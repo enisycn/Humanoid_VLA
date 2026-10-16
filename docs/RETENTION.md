@@ -10,3 +10,5 @@ Two native LIBERO task families, one initial state each. Original and final poli
 The stove result is one directly measured retained native capability. The original drawer run fails, so the final drawer success is an additional successful check, not a retained baseline success. Two single trials cannot establish retention of the whole pretraining skill set. Public pretraining coverage is not inferred from task names.
 
 [Raw results](../results/old-task-results.json)
+
+The native task environment and physical contact monitor are included in `src/liberopush/native_tasks.py`. The recorded evaluation uses 300 stock policy commands and ten holds, with native LIBERO goal predicates. Exact task names, seed, initial-state index and model outcomes are in the raw JSON.

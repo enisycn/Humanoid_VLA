@@ -36,7 +36,7 @@ def setup_vla(args):
     pre,post=make_pre_post_processors(cfg,pretrained_path=args.model,preprocessor_overrides={'device_processor':{'device':'cuda'}})
     def predict(request):
         assert set(request)=={'op','request_id','rgb2','own8','task'} and request['op']=='predict'
-        assert request['task'] in ['push the plate to the front of the stove','push the black bowl to the front of the stove','push the cream cheese to the front of the stove']
+        assert request['task'] in ['push the plate to the front of the stove','push the black bowl to the front of the stove','push the cream cheese to the front of the stove','open the middle drawer of the cabinet','turn on the stove']
         assert type(request['rgb2']) is bytes and len(request['rgb2'])==2*256*256*3
         assert type(request['own8']) is bytes and len(request['own8'])==8*4
         images=torch.frombuffer(bytearray(request['rgb2']),dtype=torch.uint8).reshape(1,2,256,256,3)
