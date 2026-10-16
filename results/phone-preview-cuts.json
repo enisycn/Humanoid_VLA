@@ -5,8 +5,8 @@
   "display": {
     "width": 576,
     "height": 324,
-    "readme_width": 288,
-    "readme_height": 162,
+    "readme_width": 240,
+    "readme_height": 135,
     "orientation": "Landscape, portrait previews rotated counterclockwise for viewing only",
     "full_frame_retained": true,
     "geometric_stretch": false,

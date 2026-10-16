@@ -21,9 +21,9 @@ I removed resets and the return-to-start motion, then mapped measured paths into
     <th width="33%">Passage recording</th>
   </tr>
   <tr>
-    <td width="33%" align="center" valign="top"><a href="media/phone-push-landscape.mp4"><img src="media/phone-push-landscape.gif" width="288" height="162" alt="Ordinary push"></a></td>
-    <td width="33%" align="center" valign="top"><a href="media/phone-obstacle-landscape.mp4"><img src="media/phone-obstacle-landscape.gif" width="288" height="162" alt="Obstacle recording"></a></td>
-    <td width="33%" align="center" valign="top"><a href="media/phone-passage-landscape.mp4"><img src="media/phone-passage-landscape.gif" width="288" height="162" alt="Passage recording"></a></td>
+    <td width="33%" align="center" valign="top"><a href="media/phone-push-landscape.mp4"><img src="media/phone-push-landscape.gif" width="240" height="135" alt="Ordinary push"></a></td>
+    <td width="33%" align="center" valign="top"><a href="media/phone-obstacle-landscape.mp4"><img src="media/phone-obstacle-landscape.gif" width="240" height="135" alt="Obstacle recording"></a></td>
+    <td width="33%" align="center" valign="top"><a href="media/phone-passage-landscape.mp4"><img src="media/phone-passage-landscape.gif" width="240" height="135" alt="Passage recording"></a></td>
   </tr>
 </table>
 
