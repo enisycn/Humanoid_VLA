@@ -2,6 +2,23 @@
 
 Linux, an NVIDIA GPU and EGL are used for the recorded experiments. Use Python 3.12 for simulation/policy and Python 3.9 for the optional predictor. Package versions are recorded in `requirements/`. These are the working environment versions, not a verified clean-machine installation.
 
+## Recorded computer and versions
+
+| Item | Used in this project |
+|---|---|
+| Operating system | Ubuntu 22.04.5 LTS, x86-64 |
+| CPU | AMD Ryzen AI 9 HX 370, 12 cores / 24 threads |
+| GPU | NVIDIA GeForce RTX 5080 Laptop GPU, 16,303 MiB reported memory |
+| System memory | About 30 GiB usable RAM |
+| NVIDIA driver | 595.84 |
+| Simulation and policy Python | 3.12.13 |
+| Simulation and policy PyTorch | 2.11.0+cu130, CUDA runtime 13.0 |
+| Optional predictor Python / PyTorch | 3.9.23 / 2.7.1+cu128, CUDA runtime 12.8 |
+| Simulator | MuJoCo 3.8.0, robosuite 1.4.0, LIBERO |
+| Policy library | LeRobot source revision `200ee53596d464bd28f6595cdb31be69a2b5e379` |
+
+The three Python environments are separate. The CUDA values above are the runtimes reported by PyTorch, not a claim that both are system-wide toolkits. Complete package lists: [simulation](../requirements/native.txt), [policy/training](../requirements/policy.txt), [optional predictor](../requirements/world-model.txt). Model revisions and checksums are in [model identities](MODEL.md).
+
 ## 1. Get the files
 
 Install [Git LFS](https://git-lfs.com/) before cloning, or run `git lfs pull` after installation.
@@ -64,7 +81,7 @@ MUJOCO_GL=egl .venv-native/bin/python scripts/evaluate.py \
   --libero-config .cache/libero-config --output outputs/final
 ```
 
-For the public baseline, use `--model-dir checkpoints/original` and omit `--expert`, preserving its own processors and saved precision. For the previous policy, use `--expert weights/previous-expert.safetensors`. Use a new output directory for each run. Every method uses the same four proposals per query and executes five commands. The control takes proposal zero; the predictor ranks those same proposals.
+For the public baseline, use `--model-dir checkpoints/original` and omit `--expert`, preserving its own processors and saved precision. For the previous policy, use `--expert weights/previous-expert.safetensors`. Use a new output directory for each run. With `--execute 10`, the stock policy uses one proposal and executes ten commands. With `--execute 5`, the pilot uses four proposals: its control takes proposal zero and the predictor ranks those same proposals. The baseline and final policy must use the same setting within each comparison.
 
 The output includes the trace, actually issued actions, model identity, proposals, camera frames and all terminal metrics. Failed runs remain in the output.
 

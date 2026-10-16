@@ -10,7 +10,7 @@ I recorded four phone videos: normal pushes, losing contact and trying again, a 
 
 I removed resets and the return-to-start motion, then mapped measured paths into Panda actions. Some direct transfers failed. The final library therefore also includes simulation examples and completed trajectories, with each source labelled separately. It contains **13 robot demonstrations, 19 continuous segments and 3,990 accepted action labels**. Older records provide replay during training.
 
-[Recording and demonstration examples](docs/DATA.md) · [Printable markers](docs/real-video-markers-A4.pdf)
+[Recording and demonstration examples](docs/DATA.md) · [Four original phone videos](recordings/README.md) · [Printable markers](docs/real-video-markers-A4.pdf)
 
 ## Model and training
 
@@ -73,4 +73,4 @@ The recorded horizontal passage still fails: less obstacle contact does not mean
 
 ## Run
 
-[Setup, model download, training and evaluation commands](docs/RUNNING.md). Weights and training records use Git LFS. [Research notes](docs/RESEARCH.md) describe what I used from SmolVLA, Learning without Forgetting, DINOv2 and DINO-WM.
+[Computer, package versions, setup, training and evaluation commands](docs/RUNNING.md). Weights and training records use Git LFS. [Research notes](docs/RESEARCH.md) describe what I used from SmolVLA, Learning without Forgetting, DINOv2 and DINO-WM.
