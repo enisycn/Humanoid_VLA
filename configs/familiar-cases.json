@@ -1,0 +1,168 @@
+[
+  {
+    "title": "Familiar start 1",
+    "case": {
+      "episode_id": "varied_dev_open_v1--repeat-0",
+      "scenario_id": "open",
+      "split": "DEV",
+      "init_index": 0,
+      "seed": 2026100911,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        0.025,
+        -0.055
+      ],
+      "expected_start_xy_m": [
+        0.025,
+        -0.055
+      ],
+      "walls": [],
+      "passage_gate": null,
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    }
+  },
+  {
+    "title": "Passage with different objects",
+    "case": {
+      "episode_id": "plate-geometry-DEV-centered-gap20-cream_cheese_1-wine_bottle_1",
+      "scenario_id": "passage",
+      "split": "DEV",
+      "init_index": 0,
+      "seed": 2026166106,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        0.025,
+        -0.065
+      ],
+      "expected_start_xy_m": [
+        0.025,
+        -0.065
+      ],
+      "walls": [
+        {
+          "name": "passage_left",
+          "center_xyz_m": [
+            -0.15106254545454548,
+            0.065,
+            0.909136
+          ],
+          "half_size_xyz_m": [
+            0.040608000000000005,
+            0.021336000000000008,
+            0.008936000000000055
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ],
+          "native_asset": "cream_cheese_1",
+          "actual_initial_AABB_world_m": [
+            [
+              -0.19167054545454548,
+              0.043664,
+              0.9002
+            ],
+            [
+              -0.11045454545454547,
+              0.086336,
+              0.9180720000000001
+            ]
+          ]
+        },
+        {
+          "name": "passage_right",
+          "center_xyz_m": [
+            0.1102066601356387,
+            0.065,
+            0.8990900000000001
+          ],
+          "half_size_xyz_m": [
+            0.021295858775026096,
+            0.022119763676062998,
+            0.07846500000000006
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ],
+          "native_asset": "wine_bottle_1",
+          "actual_initial_AABB_world_m": [
+            [
+              0.08954545454545454,
+              0.042951303057977536,
+              0.9002
+            ],
+            [
+              0.13213717209550674,
+              0.08719083041010353,
+              1.0571300000000001
+            ]
+          ]
+        }
+      ],
+      "passage_gate": {
+        "y_m": 0.065,
+        "plate_centre_x_interval_m": [
+          -0.11045454545454547,
+          0.08954545454545454
+        ],
+        "maximum_height_change_m": 0.02,
+        "interval_is_actual_collision_AABB_inner_gap": true
+      },
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0,
+      "target_object": "plate_1"
+    }
+  },
+  {
+    "title": "Obstacle 1",
+    "case": {
+      "episode_id": "center-stock10-block-0",
+      "scenario_id": "obstacle",
+      "split": "DEV",
+      "init_index": 0,
+      "seed": 2026100911,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        0.09,
+        -0.055
+      ],
+      "expected_start_xy_m": [
+        0.09,
+        -0.055
+      ],
+      "walls": [
+        {
+          "name": "detour_block",
+          "center_xyz_m": [
+            0.005,
+            0.09,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.025,
+            0.02,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        }
+      ],
+      "passage_gate": null,
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    }
+  }
+]

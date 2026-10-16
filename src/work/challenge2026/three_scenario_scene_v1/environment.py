@@ -189,7 +189,7 @@ class ThreeScenarioEnvironment:
         self.goal_xyz = sim.data.site_xpos[self.goal_site_id].copy()
         self.goal_size = sim.model.site_size[self.goal_site_id].copy()
         self.goal_xmat = sim.data.site_xmat[self.goal_site_id].reshape(3,3).copy()
-        assert np.allclose(self.goal_xyz,[-.05,.21,.895],atol=1e-12,rtol=0)
+        assert np.allclose(self.goal_xyz,np.array([-.05,.21,.895])+np.r_[self.case.get('stove_shift_xy_m',[0.,0.]),0.],atol=1e-12,rtol=0)
         assert np.allclose(self.goal_size,[.04,.04,.007],atol=1e-12,rtol=0)
         self.setup_contract = dict(
             schema='three_scenario_native_plate_reset_v1',case=case,

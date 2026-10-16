@@ -1,26 +1,21 @@
-# Results
+# Original baseline versus final policy
 
-These initial four pairs compare the previous trained policy with the final update. They do not compare against the original public model and are exposed development controls.
+Same three familiar layouts, exact initial observations and physics. One rollout per method per layout. Both use the standard ten-command VLA queue; no world model or action correction. These layouts are development checks, not unseen generalization.
 
-| Task | Previous video | Final video | Previous/final arrival |
+| Task | Original baseline | Final policy | Final error |
 |---|---|---|---|
-| Simple push | [MP4](../media/previous-simple.mp4) | [MP4](../media/final-simple.mp4) | pass / pass |
-| Passage | [MP4](../media/previous-passage.mp4) | [MP4](../media/final-passage.mp4) | pass / pass |
-| Blocking obstacle | [MP4](../media/previous-obstacle.mp4) | [MP4](../media/final-obstacle.mp4) | pass / pass |
-| Recorded horizontal passage | [MP4](../media/previous-horizontal-passage.mp4) | [MP4](../media/final-horizontal-passage.mp4) | fail / fail |
+| Simple push | Fail ([video](../media/primary-0-baseline.mp4)) | Pass ([video](../media/primary-0-final.mp4)) | 38.4 mm |
+| Passage | Fail ([video](../media/primary-1-baseline.mp4)) | Pass ([video](../media/primary-1-final.mp4)) | 47.3 mm |
+| Blocking obstacle | Fail ([video](../media/primary-2-baseline.mp4)) | Pass ([video](../media/primary-2-final.mp4)) | 45.4 mm |
 
-[Complete measurements](../results/metrics.csv). In these files B is previous and J is final. These identifiers are archival labels only.
+![Plate trajectories](../figures/primary-paths.png)
 
-The final policy preserves all three prior pushing successes in this small check. In the failed horizontal passage, robot-obstacle contact samples decrease from 74 to 0, but the goal-area gap remains about 188 mm. This is a limited contact improvement, not successful completion.
+![Goal error over simulated time](../figures/primary-errors.png)
 
-## Shared metrics
+A failed baseline uses the full 22.5-second observation horizon. A successful policy stops earlier at the native goal; ten external hold commands then check that the result persists. The longer curve is not slower video playback.
 
-- Functional success: native target or fixed 50 mm near-arrival rule, correct route, no added-obstacle contact. The result must remain during ten external hold commands.
-- Strict native goal is also reported separately. The 50 mm rule is a project criterion, not an official LIBERO score.
-- Time: actual policy commands times 0.05 seconds. Failure time is the observation horizon, not a completion time.
-- Gripper path: sum of every consecutive measured 3D displacement. Plate path uses consecutive XY positions. Neither is straight-line displacement.
-- Contact breaks: loss after a recorded gripper-plate contact, before the external holds.
-- Contacts: actual physics-substep pairs, not a count of separate impacts.
-- Centre error, stopped drift, peak lift and inference latency are diagnostic measures.
+[All primary metrics](../results/metrics.csv) · [New layouts and predictor](NEW-LAYOUTS.md)
 
-Efficiency comparisons use pairs where both methods succeed. All complete results remain available, including failures. One rollout per case is not a statistical success-rate estimate.
+Functional success uses native goal or the fixed 50 mm near-arrival criterion during all holds, with passage completion and no added-obstacle contact. Native goal is reported separately. The tolerance is a project criterion, not an official LIBERO score. Gripper travel sums consecutive measured 3D displacements; plate travel sums consecutive XY displacements. Contact samples are physics-substep pairs, not separate impacts. Efficiency is compared only where both methods succeed.
+
+The recorded horizontal passage remains a failure: [final video](../media/final-horizontal-passage.mp4). Reduced obstacle contact alone does not complete the task. The baseline comparison measures the full post-trained pipeline; it does not isolate the causal effect of personal footage alone.

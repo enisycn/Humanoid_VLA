@@ -1,9 +1,7 @@
-title,model_name,success,native_all_holds,near50_all_holds,route_complete,collision_free,centre_error_mm,region_distance_mm,drift_mm,simulated_policy_time_s,plate_travel_mm,contact_command_fraction,plate_obstacle_substep_pair_samples,robot_obstacle_substep_pair_samples
-Simple push,Saved model,True,True,True,True,True,44.90523032392574,0.0,1.1451119155556748,5.449999999999567,231.4670084407305,0.5779816513761468,0,0
-Simple push,After joint training,True,True,True,True,True,38.40465808107884,0.0,10.538130704140942,6.14999999999949,235.029988762075,0.5609756097560976,0,0
-Passage with different objects,Saved model,True,True,True,True,True,43.18030890656308,0.0,0.7591094579281252,8.899999999999809,264.8030710964811,0.7584269662921348,0,0
-Passage with different objects,After joint training,True,True,True,True,True,47.255196819467265,0.0,0.8688219776111866,7.599999999999374,246.39846895688498,0.7039473684210527,0,0
-Single obstacle,Saved model,True,True,True,True,True,40.55480922850083,0.0,5.23250893957675,17.350000000000986,369.303890273165,0.8674351585014409,0,0
-Single obstacle,After joint training,True,True,True,True,True,45.39335106360782,0.0,0.5554413459937054,19.050000000000043,385.42802545206115,0.884514435695538,0,0
-Recorded horizontal passage,Saved model,False,False,False,False,False,242.13546845071141,186.99597732294282,0.0,22.49999999999813,134.2514887292184,0.6333333333333333,0,74
-Recorded horizontal passage,After joint training,False,False,False,False,True,242.31589795913374,187.8623311752322,0.0,22.49999999999813,113.56376372231797,0.46,0,0
+task,index,method,success,native_goal_and_holds,near50_and_holds,centre_error_mm,closest_centre_error_mm,goal_area_gap_mm,simulated_time_s,gripper_path_cm,plate_path_cm,contact_breaks,plate_obstacle_samples,robot_obstacle_samples,drift_mm,route_complete,collision_free,actual_policy_commands
+Simple push,0,Original baseline,False,False,False,142.3279398181804,130.48290625871687,101.35732550423499,22.5,160.9986512345308,34.33257259389304,3,0,0,0.0,True,True,450
+Simple push,0,Final fine-tuned,True,True,True,38.40465808107884,40.94472789713796,0.0,6.15,76.25839189842767,23.5029988762075,0,0,0,10.538130704140942,True,True,123
+Passage,1,Original baseline,False,False,False,234.56435492795524,222.28354900859875,182.91969183889398,22.5,162.38121784112911,10.689437751087715,2,1042,2368,0.0,False,False,450
+Passage,1,Final fine-tuned,True,True,True,47.255196819467265,47.908076783803104,0.0,7.6000000000000005,75.34247001122796,24.6398468956885,0,0,0,0.8688219776111866,True,True,152
+Blocking obstacle,2,Original baseline,False,False,False,236.52698615100613,227.33995382117175,187.84667229610534,22.5,150.9019661815758,23.377889778853202,1,0,83,0.0,True,False,450
+Blocking obstacle,2,Final fine-tuned,True,True,True,45.39335106360782,45.65331080752067,0.0,19.05,109.33004317750562,38.542802545206115,1,0,0,0.5554413459937054,True,True,381

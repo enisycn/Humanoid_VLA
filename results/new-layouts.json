@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-16T22:32:45.241432+00:00",
+  "updated_utc": "2026-10-16T22:41:41.838162+00:00",
   "rows": [
     {
       "native_goal_and_all10_holds_success": false,
@@ -359,6 +359,325 @@
       "functional_success": false,
       "collision_free": false,
       "plate_contact_samples": 1517,
+      "robot_contact_samples": 0
+    },
+    {
+      "native_goal_and_all10_holds_success": false,
+      "completion_time_s": null,
+      "observed_policy_time_s": 22.5,
+      "gripper_3d_travel_cm": 105.6020490843226,
+      "contact_breaks": 5,
+      "first_contact": 42,
+      "center_error_mm": 222.4883247381904,
+      "stopped_drift_mm": 0.0,
+      "peak_lift_mm": 29.26245989077969,
+      "policy_commands": 450,
+      "external_holds": 10,
+      "secondary_functional_success": false,
+      "trace": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final-submission-20261016-v1/world_model/episode-000002/actual-native-trace.json",
+        "sha256": "8bee6c19f2b8294907201687cb6eab527e393c228056e1ae8f349cad577f0f17"
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final-submission-20261016-v1/world_model/episode-000002/actual-native-trace.npz",
+        "sha256": "87376cff3aa1d740c95e6ea98049765422adab60fc0ad3c34dcb7a7d5d627a52"
+      },
+      "status": "completed",
+      "arm": "world_model",
+      "plan": {
+        "path": "/home/enis/humanoid_isaac_lab/work/challenge2026/final_submission_20261016_v1/plan.json",
+        "sha256": "a26124cf41d2918fe703ab7ce7ffb1c10d4507a3930b264e192c71dbfdcecffd"
+      },
+      "wall_seconds": 127.87272439000662,
+      "planning_queries": 90,
+      "nonfirst_selections": 70,
+      "median_VLA_four_proposal_seconds": 0.9208108984748833,
+      "median_WM_seconds": 0.009408139972947538,
+      "case": {
+        "episode_id": "submission-shifted-block",
+        "scenario_id": "obstacle",
+        "split": "NEW_LAYOUT",
+        "init_index": 0,
+        "seed": 2026101692,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.07,
+          -0.06
+        ],
+        "expected_start_xy_m": [
+          0.07,
+          -0.06
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.0,
+              0.095,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "title": "Shifted Block",
+      "index": 2,
+      "gate_check": {
+        "applicable": false,
+        "passed": true
+      },
+      "functional_success": false,
+      "collision_free": false,
+      "plate_contact_samples": 20,
+      "robot_contact_samples": 0
+    },
+    {
+      "native_goal_and_all10_holds_success": false,
+      "completion_time_s": null,
+      "observed_policy_time_s": 22.5,
+      "gripper_3d_travel_cm": 146.26948775637035,
+      "contact_breaks": 1,
+      "first_contact": 47,
+      "center_error_mm": 229.0958231411457,
+      "stopped_drift_mm": 0.0,
+      "peak_lift_mm": 50.95891419602727,
+      "policy_commands": 450,
+      "external_holds": 10,
+      "secondary_functional_success": false,
+      "trace": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final-submission-20261016-v1/baseline/episode-000004/actual-native-trace.json",
+        "sha256": "903cb6afbd1153ee1c3fcab193e220acc77b1efc661d4ad0d5a349bce7f0745c"
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final-submission-20261016-v1/baseline/episode-000004/actual-native-trace.npz",
+        "sha256": "9a7547de97523ef03b38a9e3b01a2d118aa527a7022bde72b371a447837d2582"
+      },
+      "status": "completed",
+      "arm": "baseline",
+      "plan": {
+        "path": "/home/enis/humanoid_isaac_lab/work/challenge2026/final_submission_20261016_v1/plan.json",
+        "sha256": "a26124cf41d2918fe703ab7ce7ffb1c10d4507a3930b264e192c71dbfdcecffd"
+      },
+      "wall_seconds": 304.1003691210062,
+      "planning_queries": 90,
+      "nonfirst_selections": 0,
+      "median_VLA_four_proposal_seconds": 0.9834486254840158,
+      "median_WM_seconds": null,
+      "case": {
+        "episode_id": "submission-shifted-passage",
+        "scenario_id": "passage",
+        "split": "NEW_LAYOUT",
+        "init_index": 0,
+        "seed": 2026101694,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.02,
+          -0.08
+        ],
+        "expected_start_xy_m": [
+          0.02,
+          -0.08
+        ],
+        "walls": [
+          {
+            "name": "left",
+            "center_xyz_m": [
+              -0.14,
+              0.06,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.15,
+              0.35,
+              0.7,
+              1
+            ]
+          },
+          {
+            "name": "right",
+            "center_xyz_m": [
+              0.135,
+              0.06,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.7,
+              0.35,
+              0.15,
+              1
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "title": "Shifted Passage",
+      "index": 4,
+      "gate_check": {
+        "applicable": true,
+        "passed": false,
+        "plate_radius_m": 0.073,
+        "initial_signed_distance_m": -0.14,
+        "final_signed_distance_m": -0.06695532940231141,
+        "crossings": [],
+        "normal_xy": [
+          -0.0,
+          1.0
+        ],
+        "gate_span_m": 0.275,
+        "no_Y_axis_assumption": true
+      },
+      "functional_success": false,
+      "collision_free": false,
+      "plate_contact_samples": 5,
+      "robot_contact_samples": 0
+    },
+    {
+      "native_goal_and_all10_holds_success": true,
+      "completion_time_s": 10.350000000000001,
+      "observed_policy_time_s": 10.350000000000001,
+      "gripper_3d_travel_cm": 81.2272723590096,
+      "contact_breaks": 0,
+      "first_contact": 43,
+      "center_error_mm": 50.121413972497656,
+      "stopped_drift_mm": 1.3941054802763897,
+      "peak_lift_mm": 0.6675236453550504,
+      "policy_commands": 207,
+      "external_holds": 10,
+      "secondary_functional_success": true,
+      "trace": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final-submission-20261016-v1/fine/episode-000004/actual-native-trace.json",
+        "sha256": "9709154a7e1db1174a2657a2a1ddb0a0d53fd94039cd0dc62c79091c58a8e673"
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final-submission-20261016-v1/fine/episode-000004/actual-native-trace.npz",
+        "sha256": "02c9b9100517f703e79d915078508c2cc6cda12bc44cd4ef300b158212fbbd3f"
+      },
+      "status": "completed",
+      "arm": "fine",
+      "plan": {
+        "path": "/home/enis/humanoid_isaac_lab/work/challenge2026/final_submission_20261016_v1/plan.json",
+        "sha256": "a26124cf41d2918fe703ab7ce7ffb1c10d4507a3930b264e192c71dbfdcecffd"
+      },
+      "wall_seconds": 67.17712682299316,
+      "planning_queries": 42,
+      "nonfirst_selections": 0,
+      "median_VLA_four_proposal_seconds": 0.9214792874990962,
+      "median_WM_seconds": null,
+      "case": {
+        "episode_id": "submission-shifted-passage",
+        "scenario_id": "passage",
+        "split": "NEW_LAYOUT",
+        "init_index": 0,
+        "seed": 2026101694,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.02,
+          -0.08
+        ],
+        "expected_start_xy_m": [
+          0.02,
+          -0.08
+        ],
+        "walls": [
+          {
+            "name": "left",
+            "center_xyz_m": [
+              -0.14,
+              0.06,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.15,
+              0.35,
+              0.7,
+              1
+            ]
+          },
+          {
+            "name": "right",
+            "center_xyz_m": [
+              0.135,
+              0.06,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.7,
+              0.35,
+              0.15,
+              1
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "title": "Shifted Passage",
+      "index": 4,
+      "gate_check": {
+        "applicable": true,
+        "passed": true,
+        "plate_radius_m": 0.073,
+        "initial_signed_distance_m": -0.14,
+        "final_signed_distance_m": 0.11216113165400238,
+        "crossings": [
+          {
+            "command": 178,
+            "xy_m": [
+              -0.006308007702009983,
+              0.06
+            ],
+            "along_gate_m": -0.003808007702009981
+          }
+        ],
+        "normal_xy": [
+          -0.0,
+          1.0
+        ],
+        "gate_span_m": 0.275,
+        "no_Y_axis_assumption": true
+      },
+      "functional_success": true,
+      "collision_free": true,
+      "plate_contact_samples": 0,
       "robot_contact_samples": 0
     }
   ],

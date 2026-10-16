@@ -7,8 +7,8 @@ from protocol import send,receive
 KEYS=('observation.images.image','observation.images.image2')
 def write(p,x):Path(p).write_text(json.dumps(x,indent=2,allow_nan=False)+'\n')
 class Worker:
- def __init__(self,python,kind,model,seed,log,expert=None):
-  self.log=log.open('wb');env=os.environ.copy();env['CONTACT_EXPERT_OVERLAY']=str(expert)if expert else'';self.index=0
+ def __init__(self,python,kind,model,seed,log,expert=None,execute=5):
+  self.log=log.open('wb');env=os.environ.copy();env['CONTACT_EXPERT_OVERLAY']=str(expert)if expert else'';self.index=0;env['VLA_EXECUTE']=str(execute);env['VLA_PROPOSALS']='1'if execute==10 else'4'
   self.process=subprocess.Popen([str(python),str(ROOT/'src/runtime/worker.py'),'--kind',kind,'--model',str(model),'--seed',str(seed)],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=self.log,env=env)
   self.metadata=self.get(300)
  def get(self,timeout=180):
@@ -42,12 +42,22 @@ def wall_xml(walls):
   sizes=' '.join(map(str,size));rgba=' '.join(map(str,w['rgba']));quat=' '.join(map(str,[np.cos(yaw/2),0,0,np.sin(yaw/2)]))
   pieces.append(f'<body name="scenario_wall_{w["name"]}" pos="{8+i} 8 .925"><geom name="scenario_wall_{w["name"]}_geom" type="{shape}" size="{sizes}" quat="{quat}" rgba="{rgba}" group="1" contype="1" conaffinity="1" condim="3" friction=".6 .005 .0001"/></body>')
  return ''.join(pieces)
+def reset_stove_shift(env,case):
+ shift=np.array(case.get('stove_shift_xy_m',[0.,0.]),dtype=float)
+ if not np.any(shift):return
+ sim=env.sim;bid=sim.model.body_name2id('flat_stove_1_main');gid=sim.model.site_name2id('main_table_stove_front_region');parent=int(sim.model.site_bodyid[gid]);world=np.r_[shift,0.]
+ before=sim.data.site_xpos[gid].copy();sim.model.body_pos[bid]+=world
+ sim.model.site_pos[gid]+=sim.data.body_xmat[parent].reshape(3,3).T@world
+ sim.forward();assert np.allclose(sim.data.site_xpos[gid],before+world,atol=1e-10)
+ env.native.raw=env.env.env._get_observations(force_update=True)
+ write(env.out/'stove-shift.json',dict(reset_only=True,visible_stove_shift_xy_m=shift.tolist(),goal_before_xyz_m=before.tolist(),goal_after_xyz_m=sim.data.site_xpos[gid].tolist(),no_policy_state_feedback=True))
 def main():
- p=argparse.ArgumentParser();p.add_argument('--cases',type=Path,default=ROOT/'configs/evaluation-cases.json');p.add_argument('--indices',type=int,nargs='+',default=[0]);p.add_argument('--list',action='store_true');p.add_argument('--model-dir',type=Path);p.add_argument('--expert',type=Path);p.add_argument('--policy-python',type=Path);p.add_argument('--wm-python',type=Path);p.add_argument('--world-model',type=Path);p.add_argument('--libero-config',type=Path);p.add_argument('--output',type=Path);a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--cases',type=Path,default=ROOT/'configs/evaluation-cases.json');p.add_argument('--indices',type=int,nargs='+',default=[0]);p.add_argument('--list',action='store_true');p.add_argument('--execute',type=int,choices=[5,10],default=10);p.add_argument('--model-dir',type=Path);p.add_argument('--expert',type=Path);p.add_argument('--policy-python',type=Path);p.add_argument('--wm-python',type=Path);p.add_argument('--world-model',type=Path);p.add_argument('--libero-config',type=Path);p.add_argument('--output',type=Path);a=p.parse_args()
  entries=json.loads(a.cases.read_text())
  if a.list:print(json.dumps(entries,indent=2));return
  for name in ['model_dir','policy_python','libero_config','output']:
   if getattr(a,name)is None:p.error('--'+name.replace('_','-')+' is required')
+ if a.world_model and a.execute!=5:p.error('Predictor requires --execute 5')
  if a.world_model and not a.wm_python:p.error('--wm-python is required with --world-model')
  os.environ['LIBERO_CONFIG_PATH']=str(a.libero_config.resolve());os.environ.setdefault('MUJOCO_GL','egl')
  import torch
@@ -56,13 +66,13 @@ def main():
  scene.wall_xml=wall_xml
  class Environment(ThreeScenarioEnvironment):
   def __init__(self,case,out):
-   self.case=copy.deepcopy(case);self.out=out;out.mkdir(parents=True,exist_ok=False);self.native=scene.make_env(case,450,10);self.env,self.sim=self.native.env,self.native.env.sim;self._prepare()
+   self.case=copy.deepcopy(case);self.out=out;out.mkdir(parents=True,exist_ok=False);self.native=scene.make_env(case,450,10);self.env,self.sim=self.native.env,self.native.env.sim;reset_stove_shift(self,case);self._prepare()
  a.output.mkdir(parents=True,exist_ok=False);summary=[];torch.set_num_threads(1)
  for index in a.indices:
   case=entries[index]['case'];folder=a.output/f'episode-{index:06d}';env=monitor=v=w=None;images=[];states=[];actions=[];clocks=[];plans=[];result=None
   try:
    env=Environment(case,folder);monitor=SceneContactMonitor(env);scorer=EpisodeScorer(env);obs=env.observation();im,own=measured(obs);images.append(im);states.append(own);history=[(im,own)]
-   v=Worker(a.policy_python,'VLA',a.model_dir,case['model_seed'],folder/'policy.log',a.expert);write(folder/'policy-identity.json',v.metadata)
+   v=Worker(a.policy_python,'VLA',a.model_dir,case['model_seed'],folder/'policy.log',a.expert,a.execute);write(folder/'policy-identity.json',v.metadata)
    if a.world_model:w=Worker(a.wm_python,'WM',a.world_model,case['model_seed'],folder/'world-model.log');write(folder/'world-model-identity.json',w.metadata)
    def step(command,phase):
     before=float(env.sim.data.time);k=env.native.steps;monitor.begin_command();info=env.step(command);monitor.finish_command(k,phase);sample=env.score_sample();scorer.update_route(sample,k,phase);im,own=measured(env.observation());images.append(im);states.append(own);actions.append(command.copy());clocks.append(dict(command_index=k,phase=phase,simulation_time_before_s=before,simulation_time_after_s=float(env.sim.data.time),scoring_only=sample));return sample,im,own

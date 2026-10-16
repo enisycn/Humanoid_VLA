@@ -25,6 +25,8 @@ def setup_vla(args):
     from lerobot.utils.random_utils import set_seed
     from safetensors import safe_open
     set_seed(args.seed)
+    execute=int(os.environ.get('VLA_EXECUTE','5'));proposal_count=int(os.environ.get('VLA_PROPOSALS','4'))
+    assert execute in (5,10) and proposal_count in (1,4)
     from model_io import load_policy
     overlay=os.environ.get('CONTACT_EXPERT_OVERLAY')or None
     policy,cfg=load_policy(args.model,overlay)
@@ -44,17 +46,17 @@ def setup_vla(args):
             'observation.state':own,'task':[request['task']]}
         prepared=pre(batch);proposals=[]
         with torch.inference_mode():
-            for _ in range(4):
+            for _ in range(proposal_count):
                 normalized=policy.predict_action_chunk(dict(prepared))
                 assert normalized.shape==(1,50,7)
                 # Use the same official per-action postprocessor as stock select_action.
-                native=torch.stack([post(normalized[:,t])[0] for t in range(5)])
-                assert native.shape==(5,7) and torch.isfinite(native).all()
+                native=torch.stack([post(normalized[:,t])[0] for t in range(execute)])
+                assert native.shape==(execute,7) and torch.isfinite(native).all()
                 proposals.append(native.cpu().tolist())
         return dict(proposals=proposals,learned_proposals_only=True,no_simulator_input=True)
     meta=dict(kind='VLA',model_sha256=sha(Path(args.model)/'model.safetensors'),
         exact_saved_tensors=788,FP32_expert_tensors=sum(v.dtype==torch.float32 for k,v in policy.named_parameters() if k in trainable),frozen_VLM_unchanged=True,
-        input_keys=['RGB2','own8','language'],proposal_count=4,predicted_chunk=50,external_execute=5,
+        input_keys=['RGB2','own8','language'],proposal_count=proposal_count,predicted_chunk=50,external_execute=execute,
         stock_predict_action_chunk_and_postprocessor=True,no_custom_noise_or_motor_correction=True)
     meta.update(expert_overlay=overlay_identity,parent_model_sha256=meta['model_sha256'])
     if overlay_identity is not None:meta['model_sha256']=overlay_identity['sha256']

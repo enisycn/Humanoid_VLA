@@ -5,7 +5,8 @@ These layouts were fixed before policy queries. Each completed run is listed bel
 | Layout | Original VLA | Fine-tuned VLA | Fine-tuned + predictor |
 |---|---|---|---|
 | Left Start | Fail ([video](../media/test-0-baseline.mp4)) | Fail ([video](../media/test-0-fine.mp4)) | Fail ([video](../media/test-0-world_model.mp4)) |
-| Shifted Block | Fail ([video](../media/test-2-baseline.mp4)) | Fail ([video](../media/test-2-fine.mp4)) | — |
+| Shifted Block | Fail ([video](../media/test-2-baseline.mp4)) | Fail ([video](../media/test-2-fine.mp4)) | Fail ([video](../media/test-2-world_model.mp4)) |
+| Shifted Passage | Fail ([video](../media/test-4-baseline.mp4)) | Pass ([video](../media/test-4-fine.mp4)) | — |
 
 A dash means not evaluated or not completed; it is not a failure or a success. The stopping time was fixed for the submission deadline.
 

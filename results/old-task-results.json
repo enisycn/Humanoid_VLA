@@ -1,0 +1,120 @@
+{
+  "rows": [
+    {
+      "case": {
+        "id": "drawer-0",
+        "task_key": "drawer",
+        "task_name": "open_the_middle_drawer_of_the_cabinet",
+        "init_index": 0,
+        "environment_seed": 2026101697,
+        "model_seed": 0
+      },
+      "method": "baseline",
+      "success": false,
+      "native_goal_at_stop": false,
+      "native_goal_every_hold": false,
+      "policy_commands": 300,
+      "actual_holds": 10,
+      "contact_samples": {
+        "allowed_target": 676,
+        "unwanted": 217,
+        "pairs": {
+          "gripper0_finger2_collision | wooden_cabinet_1_g18": 217,
+          "gripper0_finger2_collision | wooden_cabinet_1_g29": 672,
+          "gripper0_finger2_collision | wooden_cabinet_1_g22": 4
+        }
+      },
+      "actor_object_truth": false,
+      "no_RL_or_scripted_correction": true
+    },
+    {
+      "case": {
+        "id": "drawer-0",
+        "task_key": "drawer",
+        "task_name": "open_the_middle_drawer_of_the_cabinet",
+        "init_index": 0,
+        "environment_seed": 2026101697,
+        "model_seed": 0
+      },
+      "method": "final",
+      "success": true,
+      "native_goal_at_stop": true,
+      "native_goal_every_hold": true,
+      "policy_commands": 120,
+      "actual_holds": 10,
+      "contact_samples": {
+        "allowed_target": 712,
+        "unwanted": 0,
+        "pairs": {
+          "gripper0_finger2_collision | wooden_cabinet_1_g29": 701,
+          "gripper0_finger1_collision | wooden_cabinet_1_g22": 11
+        }
+      },
+      "actor_object_truth": false,
+      "no_RL_or_scripted_correction": true
+    },
+    {
+      "case": {
+        "id": "stove-0",
+        "task_key": "stove",
+        "task_name": "turn_on_the_stove",
+        "init_index": 0,
+        "environment_seed": 2026101698,
+        "model_seed": 0
+      },
+      "method": "baseline",
+      "success": true,
+      "native_goal_at_stop": true,
+      "native_goal_every_hold": true,
+      "policy_commands": 77,
+      "actual_holds": 10,
+      "contact_samples": {
+        "allowed_target": 2155,
+        "unwanted": 0,
+        "pairs": {
+          "flat_stove_1_g19 | gripper0_finger1_pad_collision": 400,
+          "flat_stove_1_g20 | gripper0_finger1_pad_collision": 231,
+          "flat_stove_1_g19 | gripper0_finger2_pad_collision": 452,
+          "flat_stove_1_g20 | gripper0_finger2_pad_collision": 7,
+          "flat_stove_1_g5 | gripper0_finger1_collision": 644,
+          "flat_stove_1_g5 | gripper0_finger2_collision": 421
+        }
+      },
+      "actor_object_truth": false,
+      "no_RL_or_scripted_correction": true
+    },
+    {
+      "case": {
+        "id": "stove-0",
+        "task_key": "stove",
+        "task_name": "turn_on_the_stove",
+        "init_index": 0,
+        "environment_seed": 2026101698,
+        "model_seed": 0
+      },
+      "method": "final",
+      "success": true,
+      "native_goal_at_stop": true,
+      "native_goal_every_hold": true,
+      "policy_commands": 74,
+      "actual_holds": 10,
+      "contact_samples": {
+        "allowed_target": 2030,
+        "unwanted": 0,
+        "pairs": {
+          "flat_stove_1_g19 | gripper0_finger2_pad_collision": 734,
+          "flat_stove_1_g20 | gripper0_finger2_pad_collision": 20,
+          "flat_stove_1_g20 | gripper0_finger1_pad_collision": 9,
+          "flat_stove_1_g21 | gripper0_finger1_pad_collision": 133,
+          "flat_stove_1_g22 | gripper0_finger1_pad_collision": 45,
+          "flat_stove_1_g6 | gripper0_finger1_collision": 535,
+          "flat_stove_1_g7 | gripper0_finger1_collision": 535,
+          "flat_stove_1_g5 | gripper0_finger1_collision": 19
+        }
+      },
+      "actor_object_truth": false,
+      "no_RL_or_scripted_correction": true
+    }
+  ],
+  "scope": "two native task families, one initial state each; not broad no-forgetting"
+}

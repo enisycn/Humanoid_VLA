@@ -31,12 +31,21 @@ python3.12 -m venv .venv-native
 .venv-native/bin/python -m pip install --no-deps -r requirements/native.txt
 .venv-native/bin/python -m pip install --no-deps -e vendor/lerobot
 .venv-native/bin/python scripts/setup_assets.py
-.venv-policy/bin/python scripts/prepare_model.py --out checkpoints/backbone
+.venv-policy/bin/python scripts/prepare_model.py --out checkpoints/backbone --public-out checkpoints/original
 ```
 
 `--no-deps` preserves the observed versions. LeRobot's declared Torch limit differs from the tested Torch 2.11 environment, so a normal resolver install can replace the working Torch version. CUDA driver/wheel compatibility still depends on the computer. Install the EGL/OpenGL runtime through the operating system if headless rendering is unavailable.
 
+The policy config references `HuggingFaceTB/SmolVLM2-500M-Video-Instruct`. Download its config/processor files on the first online run; keep the same Hugging Face cache for later offline runs.
+
+```bash
+.venv-policy/bin/python scripts/check_install.py --part policy
+.venv-native/bin/python scripts/check_install.py --part native
+```
+
 ## 3. Evaluate the same layouts
+
+The main three-layout comparison uses `configs/familiar-cases.json`. For that table, use `--cases configs/familiar-cases.json --indices 0 1 2`. The separate new-layout/predictor pilot uses `configs/evaluation-cases.json` and a five-command cadence. Use `--execute 10` for the primary table (the default), or `--execute 5` for the four-proposal predictor pilot.
 
 List the fixed scenarios:
 
@@ -55,7 +64,7 @@ MUJOCO_GL=egl .venv-native/bin/python scripts/evaluate.py \
   --libero-config .cache/libero-config --output outputs/final
 ```
 
-For the public baseline, omit `--expert`. For the previous policy, use `--expert weights/previous-expert.safetensors`. Use a new output directory for each run. Every method uses the same four proposals per query and executes five commands. The control takes proposal zero; the predictor ranks those same proposals.
+For the public baseline, use `--model-dir checkpoints/original` and omit `--expert`, preserving its own processors and saved precision. For the previous policy, use `--expert weights/previous-expert.safetensors`. Use a new output directory for each run. Every method uses the same four proposals per query and executes five commands. The control takes proposal zero; the predictor ranks those same proposals.
 
 The output includes the trace, actually issued actions, model identity, proposals, camera frames and all terminal metrics. Failed runs remain in the output.
 
@@ -99,7 +108,7 @@ The worker verifies DINO checkpoint SHA-256 `b938bf1bc15cd2ec0feacfe3a1bb553fe8e
 DINO_SOURCE="$PWD/vendor/dinov2" \
 DINO_CHECKPOINT="$PWD/checkpoints/dinov2_vits14_pretrain.pth" \
 MUJOCO_GL=egl .venv-native/bin/python scripts/evaluate.py \
-  --indices 0 2 4 --model-dir checkpoints/backbone \
+  --indices 0 2 4 --execute 5 --model-dir checkpoints/backbone \
   --expert weights/final-expert.safetensors \
   --policy-python .venv-policy/bin/python --wm-python .venv-wm/bin/python \
   --world-model weights/forward-model.pt \
@@ -115,3 +124,5 @@ Use the printable PDFs in `docs/`. Keep the camera fixed after calibration; meas
 ```
 
 Segmentation does not produce robot actions automatically. Calibrated tracking, a measured hand-to-contact offset, Panda execution and physical admission checks are separate steps. The actual calibration/tracking code is under `src/work/phone_video_prep`; the recorded retarget entrypoint and its limitations are documented in `method_source/`. Their archived workspace entrypoints are not standalone portable commands. The exported training records allow the training stage to run without repeating that manual preparation.
+
+Summarize saved rollout metrics with `scripts/summarize.py --input outputs/final --out outputs/final-metrics.csv`. The original phone files are in `recordings/`; Git LFS is required.

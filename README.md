@@ -33,13 +33,35 @@ The policy sees two RGB views, the robot's eight state values and the same plate
 
 The fixed final policy completes the familiar simple push, blocking obstacle and passage controls. Original-baseline comparisons use the same initial observations and geometry. New layout checks are reported separately, including failures.
 
-| Simple push | Passage | Blocking obstacle |
-|---|---|---|
-| [![Simple](media/final-simple.jpg)](media/final-simple.mp4) | [![Passage](media/final-passage.jpg)](media/final-passage.mp4) | [![Obstacle](media/final-obstacle.jpg)](media/final-obstacle.mp4) |
+| Task | Original baseline | Post-trained |
+|---|---:|---:|
+| Simple push | Fail | Pass |
+| Passage | Fail | Pass |
+| Blocking obstacle | Fail | Pass |
+
+**Three matched development controls: 0/3 → 3/3.** One run per case; same initial observations and physics.
+
+### Simple push
+
+[![Baseline and post-trained policy](media/compare-simple.gif)](media/compare-simple.mp4)
+
+### Passage
+
+[![Baseline and post-trained policy](media/compare-passage.gif)](media/compare-passage.mp4)
+
+### Blocking obstacle
+
+[![Baseline and post-trained policy](media/compare-obstacle.gif)](media/compare-obstacle.mp4)
+
+The GIFs play here; click for full MP4. Each side shows its own simulated time. After a recording ends, its last frame is held for display.
+
+An additional shifted passage also succeeds with the final model while the original fails: [comparison results](docs/NEW-LAYOUTS.md). That pilot uses five commands per planning step; the main three controls use ten.
+
+![Measured plate paths](figures/primary-paths.png)
 
 [Baseline versus final results](docs/RESULTS.md) · [New layouts and predictor tests](docs/NEW-LAYOUTS.md) · [All control metrics](results/metrics.csv)
 
-The recorded horizontal passage still fails: less obstacle contact does not mean reaching the goal. Larger starting changes also expose missed approaches. The predictor ranks four learned action proposals; it is not a collision guarantee. Better approach and contact-recovery data are future work. Small pushing checks do not establish that every pretrained skill is preserved.
+The recorded horizontal passage still fails: less obstacle contact does not mean reaching the goal. Larger starting changes also expose missed approaches. The predictor ranks four learned action proposals; it is not a collision guarantee. Better approach and contact-recovery data are future work. A [small native-task check](docs/RETENTION.md) retains the stove task and succeeds at opening a drawer; it does not establish retention of every pretrained skill.
 
 ## Run
 
