@@ -18,7 +18,9 @@ I removed resets and the return-to-start motion, then mapped measured paths into
 |---|---|
 | [![My ordinary push recording](media/recorded-push.gif)](media/recorded-push.mp4) | [![My obstacle recording](media/recorded-obstacle.gif)](media/recorded-obstacle.mp4) |
 
-These are excerpts from my phone videos, before robot retargeting. Printed IDs mark the table, hand, plate and task layout; the obstacle marker represents the intended obstacle location. Preview colours are converted for viewing. Original files stay unchanged.
+I varied the plate start and push direction instead of repeating one route. I also recorded deliberate contact loss and another approach, to provide examples of recovery. Obstacle and passage recordings add route changes while keeping the same goal. These are the intended skills in the data, not a claim that the final policy learned every variation.
+
+Markers make the hand, plate and layout measurable. Table markers set the coordinate frame and scale; the stove marker anchors the goal; the reset marker separates takes so return motions are not treated as pushes. The paper obstacle marker represents the intended obstacle location. I check the transferred motion in Panda before accepting training labels. Preview colours are converted for viewing; original videos stay unchanged.
 
 ## Model and training
 
