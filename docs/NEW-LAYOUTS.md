@@ -33,3 +33,16 @@ The completed passage-at-a-new-position test shows a regression: the matched fin
 The round-obstacle five-command control also fails (185.6 mm). It is a separate protocol from the earlier ten-command near-arrival-with-contact result. Any unfinished predictor run is excluded from success counts; it is not a failure-to-success improvement.
 
 “Video-based passage” uses the layout measured from the phone recording; the robot fails to complete it. “Passage at a new position” is a different simulator layout with moved obstacles; the final VLA completes it. These are different cases, not two names for the same test.
+
+## Simple push with and without the predictor
+
+I also tested the familiar successful simple-push layout with both methods at five commands between observations and four proposals. This is separate from the ten-command main comparison. The same final VLA and unchanged predictor are used; initial observations and first proposals match.
+
+| Method | Arrival | Centre error (mm) | Simulated time (s) | Gripper travel (cm) | Contact breaks |
+|---|---|---:|---:|---:|---:|
+| Fine-tuned VLA | Pass | 49.0 | 11.95 | 84.6 | 1 |
+| Fine-tuned VLA + predictor | Fail | 270.6 | 22.50 | 114.6 | 1 |
+
+The predictor does not improve this case. It selected a different proposal on 71 of 90 queries and failed to reach the goal. Its median prediction computation was about 9 ms; the negative result concerns action selection, not a large added prediction delay. This single comparison does not explain every failure cause.
+
+[Side-by-side video](../media/simple-vla-predictor-comparison.mp4) · [Measurements](../results/simple-wm-pair.json) · [Fixed test plan](../results/simple-wm-plan.json)

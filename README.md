@@ -135,7 +135,7 @@ Some extra tests execute five commands before looking at a new image; others exe
 
 [![Horizontal passage, failed final policy](media/final-horizontal-passage.gif)](media/final-horizontal-passage.mp4)
 
-The video-based passage still fails: less obstacle contact does not mean reaching the goal. Larger starting changes also expose missed approaches. The predictor ranks four learned action proposals. In the completed passage-at-a-new-position follow-up it turns a VLA success into a failure, so I keep it as an optional negative result rather than an improvement. Better approach and contact-recovery data are future work. A [small native-task check](docs/RETENTION.md) retains the stove task and succeeds at opening a drawer; it does not establish retention of every pretrained skill.
+The video-based passage still fails: less obstacle contact does not mean reaching the goal. Larger starting changes also expose missed approaches. The predictor ranks four learned action proposals. In matched tests on both the passage at a new position and the simple push, it turns a VLA success into a failure. I keep these [negative predictor results](docs/NEW-LAYOUTS.md#simple-push-with-and-without-the-predictor) separate from the main comparison. Better approach and contact-recovery data are future work. A [small native-task check](docs/RETENTION.md) retains the stove task and succeeds at opening a drawer; it does not establish retention of every pretrained skill.
 
 ## Run
 

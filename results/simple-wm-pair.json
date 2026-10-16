@@ -1,0 +1,124 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "native_goal_and_all10_holds_success": true,
+      "completion_time_s": 11.950000000000001,
+      "observed_policy_time_s": 11.950000000000001,
+      "gripper_3d_travel_cm": 84.5958323921697,
+      "contact_breaks": 1,
+      "first_contact": 51,
+      "center_error_mm": 48.99674929464562,
+      "stopped_drift_mm": 1.1611385828540577,
+      "peak_lift_mm": 0.8057812095345618,
+      "policy_commands": 239,
+      "external_holds": 10,
+      "secondary_functional_success": true,
+      "trace": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final-simple-wm-pair-20261017-v1/fine/episode-000000/actual-native-trace.json",
+        "sha256": "c3c9d43d6bb087b6202b6d82678668c5a9414e6333387e3090bf73441d8c13a1"
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final-simple-wm-pair-20261017-v1/fine/episode-000000/actual-native-trace.npz",
+        "sha256": "4ab4e4ad569e3dcb3855caf1cab0d31030ed7dea63483e838618c887fe6cb7d6"
+      },
+      "status": "completed",
+      "arm": "fine",
+      "plan": {
+        "path": "/home/enis/humanoid_isaac_lab/work/challenge2026/phone_gallery_polish_20261017_v1/simple-wm-plan.json",
+        "sha256": "079a0a3a1cd49fe3a7cc070e10e511764851053cb0e4e52b5ec69ac38644b222"
+      },
+      "wall_seconds": 88.29576586402254,
+      "planning_queries": 48,
+      "nonfirst_selections": 0,
+      "median_VLA_four_proposal_seconds": 0.946199092984898,
+      "median_WM_seconds": null,
+      "title": "Simple push",
+      "case": {
+        "episode_id": "varied_dev_open_v1--repeat-0",
+        "scenario_id": "open",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.025,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.025,
+          -0.055
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "functional_success": true,
+      "collision_free": true,
+      "plate_contact_samples": 0,
+      "robot_contact_samples": 0
+    },
+    {
+      "native_goal_and_all10_holds_success": false,
+      "completion_time_s": null,
+      "observed_policy_time_s": 22.5,
+      "gripper_3d_travel_cm": 114.60407655216285,
+      "contact_breaks": 1,
+      "first_contact": 49,
+      "center_error_mm": 270.63310190947016,
+      "stopped_drift_mm": 0.0,
+      "peak_lift_mm": 22.923165082286978,
+      "policy_commands": 450,
+      "external_holds": 10,
+      "secondary_functional_success": false,
+      "trace": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final-simple-wm-pair-20261017-v1/world_model/episode-000000/actual-native-trace.json",
+        "sha256": "d2efa1440960ea784565f4b042d27b292bcdc091e6cf11605940cd73254bae1d"
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final-simple-wm-pair-20261017-v1/world_model/episode-000000/actual-native-trace.npz",
+        "sha256": "f65d91558d4121dc13bfe8552e230ba8eddfdccfc8f26478e1d641564d599e74"
+      },
+      "status": "completed",
+      "arm": "world_model",
+      "plan": {
+        "path": "/home/enis/humanoid_isaac_lab/work/challenge2026/phone_gallery_polish_20261017_v1/simple-wm-plan.json",
+        "sha256": "079a0a3a1cd49fe3a7cc070e10e511764851053cb0e4e52b5ec69ac38644b222"
+      },
+      "wall_seconds": 138.6952688730089,
+      "planning_queries": 90,
+      "nonfirst_selections": 71,
+      "median_VLA_four_proposal_seconds": 0.9445008780458011,
+      "median_WM_seconds": 0.009075294976355508,
+      "title": "Simple push",
+      "case": {
+        "episode_id": "varied_dev_open_v1--repeat-0",
+        "scenario_id": "open",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.025,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.025,
+          -0.055
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "functional_success": false,
+      "collision_free": true,
+      "plate_contact_samples": 0,
+      "robot_contact_samples": 0
+    }
+  ],
+  "matched_initial_observations": true
+}

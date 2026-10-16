@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-10-16T23:10:41.701209+00:00",
+  "relative_markdown_and_html_links": 87,
+  "broken_links": [],
+  "phone_previews": "All three GIFs and MP4s 576x324; README240x135; full GIF/MP4 decode passed",
+  "decoded_phone_video_frames": {
+    "phone-push-landscape": 281,
+    "phone-obstacle-landscape": 300,
+    "phone-passage-landscape": 210
+  },
+  "passage_clip": "76\u201383s, visually reviewed, no head visible",
+  "primary_plot_scope": "Before additional layouts; only the three primary comparisons",
+  "main_success": "Original0/3, final3/3",
+  "seven_layouts": "13completed rows, 6pairs+final-only stove; final2clean successes",
+  "original_phone_SHA256_matches_LFS": {
+    "contact-recovery.mov": "067c9bfc11975713795135d72cd487de1a3a8ba78d1493c1caf567804c6666e3",
+    "normal-pushes.mov": "8f5c5e93aadc5ade86e0f3f2a121933bb0adf727e7f24e88f024fdcf5821ae03",
+    "passages.mov": "6ec4c1dcbbb4c3f4edf804add9aac3eabcd1034bae8eae9dbafa8afbdfb48007",
+    "single-obstacle.mov": "b4f6944cf3f41b748af483968d27ce4e5db730d279db6c66e3c17af690c7fc03"
+  },
+  "source_python_syntax": "passed",
+  "fresh_machine_install": "not verified; documented",
+  "github_render_verified": {
+    "all_three_phone_GIFs_loaded": true,
+    "natural_dimensions": [
+      576,
+      324
+    ],
+    "display_dimensions": [
+      240,
+      135
+    ],
+    "all_visible_together_without_horizontal_scroll": true
+  },
+  "simple_predictor_pair": {
+    "completed": true,
+    "VLA_success": true,
+    "VLA_plus_predictor_success": false,
+    "side_by_side_video_frames_decoded": 461
+  }
+}
