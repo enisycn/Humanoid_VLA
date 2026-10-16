@@ -21,6 +21,18 @@ I removed resets and the return-to-start motion, then mapped measured paths into
 | Teacher: a fixed copy of the starting policy | Training reference for older examples |
 | Optional forward predictor (small world model) | Fixed image encoder; fitted feature compression and linear prediction |
 
+```mermaid
+flowchart LR
+  A[Two colour images + robot state + instruction] --> B[Fixed vision and language backbone]
+  B --> C[Trained action expert]
+  C --> D[Panda robot commands]
+  C --> E[Four proposed action sequences]
+  E --> F[Optional visual predictor]
+  F -->|Select one sequence| D
+```
+
+The normal policy follows the top path. The optional predictor selects among VLA proposals; it does not change the VLA weights during inference. The teacher is used only during training.
+
 The final stage uses **1,000 weight updates**. Each update uses a batch of **24 training examples: six from the new library and eighteen from older data**. Reusing older examples is called replay. The learning rate, 0.000001, controls the size of weight changes.
 
 One example (called a “context” in the training code) contains two camera images, the robot state, the instruction and up to 50 following actions. **Six examples do not mean six videos**; several moments can come from one recording. I train the policy to follow the recorded actions and stay close to the fixed teacher on older examples. [Method and term explanations](docs/METHOD.md) · [Model history and data sources](docs/MODEL.md)
@@ -63,6 +75,20 @@ I also completed **seven layout checks**. The final policy succeeds at the shift
 
 Some extra tests execute five commands before looking at a new image; others execute ten. Each baseline–final pair uses the same setting. I keep these protocols separate rather than pooling their success rates.
 
+### Two layout successes and one failure
+
+**Shifted passage — pass.** The original baseline fails on the same layout.
+
+[![Shifted passage, final policy](media/test-4-fine.gif)](media/test-4-fine.mp4)
+
+**Diagonal passage — pass.** The original baseline fails on the same layout.
+
+[![Diagonal passage, final policy](media/layout-5-fine.gif)](media/layout-5-fine.mp4)
+
+**Recorded horizontal passage — fail.** The policy avoids added-obstacle contact but loses useful plate contact and does not cross the passage.
+
+[![Horizontal passage, failed final policy](media/final-horizontal-passage.gif)](media/final-horizontal-passage.mp4)
+
 ![Measured plate paths](figures/primary-paths.png)
 
 These top-down paths follow the plate centre across recorded simulation steps. The axes are table coordinates in metres. Path length sums the travelled segments, including turns; it is not the straight-line start-to-finish distance.
@@ -74,3 +100,25 @@ The recorded horizontal passage still fails: less obstacle contact does not mean
 ## Run
 
 [Computer, package versions, setup, training and evaluation commands](docs/RUNNING.md). Weights and training records use Git LFS. [Research notes](docs/RESEARCH.md) describe what I used from SmolVLA, Learning without Forgetting, DINOv2 and DINO-WM.
+
+## Repository map
+
+```text
+Humanoid_VLA/
+├── README.md          # Project summary, comparisons and videos
+├── docs/              # Method, data sources, results and run instructions
+├── scripts/           # Prepare models, train, evaluate and plot
+├── src/               # Policy runtime, training loss and simulator helpers
+├── configs/           # Fixed test layouts and model settings
+├── requirements/      # Package versions for the three environments
+├── recordings/        # Four original phone videos (Git LFS)
+├── training_data/     # Training records and batch schedule (Git LFS)
+├── weights/           # Final action expert, teacher and optional predictor
+├── media/             # Robot demonstrations and inference videos
+├── figures/           # Loss and trajectory plots
+├── results/           # Measurements, plans and verification records
+├── method_source/     # Archived data-preparation entrypoints and limitations
+└── third_party/       # LIBERO runtime source and license
+```
+
+Start with [run instructions](docs/RUNNING.md) to reproduce the exported-data training and evaluation. [Data notes](docs/DATA.md) distinguish personal-video transfers, simulation examples and completed paths.
