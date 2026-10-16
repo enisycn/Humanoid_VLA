@@ -16,20 +16,24 @@ I removed resets and the return-to-start motion, then mapped measured paths into
 
 | Component | What I trained |
 |---|---|
-| SmolVLA vision-language backbone | Frozen: 489 tensors |
-| Action expert and projections | Updated: 299 tensors |
-| Teacher | Frozen; used only during training |
-| Optional forward predictor | Frozen DINOv2 features, fitted PCA and ridge head |
+| Vision and language backbone | Kept fixed; reads images and the instruction |
+| Action expert and its input/output mappings | Trained; produces robot commands |
+| Teacher: a fixed copy of the starting policy | Training reference for older examples |
+| Optional forward predictor (small world model) | Fixed image encoder; fitted feature compression and linear prediction |
 
-The final stage uses **1,000 updates**, batch size 24 and learning rate 0.000001. Each batch has six new-data and eighteen replay contexts. I combine the official flow-matching loss with teacher velocity matching on replay. The [model history and data sources](docs/MODEL.md) explain initialization and earlier training.
+The final stage uses **1,000 weight updates**. Each update uses a batch of **24 training examples: six from the new library and eighteen from older data**. Reusing older examples is called replay. The learning rate, 0.000001, controls the size of weight changes.
+
+One example (called a “context” in the training code) contains two camera images, the robot state, the instruction and up to 50 following actions. **Six examples do not mean six videos**; several moments can come from one recording. I train the policy to follow the recorded actions and stay close to the fixed teacher on older examples. [Method and term explanations](docs/METHOD.md) · [Model history and data sources](docs/MODEL.md)
 
 ![Training losses](figures/training-loss.png)
 
-These are training losses on changing batches, not validation scores. Lower loss alone does not show better control.
+**Left:** action-training loss for all 24 examples (blue) and the six new examples alone (orange). Lower means a better fit to those sampled demonstrations. **Right:** average squared difference from the fixed teacher on the eighteen older examples. Zero means identical predictions on that batch; a rise means the policy is moving away from the teacher.
+
+The horizontal axis counts weight updates. These losses have no centimetre or percentage units. The batches change, so the curves fluctuate. They do not measure task success or prove that old skills are preserved; I check those with robot runs.
 
 ## Evaluation
 
-The policy sees two RGB views, the robot's eight state values and the same plate instruction in every layout. It receives no simulator object positions. I measure target-region arrival, actual obstacle contact, simulated time, total travelled path and contact breaks. Centre error and stopped drift are extra diagnostics.
+The policy sees two colour camera views (RGB), the robot's eight state values and the same plate instruction in every layout. It receives no simulator object positions. I measure target-region arrival, actual obstacle contact, simulated time, total travelled path and contact breaks. Centre error is the plate’s distance from the target centre. Stopped drift is its extra movement after a neutral hold command. Contact breaks count interruptions in robot–plate contact. These are extra diagnostics; the full success rule and units are in the [results](docs/RESULTS.md).
 
 The fixed final policy completes the familiar simple push, blocking obstacle and passage controls. Original-baseline comparisons use the same initial observations and geometry. New layout checks are reported separately, including failures.
 
@@ -55,9 +59,13 @@ The fixed final policy completes the familiar simple push, blocking obstacle and
 
 The GIFs play here; click for full MP4. Each side shows its own simulated time. After a recording ends, its last frame is held for display.
 
-Two additional layouts also succeed while their matched original baselines fail: a shifted passage (five-command pilot) and a diagonal passage (ten-command queue). [All layout results](docs/NEW-LAYOUTS.md), including failures, are kept separately.
+I also completed **seven layout checks**. The final policy succeeds at the shifted and diagonal passages, where the matched original baseline fails. The round obstacle gives near-arrival with contact; left start, forward-right start, shifted obstacle and the moved stove fail. The moved-stove case has no baseline run. [All seven results and videos](docs/NEW-LAYOUTS.md) are reported separately.
+
+Some extra tests execute five commands before looking at a new image; others execute ten. Each baseline–final pair uses the same setting. I keep these protocols separate rather than pooling their success rates.
 
 ![Measured plate paths](figures/primary-paths.png)
+
+These top-down paths follow the plate centre across recorded simulation steps. The axes are table coordinates in metres. Path length sums the travelled segments, including turns; it is not the straight-line start-to-finish distance.
 
 [Baseline versus final results](docs/RESULTS.md) · [New layouts and predictor tests](docs/NEW-LAYOUTS.md) · [All control metrics](results/metrics.csv)
 
