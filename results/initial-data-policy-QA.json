@@ -1,0 +1,21 @@
+{
+  "training_source": {
+    "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-passage-shared-frame-20261016-v1/passage-1/actual-native-trace.npz",
+    "sha256": "d2e0b5166d1d662016f90b2d9653faab3cc733ab7743878b2489e2229bd1ebdf"
+  },
+  "comparison": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000003",
+  "arrays": {
+    "observation.images.image": {
+      "equal": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "observation.images.image2": {
+      "equal": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "observation.state": {
+      "equal": true,
+      "maximum_absolute_difference": 0.0
+    }
+  }
+}

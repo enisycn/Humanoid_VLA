@@ -1,0 +1,9 @@
+title,model_name,success,native_all_holds,near50_all_holds,route_complete,collision_free,centre_error_mm,region_distance_mm,drift_mm,simulated_policy_time_s,plate_travel_mm,contact_command_fraction,plate_obstacle_substep_pair_samples,robot_obstacle_substep_pair_samples
+Simple push,Saved model,True,True,True,True,True,44.90523032392574,0.0,1.1451119155556748,5.449999999999567,231.4670084407305,0.5779816513761468,0,0
+Simple push,After joint training,True,True,True,True,True,38.40465808107884,0.0,10.538130704140942,6.14999999999949,235.029988762075,0.5609756097560976,0,0
+Passage with different objects,Saved model,True,True,True,True,True,43.18030890656308,0.0,0.7591094579281252,8.899999999999809,264.8030710964811,0.7584269662921348,0,0
+Passage with different objects,After joint training,True,True,True,True,True,47.255196819467265,0.0,0.8688219776111866,7.599999999999374,246.39846895688498,0.7039473684210527,0,0
+Single obstacle,Saved model,True,True,True,True,True,40.55480922850083,0.0,5.23250893957675,17.350000000000986,369.303890273165,0.8674351585014409,0,0
+Single obstacle,After joint training,True,True,True,True,True,45.39335106360782,0.0,0.5554413459937054,19.050000000000043,385.42802545206115,0.884514435695538,0,0
+Recorded horizontal passage,Saved model,False,False,False,False,False,242.13546845071141,186.99597732294282,0.0,22.49999999999813,134.2514887292184,0.6333333333333333,0,74
+Recorded horizontal passage,After joint training,False,False,False,False,True,242.31589795913374,187.8623311752322,0.0,22.49999999999813,113.56376372231797,0.46,0,0

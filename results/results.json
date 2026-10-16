@@ -1,0 +1,1221 @@
+{
+  "created_utc": "2026-10-16T22:03:08.192366+00:00",
+  "training": {
+    "status": "completed",
+    "updates": 1000,
+    "additional_updates": 800,
+    "seconds": 1216.6722949979594,
+    "original_initialization": {
+      "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-morning10-failure-rehearsal-20261016-v1/training/failure_rehearsal/checkpoint-2000/expert-overlay.json",
+      "sha256": "664c383eb8af3e7aa479708f724780fc4149198b0f0e82d4f9201ca4ca29d40a"
+    },
+    "resumed_from": {
+      "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-fast-20261016-v1/training/checkpoint-200/expert-overlay.json",
+      "sha256": "89f186c95ca5a64002c5a5c84b8a0213bd6a3b10a87105d4620ffd461f96d357"
+    },
+    "checkpoint": {
+      "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-20261016-v1/training/checkpoint-1000/expert-overlay.json",
+      "sha256": "99f961336dd9cdf11f4c9ea031b126159f7db59bda6284ebbb95106526ce1aef"
+    },
+    "checkpoints": [
+      {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-20261016-v1/training/checkpoint-600/expert-overlay.json",
+        "sha256": "4a18464d7cbe66c5974f9502150f21c3c6e52a7eb75c4f4af908bbcca7225b28"
+      },
+      {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-20261016-v1/training/checkpoint-1000/expert-overlay.json",
+        "sha256": "99f961336dd9cdf11f4c9ea031b126159f7db59bda6284ebbb95106526ce1aef"
+      }
+    ],
+    "resume": {
+      "path": "/home/enis/humanoid_isaac_lab/work/challenge2026/personal_video_diverse_B_continue1000_20261016_v1/training/resume-1000.pt",
+      "sha256": "058cac02e0d1ad743827e9b5e60d2842a07c353e54cbb530686e87990e78a52b"
+    },
+    "all489_frozen_unchanged": true,
+    "reference_B_exact": true,
+    "new_library_records": 19,
+    "new_library_labels": 3990,
+    "old_records": 45,
+    "old_labels": 8847,
+    "mixed_sources": true,
+    "history": [
+      {
+        "step": 201,
+        "total": 1000,
+        "additional_step": 1,
+        "seconds": 1.7837245360133238,
+        "BC24": 0.34770485758781433,
+        "KD_old18": 0.0020582929719239473,
+        "new_library_BC": 1.041045904159546,
+        "lr": 1e-06
+      },
+      {
+        "step": 225,
+        "total": 1000,
+        "additional_step": 25,
+        "seconds": 36.54927835596027,
+        "BC24": 0.21035318076610565,
+        "KD_old18": 0.0020256307907402515,
+        "new_library_BC": 0.4870798587799072,
+        "lr": 1e-06
+      },
+      {
+        "step": 250,
+        "total": 1000,
+        "additional_step": 50,
+        "seconds": 73.41885915095918,
+        "BC24": 0.15505948662757874,
+        "KD_old18": 0.002582342131063342,
+        "new_library_BC": 0.2632870376110077,
+        "lr": 1e-06
+      },
+      {
+        "step": 275,
+        "total": 1000,
+        "additional_step": 75,
+        "seconds": 110.45204915897921,
+        "BC24": 0.17752067744731903,
+        "KD_old18": 0.002006682800129056,
+        "new_library_BC": 0.49616140127182007,
+        "lr": 1e-06
+      },
+      {
+        "step": 300,
+        "total": 1000,
+        "additional_step": 100,
+        "seconds": 147.40135983697837,
+        "BC24": 0.238424152135849,
+        "KD_old18": 0.0018706141272559762,
+        "new_library_BC": 0.5766703486442566,
+        "lr": 1e-06
+      },
+      {
+        "step": 325,
+        "total": 1000,
+        "additional_step": 125,
+        "seconds": 184.31479575898265,
+        "BC24": 0.4157741069793701,
+        "KD_old18": 0.0027782388497143984,
+        "new_library_BC": 1.3610494136810303,
+        "lr": 1e-06
+      },
+      {
+        "step": 350,
+        "total": 1000,
+        "additional_step": 150,
+        "seconds": 221.32658749696566,
+        "BC24": 0.27655985951423645,
+        "KD_old18": 0.0022823798935860395,
+        "new_library_BC": 0.7441350817680359,
+        "lr": 1e-06
+      },
+      {
+        "step": 375,
+        "total": 1000,
+        "additional_step": 175,
+        "seconds": 258.5353633289924,
+        "BC24": 0.21557673811912537,
+        "KD_old18": 0.0030456525273621082,
+        "new_library_BC": 0.3926040530204773,
+        "lr": 1e-06
+      },
+      {
+        "step": 400,
+        "total": 1000,
+        "additional_step": 200,
+        "seconds": 295.9572385060019,
+        "BC24": 0.30800265073776245,
+        "KD_old18": 0.0017135796369984746,
+        "new_library_BC": 0.9377190470695496,
+        "lr": 1e-06
+      },
+      {
+        "step": 425,
+        "total": 1000,
+        "additional_step": 225,
+        "seconds": 333.46628768596565,
+        "BC24": 0.13182154297828674,
+        "KD_old18": 0.004303907044231892,
+        "new_library_BC": 0.22450539469718933,
+        "lr": 1e-06
+      },
+      {
+        "step": 450,
+        "total": 1000,
+        "additional_step": 250,
+        "seconds": 371.1249235669966,
+        "BC24": 0.1423993706703186,
+        "KD_old18": 0.0017117841634899378,
+        "new_library_BC": 0.22488713264465332,
+        "lr": 1e-06
+      },
+      {
+        "step": 475,
+        "total": 1000,
+        "additional_step": 275,
+        "seconds": 408.94151948799845,
+        "BC24": 0.15189939737319946,
+        "KD_old18": 0.003061203984543681,
+        "new_library_BC": 0.3623499274253845,
+        "lr": 1e-06
+      },
+      {
+        "step": 500,
+        "total": 1000,
+        "additional_step": 300,
+        "seconds": 446.9686990099726,
+        "BC24": 0.12243813276290894,
+        "KD_old18": 0.002015880076214671,
+        "new_library_BC": 0.2027691900730133,
+        "lr": 1e-06
+      },
+      {
+        "step": 525,
+        "total": 1000,
+        "additional_step": 325,
+        "seconds": 484.8397703929804,
+        "BC24": 0.21154002845287323,
+        "KD_old18": 0.0017681369790807366,
+        "new_library_BC": 0.7047351598739624,
+        "lr": 1e-06
+      },
+      {
+        "step": 550,
+        "total": 1000,
+        "additional_step": 350,
+        "seconds": 522.6334325919743,
+        "BC24": 0.17562183737754822,
+        "KD_old18": 0.002598034916445613,
+        "new_library_BC": 0.3272387981414795,
+        "lr": 1e-06
+      },
+      {
+        "step": 575,
+        "total": 1000,
+        "additional_step": 375,
+        "seconds": 560.5229252660065,
+        "BC24": 0.32322150468826294,
+        "KD_old18": 0.002140505937859416,
+        "new_library_BC": 1.0424864292144775,
+        "lr": 1e-06
+      },
+      {
+        "step": 600,
+        "total": 1000,
+        "additional_step": 400,
+        "seconds": 598.5785900189658,
+        "BC24": 0.10334556549787521,
+        "KD_old18": 0.0019392491085454822,
+        "new_library_BC": 0.14127333462238312,
+        "lr": 1e-06
+      },
+      {
+        "step": 625,
+        "total": 1000,
+        "additional_step": 425,
+        "seconds": 640.7859070659615,
+        "BC24": 0.14876270294189453,
+        "KD_old18": 0.002719033043831587,
+        "new_library_BC": 0.22617214918136597,
+        "lr": 1e-06
+      },
+      {
+        "step": 650,
+        "total": 1000,
+        "additional_step": 450,
+        "seconds": 678.542054458987,
+        "BC24": 0.16763398051261902,
+        "KD_old18": 0.0025348265189677477,
+        "new_library_BC": 0.18008677661418915,
+        "lr": 1e-06
+      },
+      {
+        "step": 675,
+        "total": 1000,
+        "additional_step": 475,
+        "seconds": 716.4293469099794,
+        "BC24": 0.11711724102497101,
+        "KD_old18": 0.002360281767323613,
+        "new_library_BC": 0.24266096949577332,
+        "lr": 1e-06
+      },
+      {
+        "step": 700,
+        "total": 1000,
+        "additional_step": 500,
+        "seconds": 754.4655142420088,
+        "BC24": 0.14745810627937317,
+        "KD_old18": 0.00228853989392519,
+        "new_library_BC": 0.23005089163780212,
+        "lr": 1e-06
+      },
+      {
+        "step": 725,
+        "total": 1000,
+        "additional_step": 525,
+        "seconds": 792.4495128429844,
+        "BC24": 0.14283999800682068,
+        "KD_old18": 0.0018534428672865033,
+        "new_library_BC": 0.19287240505218506,
+        "lr": 1e-06
+      },
+      {
+        "step": 750,
+        "total": 1000,
+        "additional_step": 550,
+        "seconds": 830.3735046489746,
+        "BC24": 0.14530327916145325,
+        "KD_old18": 0.001537512638606131,
+        "new_library_BC": 0.3231888711452484,
+        "lr": 1e-06
+      },
+      {
+        "step": 775,
+        "total": 1000,
+        "additional_step": 575,
+        "seconds": 868.4873611169751,
+        "BC24": 0.19294743239879608,
+        "KD_old18": 0.004502295050770044,
+        "new_library_BC": 0.46573615074157715,
+        "lr": 1e-06
+      },
+      {
+        "step": 800,
+        "total": 1000,
+        "additional_step": 600,
+        "seconds": 906.3755385350087,
+        "BC24": 0.18297183513641357,
+        "KD_old18": 0.0021338968072086573,
+        "new_library_BC": 0.4539151191711426,
+        "lr": 1e-06
+      },
+      {
+        "step": 825,
+        "total": 1000,
+        "additional_step": 625,
+        "seconds": 944.3933224659995,
+        "BC24": 0.21159908175468445,
+        "KD_old18": 0.0017560964915901423,
+        "new_library_BC": 0.527937650680542,
+        "lr": 1e-06
+      },
+      {
+        "step": 850,
+        "total": 1000,
+        "additional_step": 650,
+        "seconds": 982.2687629630091,
+        "BC24": 0.13577955961227417,
+        "KD_old18": 0.001641377923078835,
+        "new_library_BC": 0.19757895171642303,
+        "lr": 1e-06
+      },
+      {
+        "step": 875,
+        "total": 1000,
+        "additional_step": 675,
+        "seconds": 1020.1688753800117,
+        "BC24": 0.14934417605400085,
+        "KD_old18": 0.004000632092356682,
+        "new_library_BC": 0.23369097709655762,
+        "lr": 1e-06
+      },
+      {
+        "step": 900,
+        "total": 1000,
+        "additional_step": 700,
+        "seconds": 1058.2894550999627,
+        "BC24": 0.08447550982236862,
+        "KD_old18": 0.0017184835160151124,
+        "new_library_BC": 0.0810614824295044,
+        "lr": 1e-06
+      },
+      {
+        "step": 925,
+        "total": 1000,
+        "additional_step": 725,
+        "seconds": 1096.4227536880062,
+        "BC24": 0.08977442979812622,
+        "KD_old18": 0.0025700186379253864,
+        "new_library_BC": 0.08834510296583176,
+        "lr": 1e-06
+      },
+      {
+        "step": 950,
+        "total": 1000,
+        "additional_step": 750,
+        "seconds": 1134.6892189820064,
+        "BC24": 0.12703067064285278,
+        "KD_old18": 0.0010340309236198664,
+        "new_library_BC": 0.27230802178382874,
+        "lr": 1e-06
+      },
+      {
+        "step": 975,
+        "total": 1000,
+        "additional_step": 775,
+        "seconds": 1172.8968441199977,
+        "BC24": 0.14191752672195435,
+        "KD_old18": 0.0014366096584126353,
+        "new_library_BC": 0.3290296494960785,
+        "lr": 1e-06
+      },
+      {
+        "step": 1000,
+        "total": 1000,
+        "additional_step": 800,
+        "seconds": 1211.0599811839638,
+        "BC24": 0.21176615357398987,
+        "KD_old18": 0.0020760323386639357,
+        "new_library_BC": 0.4075050950050354,
+        "lr": 1e-06
+      }
+    ]
+  },
+  "evaluation_plan": {
+    "path": "/home/enis/humanoid_isaac_lab/work/challenge2026/personal_video_diverse_B_continue1000_20261016_v1/evaluation-plan.json",
+    "sha256": "c464481fcc761f1d035889c83f085437b5e8aa0875a7641e4c6e746c37c7b69a"
+  },
+  "pairs": [
+    {
+      "index": 0,
+      "initial_observation_and_geometry_bitexact": true,
+      "old": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final30-object-retention-20261016-v1/B/episode-000000/initial-native-observation.npz",
+        "sha256": "252c95482298461f454288156bbcee7a5cc3dbd2ffd010822df4ebad767c5933"
+      },
+      "new": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000000/initial-native-observation.npz",
+        "sha256": "252c95482298461f454288156bbcee7a5cc3dbd2ffd010822df4ebad767c5933"
+      }
+    },
+    {
+      "index": 1,
+      "initial_observation_and_geometry_bitexact": true,
+      "old": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-plate-geometry-generalization-20261016-v1/B/episode-000006/initial-native-observation.npz",
+        "sha256": "b0a50860d19ab5e0b25c436cc5c4d0a67197daceff09e6e2f33bb8376287bf5e"
+      },
+      "new": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000001/initial-native-observation.npz",
+        "sha256": "b0a50860d19ab5e0b25c436cc5c4d0a67197daceff09e6e2f33bb8376287bf5e"
+      }
+    },
+    {
+      "index": 2,
+      "initial_observation_and_geometry_bitexact": true,
+      "old": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final30-object-retention-20261016-v1/B/episode-000002/initial-native-observation.npz",
+        "sha256": "54f713c1a41bd67a8f2c5cdebaa7b54b99e30a30f6f0d4d6a311914ee9f8fd2a"
+      },
+      "new": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000002/initial-native-observation.npz",
+        "sha256": "54f713c1a41bd67a8f2c5cdebaa7b54b99e30a30f6f0d4d6a311914ee9f8fd2a"
+      }
+    },
+    {
+      "index": 3,
+      "initial_observation_and_geometry_bitexact": true,
+      "old": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-fast-checks-20261016-v1/B/episode-000003/initial-native-observation.npz",
+        "sha256": "c66f3052c7b3718f515b49376b6feeef50c5b9d02611029577d08b44d91aadf3"
+      },
+      "new": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000003/initial-native-observation.npz",
+        "sha256": "c66f3052c7b3718f515b49376b6feeef50c5b9d02611029577d08b44d91aadf3"
+      }
+    }
+  ],
+  "rows": [
+    {
+      "index": 0,
+      "title": "Simple push",
+      "arm": "B",
+      "model_name": "Saved model",
+      "role": "Exposed old-skill check",
+      "success": true,
+      "native_all_holds": true,
+      "near50_all_holds": true,
+      "route_complete": true,
+      "gate_check": {
+        "applicable": false,
+        "passed": true
+      },
+      "collision_free": true,
+      "centre_error_mm": 44.90523032392574,
+      "region_distance_mm": 0.0,
+      "drift_mm": 1.1451119155556748,
+      "maximum_lift_mm": 0.02406558502188183,
+      "plate_obstacle_substep_pair_samples": 0,
+      "robot_obstacle_substep_pair_samples": 0,
+      "contact_pairs": {},
+      "policy_commands": 109,
+      "simulated_policy_time_s": 5.449999999999567,
+      "plate_travel_mm": 231.4670084407305,
+      "contact_command_fraction": 0.5779816513761468,
+      "first_native_goal_command": 108,
+      "explanation": [],
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final30-object-retention-20261016-v1/B/episode-000000",
+      "trace": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final30-object-retention-20261016-v1/B/episode-000000/actual-native-trace.json",
+        "sha256": "7224ac959a2dd14e13f7220c272e8ab83b9a99e40bc1b03746a7b21934b24ab2"
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final30-object-retention-20261016-v1/B/episode-000000/actual-native-trace.npz",
+        "sha256": "9ce657db1799e15443724bde2c8672e6517e50f3bd8e60d893dbe446f621454b"
+      },
+      "case": {
+        "episode_id": "varied_dev_open_v1--repeat-0",
+        "scenario_id": "open",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.025,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.025,
+          -0.055
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      }
+    },
+    {
+      "index": 0,
+      "title": "Simple push",
+      "arm": "J",
+      "model_name": "After joint training",
+      "role": "Exposed old-skill check",
+      "success": true,
+      "native_all_holds": true,
+      "near50_all_holds": true,
+      "route_complete": true,
+      "gate_check": {
+        "applicable": false,
+        "passed": true
+      },
+      "collision_free": true,
+      "centre_error_mm": 38.40465808107884,
+      "region_distance_mm": 0.0,
+      "drift_mm": 10.538130704140942,
+      "maximum_lift_mm": 14.705771158086689,
+      "plate_obstacle_substep_pair_samples": 0,
+      "robot_obstacle_substep_pair_samples": 0,
+      "contact_pairs": {},
+      "policy_commands": 123,
+      "simulated_policy_time_s": 6.14999999999949,
+      "plate_travel_mm": 235.029988762075,
+      "contact_command_fraction": 0.5609756097560976,
+      "first_native_goal_command": 122,
+      "explanation": [],
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000000",
+      "trace": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000000/actual-native-trace.json",
+        "sha256": "c48095444b95c12d10477474a02c1e2e3859c353b980ccbdb7b076251aa8d81e"
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000000/actual-native-trace.npz",
+        "sha256": "e3ffabc70926b2efc0c9e0356c94fea67c91398f5bedcd09cbec94c3c45d1fe5"
+      },
+      "case": {
+        "episode_id": "varied_dev_open_v1--repeat-0",
+        "scenario_id": "open",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.025,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.025,
+          -0.055
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      }
+    },
+    {
+      "index": 1,
+      "title": "Passage with different objects",
+      "arm": "B",
+      "model_name": "Saved model",
+      "role": "Exposed old-skill check",
+      "success": true,
+      "native_all_holds": true,
+      "near50_all_holds": true,
+      "route_complete": true,
+      "gate_check": {
+        "applicable": false,
+        "passed": true
+      },
+      "collision_free": true,
+      "centre_error_mm": 43.18030890656308,
+      "region_distance_mm": 0.0,
+      "drift_mm": 0.7591094579281252,
+      "maximum_lift_mm": 4.8141066021165635,
+      "plate_obstacle_substep_pair_samples": 0,
+      "robot_obstacle_substep_pair_samples": 0,
+      "contact_pairs": {},
+      "policy_commands": 178,
+      "simulated_policy_time_s": 8.899999999999809,
+      "plate_travel_mm": 264.8030710964811,
+      "contact_command_fraction": 0.7584269662921348,
+      "first_native_goal_command": 177,
+      "explanation": [],
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-plate-geometry-generalization-20261016-v1/B/episode-000006",
+      "trace": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-plate-geometry-generalization-20261016-v1/B/episode-000006/actual-native-trace.json",
+        "sha256": "d95a7284555f530976cee4dff1cf22fe3b878875f48e9e998ba38828dfff0421"
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-plate-geometry-generalization-20261016-v1/B/episode-000006/actual-native-trace.npz",
+        "sha256": "90c551d344ed19f5778f17b9ff5d7992e9c14d1b85bf33d267c16daefe88f6ba"
+      },
+      "case": {
+        "episode_id": "plate-geometry-DEV-centered-gap20-cream_cheese_1-wine_bottle_1",
+        "scenario_id": "passage",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026166106,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.025,
+          -0.065
+        ],
+        "expected_start_xy_m": [
+          0.025,
+          -0.065
+        ],
+        "walls": [
+          {
+            "name": "passage_left",
+            "center_xyz_m": [
+              -0.15106254545454548,
+              0.065,
+              0.909136
+            ],
+            "half_size_xyz_m": [
+              0.040608000000000005,
+              0.021336000000000008,
+              0.008936000000000055
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ],
+            "native_asset": "cream_cheese_1",
+            "actual_initial_AABB_world_m": [
+              [
+                -0.19167054545454548,
+                0.043664,
+                0.9002
+              ],
+              [
+                -0.11045454545454547,
+                0.086336,
+                0.9180720000000001
+              ]
+            ]
+          },
+          {
+            "name": "passage_right",
+            "center_xyz_m": [
+              0.1102066601356387,
+              0.065,
+              0.8990900000000001
+            ],
+            "half_size_xyz_m": [
+              0.021295858775026096,
+              0.022119763676062998,
+              0.07846500000000006
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ],
+            "native_asset": "wine_bottle_1",
+            "actual_initial_AABB_world_m": [
+              [
+                0.08954545454545454,
+                0.042951303057977536,
+                0.9002
+              ],
+              [
+                0.13213717209550674,
+                0.08719083041010353,
+                1.0571300000000001
+              ]
+            ]
+          }
+        ],
+        "passage_gate": {
+          "y_m": 0.065,
+          "plate_centre_x_interval_m": [
+            -0.11045454545454547,
+            0.08954545454545454
+          ],
+          "maximum_height_change_m": 0.02,
+          "interval_is_actual_collision_AABB_inner_gap": true
+        },
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0,
+        "target_object": "plate_1"
+      }
+    },
+    {
+      "index": 1,
+      "title": "Passage with different objects",
+      "arm": "J",
+      "model_name": "After joint training",
+      "role": "Exposed old-skill check",
+      "success": true,
+      "native_all_holds": true,
+      "near50_all_holds": true,
+      "route_complete": true,
+      "gate_check": {
+        "applicable": false,
+        "passed": true
+      },
+      "collision_free": true,
+      "centre_error_mm": 47.255196819467265,
+      "region_distance_mm": 0.0,
+      "drift_mm": 0.8688219776111866,
+      "maximum_lift_mm": 3.7690003557951934,
+      "plate_obstacle_substep_pair_samples": 0,
+      "robot_obstacle_substep_pair_samples": 0,
+      "contact_pairs": {},
+      "policy_commands": 152,
+      "simulated_policy_time_s": 7.599999999999374,
+      "plate_travel_mm": 246.39846895688498,
+      "contact_command_fraction": 0.7039473684210527,
+      "first_native_goal_command": 151,
+      "explanation": [],
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000001",
+      "trace": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000001/actual-native-trace.json",
+        "sha256": "bd2f48b87f2d99044654ee507f7476fe313712214d7877746ebaaaa1093b2aaf"
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000001/actual-native-trace.npz",
+        "sha256": "785ccc8b30305cf724a6a419ff7d07778ae1d621c0f5cd7a34458d6c66efa5a5"
+      },
+      "case": {
+        "episode_id": "plate-geometry-DEV-centered-gap20-cream_cheese_1-wine_bottle_1",
+        "scenario_id": "passage",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026166106,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.025,
+          -0.065
+        ],
+        "expected_start_xy_m": [
+          0.025,
+          -0.065
+        ],
+        "walls": [
+          {
+            "name": "passage_left",
+            "center_xyz_m": [
+              -0.15106254545454548,
+              0.065,
+              0.909136
+            ],
+            "half_size_xyz_m": [
+              0.040608000000000005,
+              0.021336000000000008,
+              0.008936000000000055
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ],
+            "native_asset": "cream_cheese_1",
+            "actual_initial_AABB_world_m": [
+              [
+                -0.19167054545454548,
+                0.043664,
+                0.9002
+              ],
+              [
+                -0.11045454545454547,
+                0.086336,
+                0.9180720000000001
+              ]
+            ]
+          },
+          {
+            "name": "passage_right",
+            "center_xyz_m": [
+              0.1102066601356387,
+              0.065,
+              0.8990900000000001
+            ],
+            "half_size_xyz_m": [
+              0.021295858775026096,
+              0.022119763676062998,
+              0.07846500000000006
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ],
+            "native_asset": "wine_bottle_1",
+            "actual_initial_AABB_world_m": [
+              [
+                0.08954545454545454,
+                0.042951303057977536,
+                0.9002
+              ],
+              [
+                0.13213717209550674,
+                0.08719083041010353,
+                1.0571300000000001
+              ]
+            ]
+          }
+        ],
+        "passage_gate": {
+          "y_m": 0.065,
+          "plate_centre_x_interval_m": [
+            -0.11045454545454547,
+            0.08954545454545454
+          ],
+          "maximum_height_change_m": 0.02,
+          "interval_is_actual_collision_AABB_inner_gap": true
+        },
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0,
+        "target_object": "plate_1"
+      }
+    },
+    {
+      "index": 2,
+      "title": "Single obstacle",
+      "arm": "B",
+      "model_name": "Saved model",
+      "role": "Exposed old-skill check",
+      "success": true,
+      "native_all_holds": true,
+      "near50_all_holds": true,
+      "route_complete": true,
+      "gate_check": {
+        "applicable": false,
+        "passed": true
+      },
+      "collision_free": true,
+      "centre_error_mm": 40.55480922850083,
+      "region_distance_mm": 0.0,
+      "drift_mm": 5.23250893957675,
+      "maximum_lift_mm": 12.494519396729299,
+      "plate_obstacle_substep_pair_samples": 0,
+      "robot_obstacle_substep_pair_samples": 0,
+      "contact_pairs": {},
+      "policy_commands": 347,
+      "simulated_policy_time_s": 17.350000000000986,
+      "plate_travel_mm": 369.303890273165,
+      "contact_command_fraction": 0.8674351585014409,
+      "first_native_goal_command": 346,
+      "explanation": [],
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final30-object-retention-20261016-v1/B/episode-000002",
+      "trace": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final30-object-retention-20261016-v1/B/episode-000002/actual-native-trace.json",
+        "sha256": "63a5671b9c0e8bb92afc864b3ad95880c663c2e6e3eab1f3ba8ae7a5d35b6ff4"
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final30-object-retention-20261016-v1/B/episode-000002/actual-native-trace.npz",
+        "sha256": "7f701b4f8ffdcb0b54d01deeb4725c8c353dccce7254ff319073aa9176748990"
+      },
+      "case": {
+        "episode_id": "center-stock10-block-0",
+        "scenario_id": "obstacle",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      }
+    },
+    {
+      "index": 2,
+      "title": "Single obstacle",
+      "arm": "J",
+      "model_name": "After joint training",
+      "role": "Exposed old-skill check",
+      "success": true,
+      "native_all_holds": true,
+      "near50_all_holds": true,
+      "route_complete": true,
+      "gate_check": {
+        "applicable": false,
+        "passed": true
+      },
+      "collision_free": true,
+      "centre_error_mm": 45.39335106360782,
+      "region_distance_mm": 0.0,
+      "drift_mm": 0.5554413459937054,
+      "maximum_lift_mm": 2.930482598497486,
+      "plate_obstacle_substep_pair_samples": 0,
+      "robot_obstacle_substep_pair_samples": 0,
+      "contact_pairs": {},
+      "policy_commands": 381,
+      "simulated_policy_time_s": 19.050000000000043,
+      "plate_travel_mm": 385.42802545206115,
+      "contact_command_fraction": 0.884514435695538,
+      "first_native_goal_command": 380,
+      "explanation": [],
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000002",
+      "trace": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000002/actual-native-trace.json",
+        "sha256": "47b05bbe53b585b40ba9d2689ca92e7ccc7a05ec002a3c0d86b1fc3e06914428"
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000002/actual-native-trace.npz",
+        "sha256": "081b1976317d15c859d22cf1f008f7c609fdd4b75b8be21a0020c0f7cd812612"
+      },
+      "case": {
+        "episode_id": "center-stock10-block-0",
+        "scenario_id": "obstacle",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      }
+    },
+    {
+      "index": 3,
+      "title": "Recorded horizontal passage",
+      "arm": "B",
+      "model_name": "Saved model",
+      "role": "Seen training-layout diagnostic",
+      "success": false,
+      "native_all_holds": false,
+      "near50_all_holds": false,
+      "route_complete": false,
+      "gate_check": {
+        "applicable": true,
+        "passed": false,
+        "plate_radius_m": 0.073,
+        "initial_signed_distance_m": -0.15314975128927943,
+        "final_signed_distance_m": -0.08072669073983411,
+        "crossings": [],
+        "normal_xy": [
+          -0.024155774201251222,
+          0.9997082067147084
+        ],
+        "gate_span_m": 0.24164801129826374,
+        "no_Y_axis_assumption": true
+      },
+      "collision_free": false,
+      "centre_error_mm": 242.13546845071141,
+      "region_distance_mm": 186.99597732294282,
+      "drift_mm": 0.0,
+      "maximum_lift_mm": 38.057512724017585,
+      "plate_obstacle_substep_pair_samples": 0,
+      "robot_obstacle_substep_pair_samples": 74,
+      "contact_pairs": {
+        "gripper0_hand_collision | scenario_wall_video14_0_geom": 74
+      },
+      "policy_commands": 450,
+      "simulated_policy_time_s": 22.49999999999813,
+      "plate_travel_mm": 134.2514887292184,
+      "contact_command_fraction": 0.6333333333333333,
+      "first_native_goal_command": null,
+      "explanation": [
+        "Did not reach the stove-front region",
+        "Plate or robot contacted an added obstacle",
+        "Did not complete the passage through the finite gap"
+      ],
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-fast-checks-20261016-v1/B/episode-000003",
+      "trace": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-fast-checks-20261016-v1/B/episode-000003/actual-native-trace.json",
+        "sha256": "0f237dc942cfa99a8db1db14d77d25ce615c541c72fcf5f1a6fdc3789facb273"
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-fast-checks-20261016-v1/B/episode-000003/actual-native-trace.npz",
+        "sha256": "609eefb976ac67287e38114edf26480d791a9256b00b5fc9b42c144fb1c87f1a"
+      },
+      "case": {
+        "episode_id": "personal-layout-passage-1--policy-check",
+        "scenario_id": "passage",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026180010,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.0692565118553151,
+          -0.06428721386423852
+        ],
+        "expected_start_xy_m": [
+          0.0692565118553151,
+          -0.06428721386423852
+        ],
+        "walls": [
+          {
+            "name": "video14_0",
+            "center_xyz_m": [
+              0.1758829865446494,
+              0.09148363535935952,
+              0.9202
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.2,
+              0.45,
+              0.75,
+              1.0
+            ]
+          },
+          {
+            "name": "video15_0",
+            "center_xyz_m": [
+              -0.06569451348651344,
+              0.08564644056225726,
+              0.9202
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.75,
+              0.3,
+              0.2,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "target_object": "plate_1",
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      }
+    },
+    {
+      "index": 3,
+      "title": "Recorded horizontal passage",
+      "arm": "J",
+      "model_name": "After joint training",
+      "role": "Seen training-layout diagnostic",
+      "success": false,
+      "native_all_holds": false,
+      "near50_all_holds": false,
+      "route_complete": false,
+      "gate_check": {
+        "applicable": true,
+        "passed": false,
+        "plate_radius_m": 0.073,
+        "initial_signed_distance_m": -0.15314975128927943,
+        "final_signed_distance_m": -0.08628022544861852,
+        "crossings": [],
+        "normal_xy": [
+          -0.024155774201251222,
+          0.9997082067147084
+        ],
+        "gate_span_m": 0.24164801129826374,
+        "no_Y_axis_assumption": true
+      },
+      "collision_free": true,
+      "centre_error_mm": 242.31589795913374,
+      "region_distance_mm": 187.8623311752322,
+      "drift_mm": 0.0,
+      "maximum_lift_mm": 27.71687609668905,
+      "plate_obstacle_substep_pair_samples": 0,
+      "robot_obstacle_substep_pair_samples": 0,
+      "contact_pairs": {},
+      "policy_commands": 450,
+      "simulated_policy_time_s": 22.49999999999813,
+      "plate_travel_mm": 113.56376372231797,
+      "contact_command_fraction": 0.46,
+      "first_native_goal_command": null,
+      "explanation": [
+        "Did not reach the stove-front region",
+        "Did not complete the passage through the finite gap"
+      ],
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000003",
+      "trace": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000003/actual-native-trace.json",
+        "sha256": "1e3b9614cdd222f037b8302ba541de84fc26427aafb8c9c42f0535e530aaa5ca"
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-checks-20261016-v1/J/episode-000003/actual-native-trace.npz",
+        "sha256": "5386d03991a5cae03c9afdf69195e7520335a9dec6ea385fcf33b1ba1ef9a26f"
+      },
+      "case": {
+        "episode_id": "personal-layout-passage-1--policy-check",
+        "scenario_id": "passage",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026180010,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.0692565118553151,
+          -0.06428721386423852
+        ],
+        "expected_start_xy_m": [
+          0.0692565118553151,
+          -0.06428721386423852
+        ],
+        "walls": [
+          {
+            "name": "video14_0",
+            "center_xyz_m": [
+              0.1758829865446494,
+              0.09148363535935952,
+              0.9202
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.2,
+              0.45,
+              0.75,
+              1.0
+            ]
+          },
+          {
+            "name": "video15_0",
+            "center_xyz_m": [
+              -0.06569451348651344,
+              0.08564644056225726,
+              0.9202
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.75,
+              0.3,
+              0.2,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "target_object": "plate_1",
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      }
+    }
+  ],
+  "old_skill_success": {
+    "B": 3,
+    "J": 3
+  },
+  "all_four_success": {
+    "B": 3,
+    "J": 3
+  },
+  "no_adoption_due_to_obstacle_regression": false,
+  "fixed_final_step": 1000,
+  "no_cherry_picked_checkpoint": true,
+  "limits": [
+    "Only three exposed retention cases, one run each. Not broad no-forgetting evidence.",
+    "The fourth layout appears in training. It is not held-out generalization.",
+    "Training mixed personal-video-derived, simulation-completed and simulation-source records. No personal-only causal claim.",
+    "Frozen backbone does not guarantee old motor behaviour. Distillation and replay are soft regularizers.",
+    "Contact counts are physics-substep pair samples, not a count of separate impacts.",
+    "Training report legacy personal_records means contiguous records from the mixed new library, not human video count."
+  ],
+  "retained_all_tested_old_successes": true,
+  "new_tested_success_gain": false,
+  "adopted": false
+}

@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-16T22:17:58.147302+00:00",
+  "final_checkpoint_update": 1000,
+  "verified_controls": 4,
+  "final_successes": 3,
+  "previous_successes": 3,
+  "pretrained_other_tasks_tested": false,
+  "new_layout_evaluation": "not yet run",
+  "no_new_training": true
+}

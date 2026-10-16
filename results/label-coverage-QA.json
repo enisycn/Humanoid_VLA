@@ -1,0 +1,30 @@
+{
+  "qualified_new_library_labels": 3990,
+  "unique_new_labels_used_in_valid_future_chunks": 3990,
+  "new_contexts": 6000,
+  "total_contexts": 24000,
+  "contiguous_new_records": 19,
+  "new_contexts_per_record": [
+    316,
+    316,
+    316,
+    316,
+    316,
+    316,
+    316,
+    316,
+    316,
+    316,
+    316,
+    316,
+    316,
+    316,
+    316,
+    315,
+    315,
+    315,
+    315
+  ],
+  "all_source_segments_sampled": true,
+  "not_independent_new_trajectories": true
+}
