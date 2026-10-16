@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-10-16T22:57:40.998908+00:00",
+  "viewing_only": true,
+  "originals_unchanged": true,
+  "cuts": [
+    {
+      "source": "recordings/normal-pushes.mov",
+      "start_s": 96,
+      "end_s": 105.35,
+      "preview": "media/recorded-push.gif"
+    },
+    {
+      "source": "recordings/single-obstacle.mov",
+      "start_s": 10,
+      "end_s": 20,
+      "preview": "media/recorded-obstacle.gif"
+    }
+  ]
+}

@@ -12,6 +12,14 @@ I removed resets and the return-to-start motion, then mapped measured paths into
 
 [Recording and demonstration examples](docs/DATA.md) · [Four original phone videos](recordings/README.md) · [Printable markers](docs/real-video-markers-A4.pdf)
 
+### Short clips from my recordings
+
+| Ordinary push | Obstacle recording |
+|---|---|
+| [![My ordinary push recording](media/recorded-push.gif)](media/recorded-push.mp4) | [![My obstacle recording](media/recorded-obstacle.gif)](media/recorded-obstacle.mp4) |
+
+These are excerpts from my phone videos, before robot retargeting. Printed IDs mark the table, hand, plate and task layout; the obstacle marker represents the intended obstacle location. Preview colours are converted for viewing. Original files stay unchanged.
+
 ## Model and training
 
 | Component | What I trained |
@@ -56,6 +64,20 @@ The fixed final policy completes the familiar simple push, blocking obstacle and
 | Blocking obstacle | Fail | Pass |
 
 **Three matched development controls: 0/3 → 3/3.** One run per case; same initial observations and physics.
+
+### Control quality: baseline → post-trained
+
+Each cell shows **original baseline → final policy**, from the same three paired runs.
+
+| Task | Centre error (mm) | Sim. time (s) | Gripper path (cm) | Plate path (cm) | Contact breaks | Obstacle contact samples: plate / robot |
+|---|---:|---:|---:|---:|---:|---|
+| Simple push | 142.3 → 38.4 | 22.5 → 6.2 | 161.0 → 76.3 | 34.3 → 23.5 | 3 → 0 | 0 / 0 → 0 / 0 |
+| Passage | 234.6 → 47.3 | 22.5 → 7.6 | 162.4 → 75.3 | 10.7 → 24.6 | 2 → 0 | 1042 / 2368 → 0 / 0 |
+| Blocking obstacle | 236.5 → 45.4 | 22.5 → 19.1 | 150.9 → 109.3 | 23.4 → 38.5 | 1 → 1 | 0 / 83 → 0 / 0 |
+
+Paths sum actual movements, including turns. Contact breaks mean lost robot–plate contact; obstacle samples count physics steps in contact, not individual impacts. The failed baselines use the full 22.5 s limit; successful runs stop at arrival. These are single-run measurements, not average speed or efficiency claims.
+
+Stopped drift is also recorded: baseline → final is 0.0 → 10.5 mm (simple), 0.0 → 0.9 mm (passage), and 0.0 → 0.6 mm (obstacle). A failed stationary plate can have zero drift, so lower drift alone does not mean a better push. [Raw measurements and metric definitions](docs/RESULTS.md).
 
 ### Simple push
 
