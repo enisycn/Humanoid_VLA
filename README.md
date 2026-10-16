@@ -14,9 +14,9 @@ I removed resets and the return-to-start motion, then mapped measured paths into
 
 ### Short clips from my recordings
 
-| Ordinary push | Obstacle recording |
-|---|---|
-| [![My ordinary push recording](media/recorded-push.gif)](media/recorded-push.mp4) | [![My obstacle recording](media/recorded-obstacle.gif)](media/recorded-obstacle.mp4) |
+| Ordinary push | Obstacle recording | Passage recording |
+|---|---|---|
+| [![My ordinary push recording](media/recorded-push.gif)](media/recorded-push.mp4) | [![My obstacle recording](media/recorded-obstacle.gif)](media/recorded-obstacle.mp4) | [![My passage recording](media/recorded-passage.gif)](media/recorded-passage.mp4) |
 
 I varied the plate start and push direction instead of repeating one route. I also recorded deliberate contact loss and another approach, to provide examples of recovery. Obstacle and passage recordings add route changes while keeping the same goal. These are the intended skills in the data, not a claim that the final policy learned every variation.
 
