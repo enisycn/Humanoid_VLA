@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-10-16T22:47:22.595645+00:00",
+  "relative_markdown_links_checked": 56,
+  "broken_links": [],
+  "python_syntax_checked": true,
+  "data_schedule_check": "64 records /12837 labels hash-checked; no model update",
+  "native_imports_passed": true,
+  "policy_imports_and_final_expert_hash_passed": true,
+  "initial_RGB2_own8_bitexact_to_recorded_final": true,
+  "portable_full_policy_rollout_completed": "8cm stove-shift control; failed task, executable completed",
+  "fresh_machine_install_verified": false,
+  "all_original_phone_videos_upload_reported_complete": true,
+  "free_disk_GB": 21.286981632
+}

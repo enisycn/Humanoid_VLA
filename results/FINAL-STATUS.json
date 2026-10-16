@@ -1,0 +1,29 @@
+{
+  "closed_utc": "2026-10-16T22:47:56.646452+00:00",
+  "main_comparison": {
+    "original": 0,
+    "post_trained": 3,
+    "paired_layouts": 3,
+    "execute": 10
+  },
+  "extra_layouts": {
+    "matched_layout_pairs_completed": 6,
+    "stove_goal_shift_single_final_check_completed": true,
+    "two_separate_matched_execution_protocols": true,
+    "do_not_pool_with_main": true
+  },
+  "native_old_tasks": {
+    "original_drawer": false,
+    "final_drawer": true,
+    "original_stove": true,
+    "final_stove": true,
+    "one_trial_each_only": true
+  },
+  "world_model": "two completed final-checkpoint paired pilots, no success gain; third time-limited partial excluded",
+  "training": "no new training during delivery",
+  "raw_phone_recordings": 4,
+  "data_records": 64,
+  "data_labels": 12837,
+  "final_expert_fixed_update": 1000,
+  "fresh_machine_install_verified": false
+}

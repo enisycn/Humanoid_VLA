@@ -1,0 +1,95 @@
+[
+  {
+    "title": "Stove moved right by 8 cm",
+    "index": 0,
+    "case": {
+      "episode_id": "submission-stove-moved-right",
+      "scenario_id": "open",
+      "split": "NEW_GOAL",
+      "init_index": 0,
+      "seed": 2026101699,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        0.025,
+        -0.055
+      ],
+      "expected_start_xy_m": [
+        0.025,
+        -0.055
+      ],
+      "walls": [],
+      "passage_gate": null,
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0,
+      "stove_shift_xy_m": [
+        0.08,
+        0.0
+      ]
+    },
+    "native_goal_success": false,
+    "primary_success": false,
+    "scenario_success": false,
+    "route_complete": true,
+    "added_obstacle_collision_free": true,
+    "passage_crossings": [],
+    "centre_error_mm": 74.17508206802295,
+    "region_distance_mm": 17.661961007713217,
+    "stopped_3d_drift_mm": 0.0,
+    "final_plate_xyz": [
+      -0.023569453688586723,
+      0.15869447952408725,
+      0.902506338529415
+    ],
+    "native_success_at_stop": false,
+    "native_success_all_ten_holds": false,
+    "external_hold_commands": 10,
+    "object_truth_scoring_only": true,
+    "allowed_tool_plate_samples": 8116,
+    "allowed_finger_table_samples": 9218,
+    "unwanted_contact_samples": 0,
+    "plate_obstacle_contact_samples": 0,
+    "robot_obstacle_contact_samples": 0,
+    "maximum_lift_mm": 16.433753963951304,
+    "obstacle_contact_pairs": {},
+    "contact_intervals_inclusive": [
+      [
+        51,
+        51
+      ],
+      [
+        53,
+        152
+      ]
+    ],
+    "contact_loss_recontact_events": [
+      {
+        "kind": "first_contact",
+        "command_index": 51,
+        "simulation_time_s": 3.09999999999988
+      },
+      {
+        "kind": "contact_loss",
+        "command_index": 52,
+        "simulation_time_s": 3.1499999999998747
+      },
+      {
+        "kind": "recontact",
+        "command_index": 53,
+        "simulation_time_s": 3.199999999999869
+      },
+      {
+        "kind": "contact_loss",
+        "command_index": 153,
+        "simulation_time_s": 8.199999999999408
+      }
+    ],
+    "contact_count_definition": "all physics-substep pair samples, not distinct collisions",
+    "contact_gap_definition": "a policy command without any gripper-plate contact after a command with contact",
+    "functional_success": false,
+    "policy_commands": 450,
+    "simulated_policy_time_s": 22.5,
+    "gripper_3d_travel_cm": 110.84251403808594,
+    "plate_travel_mm": 231.61117190211826
+  }
+]

@@ -1,0 +1,13 @@
+index,scenario,method,success,execute,native_goal_and_holds,centre_error_mm,simulated_time_s,collision_free,route_complete,plate_obstacle_samples,robot_obstacle_samples
+0,Left Start,Original baseline,False,5,False,278.2968827554131,22.5,True,True,0,0
+0,Left Start,Post-trained,False,5,False,273.39537686631496,22.5,True,True,0,0
+1,Forward Right Start,Original baseline,False,10,False,204.28458821731294,22.5,True,True,0,0
+1,Forward Right Start,Post-trained,False,10,False,148.04889733878485,22.5,True,True,0,0
+2,Shifted Block,Original baseline,False,5,False,215.73094442952322,22.5,False,True,0,402
+2,Shifted Block,Post-trained,False,5,False,189.72752358118942,22.5,False,True,1517,0
+3,Round Obstacle,Original baseline,False,10,False,298.65247825836065,22.5,False,True,0,157
+3,Round Obstacle,Post-trained,False,10,False,41.801554564990184,21.5,False,True,172,921
+4,Shifted Passage,Original baseline,False,5,False,229.0958231411457,22.5,False,False,5,0
+4,Shifted Passage,Post-trained,True,5,True,50.121413972497656,10.350000000000001,True,True,0,0
+5,Diagonal Passage,Original baseline,False,10,False,237.31532156253385,22.5,False,False,0,9422
+5,Diagonal Passage,Post-trained,True,10,True,47.136709232198115,9.200000000000001,True,True,0,0

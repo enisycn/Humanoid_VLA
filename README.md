@@ -55,7 +55,7 @@ The fixed final policy completes the familiar simple push, blocking obstacle and
 
 The GIFs play here; click for full MP4. Each side shows its own simulated time. After a recording ends, its last frame is held for display.
 
-An additional shifted passage also succeeds with the final model while the original fails: [comparison results](docs/NEW-LAYOUTS.md). That pilot uses five commands per planning step; the main three controls use ten.
+Two additional layouts also succeed while their matched original baselines fail: a shifted passage (five-command pilot) and a diagonal passage (ten-command queue). [All layout results](docs/NEW-LAYOUTS.md), including failures, are kept separately.
 
 ![Measured plate paths](figures/primary-paths.png)
 

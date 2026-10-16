@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "id": "drawer-0",
+      "task_key": "drawer",
+      "task_name": "open_the_middle_drawer_of_the_cabinet",
+      "init_index": 0,
+      "environment_seed": 2026101697,
+      "model_seed": 0
+    },
+    {
+      "id": "stove-0",
+      "task_key": "stove",
+      "task_name": "turn_on_the_stove",
+      "init_index": 0,
+      "environment_seed": 2026101698,
+      "model_seed": 0
+    }
+  ],
+  "scope": "Two native task families, one init each; retention only where public baseline succeeds; not universal no-forgetting proof",
+  "deadline_utc": "2026-10-16T22:42:00+00:00"
+}

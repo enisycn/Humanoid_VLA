@@ -1,0 +1,309 @@
+{
+  "implementation": {
+    "path": "/home/enis/humanoid_isaac_lab/work/challenge2026/final_submission_20261016_v1/remaining.py",
+    "sha256": "963cf89a7f184997d87070afeef85cc8a4658b3868d6ff66e6c85b07d41a5681"
+  },
+  "last_launch_utc": "2026-10-16T22:46:30+00:00",
+  "deadline_utc": "2026-10-16T22:47:15+00:00",
+  "horizon": 450,
+  "holds": 10,
+  "execute": 10,
+  "flow_steps": 10,
+  "cases": [
+    {
+      "title": "Left Start",
+      "case": {
+        "episode_id": "submission-left-start",
+        "scenario_id": "open",
+        "split": "NEW_LAYOUT",
+        "init_index": 0,
+        "seed": 2026101690,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          -0.055,
+          -0.07
+        ],
+        "expected_start_xy_m": [
+          -0.055,
+          -0.07
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "role": "Additional fixed layout; stock10 cadence"
+    },
+    {
+      "title": "Forward Right Start",
+      "case": {
+        "episode_id": "submission-forward-right-start",
+        "scenario_id": "open",
+        "split": "NEW_LAYOUT",
+        "init_index": 0,
+        "seed": 2026101691,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.065,
+          0.005
+        ],
+        "expected_start_xy_m": [
+          0.065,
+          0.005
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "role": "Additional fixed layout; stock10 cadence"
+    },
+    {
+      "title": "Shifted Block",
+      "case": {
+        "episode_id": "submission-shifted-block",
+        "scenario_id": "obstacle",
+        "split": "NEW_LAYOUT",
+        "init_index": 0,
+        "seed": 2026101692,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.07,
+          -0.06
+        ],
+        "expected_start_xy_m": [
+          0.07,
+          -0.06
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.0,
+              0.095,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "role": "Additional fixed layout; stock10 cadence"
+    },
+    {
+      "title": "Round Obstacle",
+      "case": {
+        "episode_id": "submission-round-obstacle",
+        "scenario_id": "obstacle",
+        "split": "NEW_LAYOUT",
+        "init_index": 0,
+        "seed": 2026101693,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.11,
+          -0.07
+        ],
+        "expected_start_xy_m": [
+          0.11,
+          -0.07
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.028,
+              0.1,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.027,
+              0.027,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ],
+            "shape": "cylinder"
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "role": "Additional fixed layout; stock10 cadence"
+    },
+    {
+      "title": "Shifted Passage",
+      "case": {
+        "episode_id": "submission-shifted-passage",
+        "scenario_id": "passage",
+        "split": "NEW_LAYOUT",
+        "init_index": 0,
+        "seed": 2026101694,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.02,
+          -0.08
+        ],
+        "expected_start_xy_m": [
+          0.02,
+          -0.08
+        ],
+        "walls": [
+          {
+            "name": "left",
+            "center_xyz_m": [
+              -0.14,
+              0.06,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.15,
+              0.35,
+              0.7,
+              1
+            ]
+          },
+          {
+            "name": "right",
+            "center_xyz_m": [
+              0.135,
+              0.06,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.7,
+              0.35,
+              0.15,
+              1
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "role": "Additional fixed layout; stock10 cadence"
+    },
+    {
+      "title": "Diagonal Passage",
+      "case": {
+        "episode_id": "submission-diagonal-passage",
+        "scenario_id": "passage",
+        "split": "NEW_LAYOUT",
+        "init_index": 0,
+        "seed": 2026101695,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.035,
+          -0.08
+        ],
+        "expected_start_xy_m": [
+          0.035,
+          -0.08
+        ],
+        "walls": [
+          {
+            "name": "left",
+            "center_xyz_m": [
+              -0.1299877800029333,
+              0.023491593405312095,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.15,
+              0.35,
+              0.7,
+              1
+            ],
+            "yaw_rad": 0.3839724354387525
+          },
+          {
+            "name": "right",
+            "center_xyz_m": [
+              0.12498778000293329,
+              0.1265084065946879,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.7,
+              0.35,
+              0.15,
+              1
+            ],
+            "yaw_rad": 0.3839724354387525
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "role": "Additional fixed layout; stock10 cadence"
+    }
+  ],
+  "models": {
+    "parent": {
+      "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-correction-replay-SFT500-v1/pretrained_model/model.safetensors",
+      "sha256": "e22c97d4e7eb224e481b7c519a4c5cdfb25bf9b03b844ccae735eac57586c988"
+    },
+    "B": {
+      "overlaydir": "/home/enis/humanoid_isaac_lab/runs/challenge2026-morning10-failure-rehearsal-20261016-v1/training/failure_rehearsal/checkpoint-2000",
+      "overlaymanifestSHA": "664c383eb8af3e7aa479708f724780fc4149198b0f0e82d4f9201ca4ca29d40a",
+      "parent": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-correction-replay-SFT500-v1/pretrained_model/model.safetensors",
+        "sha256": "e22c97d4e7eb224e481b7c519a4c5cdfb25bf9b03b844ccae735eac57586c988"
+      }
+    },
+    "J": {
+      "overlaydir": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-diverse-B-1000-20261016-v1/training/checkpoint-1000",
+      "overlaymanifestSHA": "99f961336dd9cdf11f4c9ea031b126159f7db59bda6284ebbb95106526ce1aef",
+      "parent": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-correction-replay-SFT500-v1/pretrained_model/model.safetensors",
+        "sha256": "e22c97d4e7eb224e481b7c519a4c5cdfb25bf9b03b844ccae735eac57586c988"
+      }
+    }
+  },
+  "output": "/home/enis/humanoid_isaac_lab/runs/challenge2026-final-remaining-layouts-20261016-v1",
+  "source_bindings": []
+}
