@@ -10,8 +10,9 @@ The report fixes the final 1,000-update checkpoint. The previous trained policy 
 
 ```mermaid
 flowchart LR
-  A[Two RGB views + robot state + language] --> B[Frozen SmolVLA VLM]
+  A[Two RGB views + language] --> B[Frozen SmolVLA VLM]
   B --> C[Trained action expert]
+  S[Robot state] --> C
   C --> D[Native Panda commands]
   C --> E[Four proposed chunks]
   E --> F[Optional visual forward predictor]

@@ -33,15 +33,16 @@ Markers make the hand, plate and layout measurable. Table markers set the coordi
 
 ```mermaid
 flowchart LR
-  A[Two colour images + robot state + instruction] --> B[Fixed vision and language backbone]
+  A[Two colour images + instruction] --> B[Fixed vision and language backbone]
   B --> C[Trained action expert]
+  S[Robot state] --> C
   C --> D[Panda robot commands]
   C --> E[Four proposed action sequences]
   E --> F[Optional visual predictor]
   F -->|Select one sequence| D
 ```
 
-The normal policy follows the top path. The optional predictor selects among VLA proposals; it does not change the VLA weights during inference. The teacher is used only during training.
+The normal policy sends the action expert’s commands to Panda. The optional predictor also reads current/past images and robot state, through its own fixed DINOv2 encoder, to rank the VLA proposals. It does not change the VLA weights during inference. The teacher is a fixed copy of the starting policy, used only during training to discourage changes on older examples; it is absent from both inference paths.
 
 The final stage uses **1,000 weight updates**. Each update uses a batch of **24 training examples: six from the new library and eighteen from older data**. Reusing older examples is called replay. The learning rate, 0.000001, controls the size of weight changes.
 

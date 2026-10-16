@@ -22,5 +22,5 @@
       "preview": "media/recorded-passage.gif"
     }
   ],
-  "display": "Same 448x252 landscape canvas; full frame retained, no geometric stretch."
+  "display": "Same 448x252 landscape canvas; portrait previews rotated for display only. Full frame retained, no geometric stretch."
 }
