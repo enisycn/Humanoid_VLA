@@ -1,0 +1,3306 @@
+{
+  "comparison_weight": {
+    "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/pretrained_model/model.safetensors",
+    "sha256": "871581b503b92a70fa9de73842f20d04cd5b77fe87f87ca3ae08053aa0fca0fa"
+  },
+  "prior_input_QA": {
+    "path": "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/native-multitask-replay-SFT-v1/data-readback-QA.json",
+    "sha256": "4742b96f7881124428df39dfbeb822886dfd7e9bdd6e567c05b87f0cda78ff53"
+  },
+  "center_DEV": [
+    {
+      "episode_id": "center-stock10-block-0",
+      "scenario_id": "obstacle",
+      "split": "DEV",
+      "init_index": 0,
+      "seed": 2026100911,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        0.09,
+        -0.055
+      ],
+      "expected_start_xy_m": [
+        0.09,
+        -0.055
+      ],
+      "walls": [
+        {
+          "name": "detour_block",
+          "center_xyz_m": [
+            0.005,
+            0.09,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.025,
+            0.02,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        }
+      ],
+      "passage_gate": null,
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    },
+    {
+      "episode_id": "center-stock10-block-1",
+      "scenario_id": "obstacle",
+      "split": "DEV",
+      "init_index": 0,
+      "seed": 2026100912,
+      "model_seed": 1,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        0.09,
+        -0.055
+      ],
+      "expected_start_xy_m": [
+        0.09,
+        -0.055
+      ],
+      "walls": [
+        {
+          "name": "detour_block",
+          "center_xyz_m": [
+            0.005,
+            0.09,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.025,
+            0.02,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        }
+      ],
+      "passage_gate": null,
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    }
+  ],
+  "push_DEV": [
+    {
+      "episode_id": "multitask-replay-push-FINAL-00",
+      "scenario_id": "open",
+      "split": "FINAL",
+      "init_index": 0,
+      "seed": 2026104400,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        0.022223,
+        -0.044236
+      ],
+      "expected_start_xy_m": [
+        0.022223,
+        -0.044236
+      ],
+      "walls": [],
+      "passage_gate": null,
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    },
+    {
+      "episode_id": "multitask-replay-push-FINAL-01",
+      "scenario_id": "open",
+      "split": "FINAL",
+      "init_index": 0,
+      "seed": 2026104401,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        0.043062,
+        -0.061168
+      ],
+      "expected_start_xy_m": [
+        0.043062,
+        -0.061168
+      ],
+      "walls": [],
+      "passage_gate": null,
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    },
+    {
+      "episode_id": "multitask-replay-push-FINAL-02",
+      "scenario_id": "open",
+      "split": "FINAL",
+      "init_index": 0,
+      "seed": 2026104402,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        0.044646000000000005,
+        -0.047263
+      ],
+      "expected_start_xy_m": [
+        0.044646000000000005,
+        -0.047263
+      ],
+      "walls": [],
+      "passage_gate": null,
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    },
+    {
+      "episode_id": "multitask-replay-push-FINAL-03",
+      "scenario_id": "open",
+      "split": "FINAL",
+      "init_index": 0,
+      "seed": 2026104403,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        0.00886,
+        -0.041084999999999997
+      ],
+      "expected_start_xy_m": [
+        0.00886,
+        -0.041084999999999997
+      ],
+      "walls": [],
+      "passage_gate": null,
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    },
+    {
+      "episode_id": "multitask-replay-push-FINAL-04",
+      "scenario_id": "passage",
+      "split": "FINAL",
+      "init_index": 0,
+      "seed": 2026104404,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        -0.005,
+        -0.08
+      ],
+      "expected_start_xy_m": [
+        -0.005,
+        -0.08
+      ],
+      "walls": [
+        {
+          "name": "passage_left",
+          "center_xyz_m": [
+            -0.155873,
+            0.103079,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        },
+        {
+          "name": "passage_right",
+          "center_xyz_m": [
+            0.064127,
+            0.103079,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        }
+      ],
+      "passage_gate": {
+        "y_m": 0.103079,
+        "plate_centre_x_interval_m": [
+          -0.07087299999999999,
+          -0.020873000000000003
+        ],
+        "maximum_height_change_m": 0.02
+      },
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    },
+    {
+      "episode_id": "multitask-replay-push-FINAL-05",
+      "scenario_id": "passage",
+      "split": "FINAL",
+      "init_index": 0,
+      "seed": 2026104405,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        -0.005,
+        -0.08
+      ],
+      "expected_start_xy_m": [
+        -0.005,
+        -0.08
+      ],
+      "walls": [
+        {
+          "name": "passage_left",
+          "center_xyz_m": [
+            -0.147601,
+            0.099591,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        },
+        {
+          "name": "passage_right",
+          "center_xyz_m": [
+            0.07239899999999999,
+            0.099591,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        }
+      ],
+      "passage_gate": {
+        "y_m": 0.099591,
+        "plate_centre_x_interval_m": [
+          -0.06260099999999999,
+          -0.012601000000000001
+        ],
+        "maximum_height_change_m": 0.02
+      },
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    },
+    {
+      "episode_id": "multitask-replay-push-FINAL-06",
+      "scenario_id": "passage",
+      "split": "FINAL",
+      "init_index": 0,
+      "seed": 2026104406,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        -0.005,
+        -0.08
+      ],
+      "expected_start_xy_m": [
+        -0.005,
+        -0.08
+      ],
+      "walls": [
+        {
+          "name": "passage_left",
+          "center_xyz_m": [
+            -0.15672,
+            0.097354,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        },
+        {
+          "name": "passage_right",
+          "center_xyz_m": [
+            0.06328,
+            0.097354,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        }
+      ],
+      "passage_gate": {
+        "y_m": 0.097354,
+        "plate_centre_x_interval_m": [
+          -0.07171999999999999,
+          -0.021720000000000003
+        ],
+        "maximum_height_change_m": 0.02
+      },
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    },
+    {
+      "episode_id": "multitask-replay-push-FINAL-07",
+      "scenario_id": "passage",
+      "split": "FINAL",
+      "init_index": 0,
+      "seed": 2026104407,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        -0.005,
+        -0.08
+      ],
+      "expected_start_xy_m": [
+        -0.005,
+        -0.08
+      ],
+      "walls": [
+        {
+          "name": "passage_left",
+          "center_xyz_m": [
+            -0.148628,
+            0.07855999999999999,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        },
+        {
+          "name": "passage_right",
+          "center_xyz_m": [
+            0.07137199999999999,
+            0.07855999999999999,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        }
+      ],
+      "passage_gate": {
+        "y_m": 0.07855999999999999,
+        "plate_centre_x_interval_m": [
+          -0.06362799999999999,
+          -0.013628000000000001
+        ],
+        "maximum_height_change_m": 0.02
+      },
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    }
+  ],
+  "push_DEV_references": [
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/FINAL-push-after/episode-000000",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/FINAL-push-after/episode-000001",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/FINAL-push-after/episode-000002",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/FINAL-push-after/episode-000003",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/FINAL-push-after/episode-000004",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/FINAL-push-after/episode-000005",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/FINAL-push-after/episode-000006",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/FINAL-push-after/episode-000007"
+  ],
+  "native_DEV": [
+    {
+      "id": "drawer-original-retention-1",
+      "task_name": "open_the_middle_drawer_of_the_cabinet",
+      "task_key": "drawer",
+      "init_index": 26,
+      "environment_seed": 870201,
+      "model_seed": 1
+    },
+    {
+      "id": "stove-original-retention-1",
+      "task_name": "turn_on_the_stove",
+      "task_key": "stove",
+      "init_index": 26,
+      "environment_seed": 870203,
+      "model_seed": 1
+    },
+    {
+      "id": "drawer-multitask-replay-FINAL-0",
+      "task_key": "drawer",
+      "task_name": "open_the_middle_drawer_of_the_cabinet",
+      "init_index": 27,
+      "environment_seed": 2026104500,
+      "model_seed": 0
+    },
+    {
+      "id": "drawer-multitask-replay-FINAL-1",
+      "task_key": "drawer",
+      "task_name": "open_the_middle_drawer_of_the_cabinet",
+      "init_index": 28,
+      "environment_seed": 2026104501,
+      "model_seed": 1
+    },
+    {
+      "id": "stove-multitask-replay-FINAL-0",
+      "task_key": "stove",
+      "task_name": "turn_on_the_stove",
+      "init_index": 27,
+      "environment_seed": 2026104502,
+      "model_seed": 0
+    },
+    {
+      "id": "stove-multitask-replay-FINAL-1",
+      "task_key": "stove",
+      "task_name": "turn_on_the_stove",
+      "init_index": 28,
+      "environment_seed": 2026104503,
+      "model_seed": 1
+    }
+  ],
+  "native_DEV_references": [
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/DEV-native4/drawer-original-retention-1",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/DEV-native4/stove-original-retention-1",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/FINAL-native-after/drawer-multitask-replay-FINAL-0",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/FINAL-native-after/drawer-multitask-replay-FINAL-1",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/FINAL-native-after/stove-multitask-replay-FINAL-0",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/FINAL-native-after/stove-multitask-replay-FINAL-1"
+  ],
+  "nominal_basic_DEV": [
+    {
+      "episode_id": "varied_dev_open_v1--repeat-0",
+      "scenario_id": "open",
+      "split": "DEV",
+      "init_index": 0,
+      "seed": 2026100911,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        0.025,
+        -0.055
+      ],
+      "expected_start_xy_m": [
+        0.025,
+        -0.055
+      ],
+      "walls": [],
+      "passage_gate": null,
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    },
+    {
+      "episode_id": "varied_dev_open_v1--repeat-1",
+      "scenario_id": "open",
+      "split": "DEV",
+      "init_index": 0,
+      "seed": 2026100912,
+      "model_seed": 1,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        0.025,
+        -0.055
+      ],
+      "expected_start_xy_m": [
+        0.025,
+        -0.055
+      ],
+      "walls": [],
+      "passage_gate": null,
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    },
+    {
+      "episode_id": "varied_dev_passage_v1--repeat-0",
+      "scenario_id": "passage",
+      "split": "DEV",
+      "init_index": 0,
+      "seed": 2026100911,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        -0.005,
+        -0.08
+      ],
+      "expected_start_xy_m": [
+        -0.005,
+        -0.08
+      ],
+      "walls": [
+        {
+          "name": "passage_left",
+          "center_xyz_m": [
+            -0.16,
+            0.09,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        },
+        {
+          "name": "passage_right",
+          "center_xyz_m": [
+            0.06,
+            0.09,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        }
+      ],
+      "passage_gate": {
+        "y_m": 0.09,
+        "plate_centre_x_interval_m": [
+          -0.075,
+          -0.025
+        ],
+        "maximum_height_change_m": 0.02
+      },
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    },
+    {
+      "episode_id": "varied_dev_passage_v1--repeat-1",
+      "scenario_id": "passage",
+      "split": "DEV",
+      "init_index": 0,
+      "seed": 2026100912,
+      "model_seed": 1,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        -0.005,
+        -0.08
+      ],
+      "expected_start_xy_m": [
+        -0.005,
+        -0.08
+      ],
+      "walls": [
+        {
+          "name": "passage_left",
+          "center_xyz_m": [
+            -0.16,
+            0.09,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        },
+        {
+          "name": "passage_right",
+          "center_xyz_m": [
+            0.06,
+            0.09,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        }
+      ],
+      "passage_gate": {
+        "y_m": 0.09,
+        "plate_centre_x_interval_m": [
+          -0.075,
+          -0.025
+        ],
+        "maximum_height_change_m": 0.02
+      },
+      "yaw_mode": "preserve_native_quaternion",
+      "yaw_delta_rad": 0.0
+    }
+  ],
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "eps": 1e-08,
+  "weight_decay": 1e-10,
+  "grad_clip_norm": 10,
+  "schema": "actual_corrective_suffix_and_successful_replay_short_SFT_v1",
+  "created_utc": "2026-10-15T07:37:13.405210+00:00",
+  "output": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-correction-replay-SFT500-v1",
+  "starting_model": "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model",
+  "starting_weight": {
+    "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model/model.safetensors",
+    "sha256": "1b66ad8b4a755c1cfac90b185dd9074b245d8cc8a46484a52dfcb551a892357b"
+  },
+  "sources": [
+    {
+      "name": "current-base-success-DEV-00",
+      "role": "open_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 124,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000000/actual-native-trace.npz",
+        "sha256": "5433cb83954bdd2022594bb3f0eed9e972afcc0ebc46b4f701bec3af379333f2"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000000/actual-native-trace.json",
+        "sha256": "be22ff3dc21b57f8dc776d97fd447664dcc5de8a00c2851c56dd61a8b6a0298d"
+      },
+      "case": {
+        "episode_id": "varied_dev_open_v1--repeat-0",
+        "scenario_id": "open",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.025,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.025,
+          -0.055
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-01",
+      "role": "open_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 110,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000001/actual-native-trace.npz",
+        "sha256": "bc4025e1f31f488cdd053f6d2a9191d9343e0991c0d67fd57bf62084ce2fb808"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000001/actual-native-trace.json",
+        "sha256": "24a6dbfdc989c91fef9756dfc0de06493ec50eb4aa764c736ef30f71122ea5ee"
+      },
+      "case": {
+        "episode_id": "varied_dev_open_v1--repeat-1",
+        "scenario_id": "open",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.025,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.025,
+          -0.055
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-02",
+      "role": "passage_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 105,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000002/actual-native-trace.npz",
+        "sha256": "5701925da54e64e1446b1cc584b2185082f4969baa5b728728f00c425fd8750a"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000002/actual-native-trace.json",
+        "sha256": "64cb379d0b7b1381c029f6a5228825e49bfb3c48cd35790fcf43c35ff3bfb0d5"
+      },
+      "case": {
+        "episode_id": "varied_dev_passage_v1--repeat-0",
+        "scenario_id": "passage",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          -0.005,
+          -0.08
+        ],
+        "expected_start_xy_m": [
+          -0.005,
+          -0.08
+        ],
+        "walls": [
+          {
+            "name": "passage_left",
+            "center_xyz_m": [
+              -0.16,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          },
+          {
+            "name": "passage_right",
+            "center_xyz_m": [
+              0.06,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": {
+          "y_m": 0.09,
+          "plate_centre_x_interval_m": [
+            -0.075,
+            -0.025
+          ],
+          "maximum_height_change_m": 0.02
+        },
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-03",
+      "role": "passage_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 232,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000003/actual-native-trace.npz",
+        "sha256": "98ef456e6b74044cd994965cda40f0e2b9a8b3fba4231cb15b604d1cad2a78a0"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000003/actual-native-trace.json",
+        "sha256": "6d25a7248e62e044f021b4f0fecdcaed44d5072db4c928317a3bac320c5fa9c1"
+      },
+      "case": {
+        "episode_id": "varied_dev_passage_v1--repeat-1",
+        "scenario_id": "passage",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          -0.005,
+          -0.08
+        ],
+        "expected_start_xy_m": [
+          -0.005,
+          -0.08
+        ],
+        "walls": [
+          {
+            "name": "passage_left",
+            "center_xyz_m": [
+              -0.16,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          },
+          {
+            "name": "passage_right",
+            "center_xyz_m": [
+              0.06,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": {
+          "y_m": 0.09,
+          "plate_centre_x_interval_m": [
+            -0.075,
+            -0.025
+          ],
+          "maximum_height_change_m": 0.02
+        },
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-04",
+      "role": "open_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 103,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000000/actual-native-trace.npz",
+        "sha256": "f36f0206c4bdfa9b408121fceef00a3579020a27c8e51a5c50d43c3c5477c136"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000000/actual-native-trace.json",
+        "sha256": "2f3180b6671a86535af9134ee1765a0dfbefe3989136d221b25cdb7605b796b0"
+      },
+      "case": {
+        "episode_id": "open-factor-Xminus20mm",
+        "scenario_id": "open",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.005000000000000001,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.005000000000000001,
+          -0.055
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-05",
+      "role": "open_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 155,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000001/actual-native-trace.npz",
+        "sha256": "3b78868f4cc2b75f47f63b4c865f04998f5981d71311c00dc536a74257ef0e29"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000001/actual-native-trace.json",
+        "sha256": "b6ae871bfb360645751a4349e577101bf9781f1c06f7ef475628620a4f4d0960"
+      },
+      "case": {
+        "episode_id": "open-factor-Xplus20mm",
+        "scenario_id": "open",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.045,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.045,
+          -0.055
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-06",
+      "role": "open_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 116,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000002/actual-native-trace.npz",
+        "sha256": "436d4c6d376dad242f5db5ebe3982294d33159d6cdb063a598f45285fe1864d1"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000002/actual-native-trace.json",
+        "sha256": "4b53564d707513d051637ebccf3f8c2276b395b4fa84590abef7dcd0a9bb0c18"
+      },
+      "case": {
+        "episode_id": "open-factor-Yminus20mm",
+        "scenario_id": "open",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.025,
+          -0.075
+        ],
+        "expected_start_xy_m": [
+          0.025,
+          -0.075
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-07",
+      "role": "open_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 116,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000003/actual-native-trace.npz",
+        "sha256": "d12475b743e6bb98bb6141393eff2e5e57c9c5923e123994b749b627dd469635"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000003/actual-native-trace.json",
+        "sha256": "f4cce08a8716543543d7cacaf04548b71df8e8461814d916ee46a22d48e89094"
+      },
+      "case": {
+        "episode_id": "open-factor-Yplus20mm",
+        "scenario_id": "open",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.025,
+          -0.035
+        ],
+        "expected_start_xy_m": [
+          0.025,
+          -0.035
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-08",
+      "role": "passage_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 107,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000000/actual-native-trace.npz",
+        "sha256": "49485a34796db29fa086e381d5d56b79ebda133ce8d0776ffa0d97a732cf75e6"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000000/actual-native-trace.json",
+        "sha256": "65b18b3f05872d350f767c59c0469e93f65c61fa6333e765140efb1318283517"
+      },
+      "case": {
+        "episode_id": "passage-factor-walls-Xplus15mm",
+        "scenario_id": "passage",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          -0.005,
+          -0.08
+        ],
+        "expected_start_xy_m": [
+          -0.005,
+          -0.08
+        ],
+        "walls": [
+          {
+            "name": "passage_left",
+            "center_xyz_m": [
+              -0.14500000000000002,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          },
+          {
+            "name": "passage_right",
+            "center_xyz_m": [
+              0.075,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": {
+          "y_m": 0.09,
+          "plate_centre_x_interval_m": [
+            -0.06,
+            -0.010000000000000002
+          ],
+          "maximum_height_change_m": 0.02
+        },
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-09",
+      "role": "passage_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 105,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000001/actual-native-trace.npz",
+        "sha256": "e393eacef22932423167b8ae2d7957d398ca40393004d2142d3438bf39e9a698"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000001/actual-native-trace.json",
+        "sha256": "33e7cb9b8f7ab2ec56b8d4e6643fd54f2b5dc406724d7c2cabb03da69b1cb9ee"
+      },
+      "case": {
+        "episode_id": "passage-factor-walls-Yplus20mm",
+        "scenario_id": "passage",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          -0.005,
+          -0.08
+        ],
+        "expected_start_xy_m": [
+          -0.005,
+          -0.08
+        ],
+        "walls": [
+          {
+            "name": "passage_left",
+            "center_xyz_m": [
+              -0.16,
+              0.11,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          },
+          {
+            "name": "passage_right",
+            "center_xyz_m": [
+              0.06,
+              0.11,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": {
+          "y_m": 0.11,
+          "plate_centre_x_interval_m": [
+            -0.075,
+            -0.025
+          ],
+          "maximum_height_change_m": 0.02
+        },
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-10",
+      "role": "passage_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 110,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000002/actual-native-trace.npz",
+        "sha256": "91ee4bd2df007f9976bca651b5635c06371f33875f1f05dcc95dfd6a94d580d4"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000002/actual-native-trace.json",
+        "sha256": "eb314cabd2cca2e144fbeff302f9a8690263d810ce39c0340baaf5beacdb57c4"
+      },
+      "case": {
+        "episode_id": "passage-factor-plate-Xminus20mm",
+        "scenario_id": "passage",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          -0.025,
+          -0.08
+        ],
+        "expected_start_xy_m": [
+          -0.025,
+          -0.08
+        ],
+        "walls": [
+          {
+            "name": "passage_left",
+            "center_xyz_m": [
+              -0.16,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          },
+          {
+            "name": "passage_right",
+            "center_xyz_m": [
+              0.06,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": {
+          "y_m": 0.09,
+          "plate_centre_x_interval_m": [
+            -0.075,
+            -0.025
+          ],
+          "maximum_height_change_m": 0.02
+        },
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-11",
+      "role": "passage_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 116,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000003/actual-native-trace.npz",
+        "sha256": "0eb70a8f459da59c2f60ff122e4112f62a9a52d07bbcef4b3c39c4e428f4f987"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000003/actual-native-trace.json",
+        "sha256": "8397dbc7241685ea7dc549ef68607fc4d8978d61de2ad2c5ef2e0d4ab77d90bb"
+      },
+      "case": {
+        "episode_id": "passage-factor-plate-Yminus20mm",
+        "scenario_id": "passage",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          -0.005,
+          -0.1
+        ],
+        "expected_start_xy_m": [
+          -0.005,
+          -0.1
+        ],
+        "walls": [
+          {
+            "name": "passage_left",
+            "center_xyz_m": [
+              -0.16,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          },
+          {
+            "name": "passage_right",
+            "center_xyz_m": [
+              0.06,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": {
+          "y_m": 0.09,
+          "plate_centre_x_interval_m": [
+            -0.075,
+            -0.025
+          ],
+          "maximum_height_change_m": 0.02
+        },
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-12",
+      "role": "open_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 104,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000000/actual-native-trace.npz",
+        "sha256": "1c2da5071c06b189cf5fb032629944253302ec019a7b5fdafebe3021b98d9f13"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000000/actual-native-trace.json",
+        "sha256": "63782c7fdaface25201bd1ab92e4eb44b39a3efc7d42697d5af783b8abc169b2"
+      },
+      "case": {
+        "episode_id": "fresh-simple-final-01",
+        "scenario_id": "open",
+        "split": "FINAL",
+        "init_index": 0,
+        "seed": 2026101501,
+        "model_seed": 2026101601,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.043256,
+          -0.033372
+        ],
+        "expected_start_xy_m": [
+          0.043256,
+          -0.033372
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-13",
+      "role": "open_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 161,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000001/actual-native-trace.npz",
+        "sha256": "e218ccf5e92dcec8e01eabc33cc6a69d98d337d86bf34cd004c6431426ce48c8"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000001/actual-native-trace.json",
+        "sha256": "d767779ee623a2e303dfefa609e7b5ae44f3fe78d1d3298ce255512154ea1af3"
+      },
+      "case": {
+        "episode_id": "fresh-simple-final-02",
+        "scenario_id": "open",
+        "split": "FINAL",
+        "init_index": 0,
+        "seed": 2026101502,
+        "model_seed": 2026101602,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.03154,
+          -0.06911300000000001
+        ],
+        "expected_start_xy_m": [
+          0.03154,
+          -0.06911300000000001
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-14",
+      "role": "open_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 106,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000002/actual-native-trace.npz",
+        "sha256": "5f370f7b11163319cbb17b8dd64052e0e16d593de07ae202e1fc73da6b451f16"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000002/actual-native-trace.json",
+        "sha256": "9f60bd8d7e918bd2d4c10493482674a106732d9f2c8a1fc7e333ad36949c0e33"
+      },
+      "case": {
+        "episode_id": "fresh-simple-final-03",
+        "scenario_id": "open",
+        "split": "FINAL",
+        "init_index": 0,
+        "seed": 2026101503,
+        "model_seed": 2026101603,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.007774,
+          -0.043148
+        ],
+        "expected_start_xy_m": [
+          0.007774,
+          -0.043148
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-15",
+      "role": "open_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 110,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000003/actual-native-trace.npz",
+        "sha256": "d6e86f7f3951cbeb49173255289019a994e1515b7bad0b7eb55383a6acebfea5"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000003/actual-native-trace.json",
+        "sha256": "10189aebf291eab0717aa013dd9d903c5cc61e382095110ca2e77d2613d7969f"
+      },
+      "case": {
+        "episode_id": "fresh-simple-final-04",
+        "scenario_id": "open",
+        "split": "FINAL",
+        "init_index": 0,
+        "seed": 2026101504,
+        "model_seed": 2026101604,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.049807000000000004,
+          -0.030091
+        ],
+        "expected_start_xy_m": [
+          0.049807000000000004,
+          -0.030091
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "current-base-success-DEV-16",
+      "role": "passage_success",
+      "language": "push the plate to the front of the stove",
+      "rows": 188,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000004/actual-native-trace.npz",
+        "sha256": "32ffb92329c8a0b94d500ada3858e71ea811b45c855713a2d4ee627ffcdbd095"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000004/actual-native-trace.json",
+        "sha256": "fb837974210eeb8e6ab61a460ecffd895971972acde8d6511e5b1fea20482dcd"
+      },
+      "case": {
+        "episode_id": "fresh-simple-final-05",
+        "scenario_id": "passage",
+        "split": "FINAL",
+        "init_index": 0,
+        "seed": 2026101505,
+        "model_seed": 2026101605,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          -0.020601,
+          -0.06255
+        ],
+        "expected_start_xy_m": [
+          -0.020601,
+          -0.06255
+        ],
+        "walls": [
+          {
+            "name": "passage_left",
+            "center_xyz_m": [
+              -0.16475700000000001,
+              0.09478199999999999,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          },
+          {
+            "name": "passage_right",
+            "center_xyz_m": [
+              0.055243,
+              0.09478199999999999,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": {
+          "y_m": 0.09478199999999999,
+          "plate_centre_x_interval_m": [
+            -0.079757,
+            -0.029757000000000002
+          ],
+          "maximum_height_change_m": 0.02
+        },
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "former_exposed_DEV_now_replay_TRAIN": true,
+      "source": "actual selected-SFT policy rollout, not human recording",
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "drawer-original-retention-0",
+      "role": "drawer_restoration",
+      "language": "open the middle drawer of the cabinet",
+      "rows": 124,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-original-task-retention-v1/drawer-original-retention-0/original/actual-native-trace.npz",
+        "sha256": "e8a93c29916ab3cdbf9b97c11cb61938c606f9ad7caa14ca7098bfb91f2bf16a"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-original-task-retention-v1/drawer-original-retention-0/original/actual-native-trace.json",
+        "sha256": "c023d68ef09f58743c5a5525706046bde99ee75601c5284f068a8d134df307bc"
+      },
+      "case": {
+        "id": "drawer-original-retention-0",
+        "task_name": "open_the_middle_drawer_of_the_cabinet",
+        "task_key": "drawer",
+        "init_index": 25,
+        "environment_seed": 870200,
+        "model_seed": 0
+      },
+      "source": "actual successful original public policy replay, not human video",
+      "old_exposed_retention_case_now_TRAIN": true,
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "stove-original-retention-0",
+      "role": "stove_restoration",
+      "language": "turn on the stove",
+      "rows": 67,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-original-task-retention-v1/stove-original-retention-0/original/actual-native-trace.npz",
+        "sha256": "e482407e506d5b32a271ed4fb9b052fae1c97a1f064fb50ad54488b878f459ad"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-original-task-retention-v1/stove-original-retention-0/original/actual-native-trace.json",
+        "sha256": "dbd1c3f392d6864887df41a472ba6fc124c1a48f9c437cf4c017c342ac9f968e"
+      },
+      "case": {
+        "id": "stove-original-retention-0",
+        "task_name": "turn_on_the_stove",
+        "task_key": "stove",
+        "init_index": 25,
+        "environment_seed": 870202,
+        "model_seed": 0
+      },
+      "source": "actual successful original public policy replay, not human video",
+      "old_exposed_retention_case_now_TRAIN": true,
+      "format": "native_trace",
+      "training_target": "Actually issued motor command; standard supervised flow matching"
+    },
+    {
+      "name": "right-route-physical-TRAIN-00",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "center-stock10-block-1",
+        "scenario_id": "obstacle",
+        "split": "DEV",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000000/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000000/actual-native-trace.json",
+        "sha256": "a97f34669feaf74e2a014ea512bfe9a596f7605590779346cccf660bb4bc6d72"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "name": "right-route-physical-TRAIN-01",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "right-route-TRAIN-01",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.092,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.092,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000001/actual-native-trace.npz",
+        "sha256": "d9c0318121768dacca2de96c2e769f4300dd0c280ebe5f112c87e418bd64208f"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000001/actual-native-trace.json",
+        "sha256": "052d45fd885497e21b0bdf3af5fe4d1a287a061c1c3378177627d584cd4f8d83"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "name": "right-route-physical-TRAIN-02",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "right-route-TRAIN-02",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.088,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.088,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000002/actual-native-trace.npz",
+        "sha256": "c2ebe778f94a674d5e2f9e7e5eff8a1c90afdcb5ccdc6ebbdc198c0d730e46a2"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000002/actual-native-trace.json",
+        "sha256": "9f10f07ccc929a237364e36187f059ae0ffcdd27f5a34ed84e06b141832e1c00"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "name": "right-route-physical-TRAIN-03",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "right-route-TRAIN-03",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.094,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.094,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000003/actual-native-trace.npz",
+        "sha256": "344d8d60860e581715f0d820686a658d1d800114d3256469dcf75fe575e40683"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000003/actual-native-trace.json",
+        "sha256": "94ac213359e9f9af399656fe81cd2710efc64777c328e690e28bda5cdb2bf1d6"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "name": "right-route-physical-TRAIN-04",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "right-route-TRAIN-04",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.086,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.086,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000004/actual-native-trace.npz",
+        "sha256": "83f5b1fe54c7c4492f4f481fa05ded50ae51dfc17e0f2c68e8c5c7d778f87003"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000004/actual-native-trace.json",
+        "sha256": "583b01feea38b4f3742a2c03459d206fd8a7dca239402e7777e90dc588fa6244"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "name": "right-route-physical-TRAIN-05",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "right-route-TRAIN-05",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.053
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.053
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000005/actual-native-trace.npz",
+        "sha256": "b8ec00186ee455bfb3d65557cce678a8ec3f27cb7f560ecbd3dd53bc26391430"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000005/actual-native-trace.json",
+        "sha256": "0ec67faa73f5e6ea6f2678155ea9c67ea8cca4d3141c7e03bcf97fc441adfabf"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "name": "right-route-physical-TRAIN-06",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "right-route-TRAIN-06",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.057
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.057
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000006/actual-native-trace.npz",
+        "sha256": "eb35befe20a00aa1fcd3e5eec25cdfbebe3ce8e81ac84376a57daf6c20d6e8bf"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000006/actual-native-trace.json",
+        "sha256": "e3414cee73bb7851adeb735b819f6549365fa46b1fd32b04567596d1dc0da003"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "name": "right-route-physical-TRAIN-07",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "right-route-TRAIN-07",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.051000000000000004
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.051000000000000004
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000007/actual-native-trace.npz",
+        "sha256": "2349c91d3b6b1c68f4c582ce11fcced00af985d669bfc28a357cd4f471d32a66"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000007/actual-native-trace.json",
+        "sha256": "294fb7ad0e4020dfbdf605120d7681c30cb7e12e048b1d2e397827aadce7c67c"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "name": "right-route-physical-TRAIN-08",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "right-route-TRAIN-08",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.059
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.059
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000008/actual-native-trace.npz",
+        "sha256": "afbbda63b541187509dfc5ccb87e7355fb2cf5d795219c20474058ac0b51cb4e"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000008/actual-native-trace.json",
+        "sha256": "4d12656c408d335cd294f8c65cbf31ba23d50f79622bd49ce079531371076508"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "name": "right-route-physical-TRAIN-09",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "right-route-TRAIN-09",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.092,
+          -0.053
+        ],
+        "expected_start_xy_m": [
+          0.092,
+          -0.053
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000009/actual-native-trace.npz",
+        "sha256": "836a29c33713557e94f0164c56fa3672509b5410cf25e81525fc5df4b40dad28"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000009/actual-native-trace.json",
+        "sha256": "410319a70013a13284d82327c3062834332e826b7a5a48be5afb1029e82520bc"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "name": "right-route-physical-TRAIN-10",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "right-route-TRAIN-10",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.088,
+          -0.057
+        ],
+        "expected_start_xy_m": [
+          0.088,
+          -0.057
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000010/actual-native-trace.npz",
+        "sha256": "7e0e0f91003f49157917677ca03d090d9e69a2a821e00c6cb9c3a7cdec54f39a"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000010/actual-native-trace.json",
+        "sha256": "526f2296015d16781bc164f5f7b33018089e37e850bf089b927d21df53ad931e"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "name": "right-route-physical-TRAIN-11",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "right-route-TRAIN-11",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.007,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000011/actual-native-trace.npz",
+        "sha256": "ad4983f43567fe6d0f55e6360fe8c78d779500c7102d4976476f64a07a2fe3d8"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000011/actual-native-trace.json",
+        "sha256": "93c7d87480f74aa0c3f238893295acf7cfb1bcf648886a08029e932c930e4081"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "name": "right-route-physical-TRAIN-12",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "right-route-TRAIN-12",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.003,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000012/actual-native-trace.npz",
+        "sha256": "3de1d8b2d8ed09b77a4124b7a7ea01f076a0e97b75d843662e5001d7238fcdc9"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000012/actual-native-trace.json",
+        "sha256": "2a911b2923ff3defae13c6a79b3e85ba0d9ec243bec9403428a7e8a1d8342257"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "name": "right-route-physical-TRAIN-13",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "right-route-TRAIN-13",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.092,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000013/actual-native-trace.npz",
+        "sha256": "b9127e657ab1996faf76615ef1c937db3ea9222625f23d75740e116e59e26590"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000013/actual-native-trace.json",
+        "sha256": "1257205eadb8dc739fd35d9835c8aebff5f268dac2d63e97018267dafecbc0fc"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "name": "right-route-physical-TRAIN-14",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "right-route-TRAIN-14",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.088,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000014/actual-native-trace.npz",
+        "sha256": "7fbe7a1a680f0715ad35a11084a7fcb8cc02baae43bb353822c18cac9fae83cc"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000014/actual-native-trace.json",
+        "sha256": "8c8ac22df5b051535e8cf3e59eec82be1a76d81c730da34cab489c8792c394c2"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "name": "right-route-physical-TRAIN-15",
+      "role": "center_success",
+      "format": "physical_demonstration_replay",
+      "rows": 300,
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "right-route-TRAIN-15",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.098,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.098,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.011,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000015/actual-native-trace.npz",
+        "sha256": "6fa36d45af115fa45aab7ff2adc2d861df33aec3fe0400a6ca520b994dcca5e4"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000015/actual-native-trace.json",
+        "sha256": "0f102259ff46c646c187a61767f5546c9009cab377fcef7b04027e53b64c6b08"
+      },
+      "source_actions": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz",
+        "sha256": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "shared_source_family": true,
+      "source": "Actual simulation observations under unchanged replayed commands from one earlier VLA success",
+      "training_target": "Actually issued native command; standard supervised BC",
+      "not_autonomous_policy_evaluation": true,
+      "not_human_data": true
+    },
+    {
+      "role": "center_correction",
+      "format": "actual_teacher_suffix_v1",
+      "prefix_commands": 280,
+      "rows": 83,
+      "total_policy_commands": 363,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000002/actual-native-trace.npz",
+        "sha256": "27c286ee2f9c968ac4dcb6b0ae6437f65cf622475e6501332541ad3edd9a9d95"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000002/actual-native-trace.json",
+        "sha256": "f6805d843017ab539f7cc2addb704e73ecfc009c0f5429379d29ebdc82cb893d"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000002/actor-command-provenance.json",
+        "sha256": "b428e57a0b0b494c55a39ec57842e3c91cd086682eb5bcd2850fbb3f8c091f04"
+      },
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "late-learned-recovery-TRAIN-02",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "teacher": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-standard-pose-layout-SFT1000-v2/pretrained_model/model.safetensors",
+        "sha256": "11d4a47f309b412107a67ec8ae192a83e2faf08b37da57fe050a147171622023"
+      },
+      "learner_rollin": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model/model.safetensors",
+        "sha256": "1b66ad8b4a755c1cfac90b185dd9074b245d8cc8a46484a52dfcb551a892357b"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "labels_exclude_learner_rollin_ignored_teacher_proposals_and_holds": true,
+      "shared_scene_and_actor_family": true,
+      "name": "qualified-late-correction-00"
+    },
+    {
+      "role": "center_correction",
+      "format": "actual_teacher_suffix_v1",
+      "prefix_commands": 260,
+      "rows": 122,
+      "total_policy_commands": 382,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000004/actual-native-trace.npz",
+        "sha256": "9a19b4d929b4c53dc149fbf360b7e5811edbda730665a487a75ab5d29c9ed3ac"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000004/actual-native-trace.json",
+        "sha256": "ea405cd22bfbc995db5104dfd746bb7b835848aeb98bbdc82fad9beb583af4ab"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000004/actor-command-provenance.json",
+        "sha256": "3c43f227ad44f6d2fa00c307cebec5170014425b211d81327dc70a8fa25893a4"
+      },
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "late-learned-recovery-TRAIN-04",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "teacher": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-standard-pose-layout-SFT1000-v2/pretrained_model/model.safetensors",
+        "sha256": "11d4a47f309b412107a67ec8ae192a83e2faf08b37da57fe050a147171622023"
+      },
+      "learner_rollin": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model/model.safetensors",
+        "sha256": "1b66ad8b4a755c1cfac90b185dd9074b245d8cc8a46484a52dfcb551a892357b"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "labels_exclude_learner_rollin_ignored_teacher_proposals_and_holds": true,
+      "shared_scene_and_actor_family": true,
+      "name": "qualified-late-correction-01"
+    },
+    {
+      "role": "center_correction",
+      "format": "actual_teacher_suffix_v1",
+      "prefix_commands": 280,
+      "rows": 101,
+      "total_policy_commands": 381,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000005/actual-native-trace.npz",
+        "sha256": "127a9c8c8fb7a82719284b41e2681d1e4b43d69274789a069597752fca56d410"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000005/actual-native-trace.json",
+        "sha256": "a9c8f287140bd97d0c78f4e9af6d9df11280017626f77cd6fea5b0d63f022ace"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000005/actor-command-provenance.json",
+        "sha256": "27d9f1360ccc8bca615d2da5144e8b693c2b8ec3658af2adb69a02ccd49def35"
+      },
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "late-learned-recovery-TRAIN-05",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "teacher": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-standard-pose-layout-SFT1000-v2/pretrained_model/model.safetensors",
+        "sha256": "11d4a47f309b412107a67ec8ae192a83e2faf08b37da57fe050a147171622023"
+      },
+      "learner_rollin": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model/model.safetensors",
+        "sha256": "1b66ad8b4a755c1cfac90b185dd9074b245d8cc8a46484a52dfcb551a892357b"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "labels_exclude_learner_rollin_ignored_teacher_proposals_and_holds": true,
+      "shared_scene_and_actor_family": true,
+      "name": "qualified-late-correction-02"
+    },
+    {
+      "role": "center_correction",
+      "format": "actual_teacher_suffix_v1",
+      "prefix_commands": 300,
+      "rows": 91,
+      "total_policy_commands": 391,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000006/actual-native-trace.npz",
+        "sha256": "d77b2ad7ef065784f88090267c25488777e6e6297c185b1487f2b52d7f6ae07e"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000006/actual-native-trace.json",
+        "sha256": "4a5dee78e756a99ac7d1ef623eada480e40b2883ac83dec3c9c020705bc94483"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000006/actor-command-provenance.json",
+        "sha256": "45cbf3b40cf712778f5f66537d4e14284e4891e0afea54845fbbddb85d6d889e"
+      },
+      "language": "push the plate to the front of the stove",
+      "case": {
+        "episode_id": "late-learned-recovery-TRAIN-06",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "teacher": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-standard-pose-layout-SFT1000-v2/pretrained_model/model.safetensors",
+        "sha256": "11d4a47f309b412107a67ec8ae192a83e2faf08b37da57fe050a147171622023"
+      },
+      "learner_rollin": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model/model.safetensors",
+        "sha256": "1b66ad8b4a755c1cfac90b185dd9074b245d8cc8a46484a52dfcb551a892357b"
+      },
+      "physical_TRAIN_admission_passed": true,
+      "labels_exclude_learner_rollin_ignored_teacher_proposals_and_holds": true,
+      "shared_scene_and_actor_family": true,
+      "name": "qualified-late-correction-03"
+    }
+  ],
+  "episodes": 39,
+  "rows": 7556,
+  "new_corrective_labels": 397,
+  "seed": 2026101503,
+  "updates": 500,
+  "batch_size": 24,
+  "lr": 1e-05,
+  "final_lr": 1e-06,
+  "warmup_steps": 20,
+  "segments": [
+    [
+      0,
+      41
+    ],
+    [
+      41,
+      100
+    ],
+    [
+      100,
+      200
+    ],
+    [
+      200,
+      300
+    ]
+  ],
+  "sampler": "8 corrective contexts:2 per admitted suffix;4 complete center contexts:1 per source segment;4 open,4 passage,2 drawer,2 stove episode/time-uniform",
+  "objective": "One official real7 valid-time flow-matching BC loss; ordinary supervised replay for preservation",
+  "no_teacher_network_or_distillation": true,
+  "freeze_VLM": true,
+  "trainable_expert_tensors": 299,
+  "inference": "One ordinary SmolVLA checkpoint;RGB2,own8,language;native OSC;queue10;denoising10",
+  "chunk_size": 50,
+  "saved_n_action_steps": 10,
+  "real_action_dim": 7,
+  "use_amp": false,
+  "no_actor_phase_time_or_object_truth": true,
+  "no_runtime_controller_or_expert_router": true,
+  "source_lineage": "Original35 generated/simulation trajectories plus4 actual learned-teacher corrective suffixes; shared source families, not39 human demonstrations",
+  "only_teacher_issued_suffixes_are_new_labels": true,
+  "exclude_learner_prefixes_ignored_proposals_and_holds": true,
+  "diagnosis": "Parent5k avoided added obstacles2/2 but reached goal1/2 at450 commands. Remaining repeat lost plate contact at359. Four qualified teacher recoveries provide actual commands from learner-visited late states.",
+  "research_scope": "Learner-state corrective data plus supervised rehearsal. Inspired by DAgger; imperfect learned teacher and success-filtered fixed roll-ins are not the full DAgger algorithm.",
+  "primary_sources": [
+    "https://proceedings.mlr.press/v15/ross11a.html",
+    "https://huggingface.co/docs/lerobot/smolvla"
+  ],
+  "parent_center_horizon450": [
+    1,
+    2
+  ],
+  "comparison_center_horizon450": [
+    0,
+    2
+  ],
+  "center_DEV_references": [
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-horizon450-control-v1/before/episode-000000",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-horizon450-control-v1/before/episode-000001"
+  ],
+  "center_seen_TRAIN_geometry_not_generalization": true,
+  "reserved_FINAL": {
+    "path": "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/late-correction-replay-SFT500-v1/reserved-FINAL.json",
+    "sha256": "8786101803be3dd9a50082a6887f6507c77dbf871baab97943864fc0f970416d"
+  },
+  "pushing_horizon": 450,
+  "native_horizon": 300,
+  "actual_holds": 10,
+  "before_after_push_horizon_equal": true,
+  "original300_scores_unchanged": true,
+  "gate": "Center2/2 then nominal basic4/4,varied basic8/8,native retention6/6; root reviews before opening paired FINAL32 episodes",
+  "push_DEV_baseline_reference_horizon": 300,
+  "push_DEV_candidate_horizon": 450,
+  "no_fabricated_paired450_baseline_for_varied_DEV": true,
+  "success_rule": "Native goal OR50mm flat at stop and all10 holds;physical route and zero ever-added-wall contacts",
+  "no_actual_personal_data": true,
+  "no_reward_learning": true,
+  "no_checkpoint_selection": true,
+  "no_automatic_extension": true,
+  "no_automatic_FINAL": true,
+  "selected_comparison_unchanged_until_full_review": true,
+  "bindings": {
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000008/actual-native-trace.npz": "afbbda63b541187509dfc5ccb87e7355fb2cf5d795219c20474058ac0b51cb4e",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000001/actual-native-trace.npz": "bc4025e1f31f488cdd053f6d2a9191d9343e0991c0d67fd57bf62084ce2fb808",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000004/actual-native-trace.json": "583b01feea38b4f3742a2c03459d206fd8a7dca239402e7777e90dc588fa6244",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000002/actual-native-trace.json": "64cb379d0b7b1381c029f6a5228825e49bfb3c48cd35790fcf43c35ff3bfb0d5",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/late-learned-recovery-TRAIN-v1/admitted-suffixes.json": "9acd024075ce867ac35c64ce0d4d5f754686a34615af6d5d7c35fbbdda1eabdc",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000011/actual-native-trace.json": "93c7d87480f74aa0c3f238893295acf7cfb1bcf648886a08029e932c930e4081",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/native-multitask-replay-SFT-v1/runtime_drawer/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model/tokenizer/tokenizer.json": "658fdd4589e533bda87358ad06229146e87e1d725198a40eaab4d93c75576aee",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/native-multitask-replay-SFT-v1/runtime_stove/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000001/actual-native-trace.npz": "3b78868f4cc2b75f47f63b4c865f04998f5981d71311c00dc536a74257ef0e29",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/native-multitask-replay-SFT-v1/runtime_stove/client.py": "ba0eab5d348a9bc5f8ef60ace816df8570c524d3ae61f407ad243ef24b4336cd",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000001/actual-native-trace.json": "b6ae871bfb360645751a4349e577101bf9781f1c06f7ef475628620a4f4d0960",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/train_consistent_right_route_BC_v1.py": "14a860099a29bff5dcac054d37c7b37c107af9db5126a6ea7d2ccf3bea53f720",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000003/actual-native-trace.json": "94ac213359e9f9af399656fe81cd2710efc64777c328e690e28bda5cdb2bf1d6",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/late-learned-recovery-TRAIN-v1/report.json": "642f3826b9aaa9107828c02e7943fdc61dbf5a8beae803246d6a3dbacd36cf70",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000002/actual-native-trace.npz": "436d4c6d376dad242f5db5ebe3982294d33159d6cdb063a598f45285fe1864d1",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000000/actual-native-trace.json": "a97f34669feaf74e2a014ea512bfe9a596f7605590779346cccf660bb4bc6d72",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000001/actual-native-trace.npz": "e218ccf5e92dcec8e01eabc33cc6a69d98d337d86bf34cd004c6431426ce48c8",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000012/actual-native-trace.json": "2a911b2923ff3defae13c6a79b3e85ba0d9ec243bec9403428a7e8a1d8342257",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000011/actual-native-trace.npz": "ad4983f43567fe6d0f55e6360fe8c78d779500c7102d4976476f64a07a2fe3d8",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model/config.json": "26b06b6232eba4c65efea3dd40fdcc72a165922f5f6f0fadab25aec422939e62",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model/policy_postprocessor_step_1_unnormalizer_processor.safetensors": "0c7f411fbec3a8b69d1e1c9ab63344cf9377696d86d6f74fba1c7b4c2abb1e9e",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/native-multitask-replay-SFT-v1/runtime_stove/protocol.py": "e877de69ebe3c0171e75c079468e73694fd27581685bb804fc63cccab170c03f",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000000/actual-native-trace.json": "63782c7fdaface25201bd1ab92e4eb44b39a3efc7d42697d5af783b8abc169b2",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000005/actor-command-provenance.json": "27d9f1360ccc8bca615d2da5144e8b693c2b8ec3658af2adb69a02ccd49def35",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000006/actual-native-trace.npz": "eb35befe20a00aa1fcd3e5eec25cdfbebe3ce8e81ac84376a57daf6c20d6e8bf",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000014/actual-native-trace.npz": "7fbe7a1a680f0715ad35a11084a7fcb8cc02baae43bb353822c18cac9fae83cc",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model/model.safetensors": "1b66ad8b4a755c1cfac90b185dd9074b245d8cc8a46484a52dfcb551a892357b",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-original-task-retention-v1/drawer-original-retention-0/original/actual-native-trace.npz": "e8a93c29916ab3cdbf9b97c11cb61938c606f9ad7caa14ca7098bfb91f2bf16a",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000003/actual-native-trace.npz": "d6e86f7f3951cbeb49173255289019a994e1515b7bad0b7eb55383a6acebfea5",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000002/actual-native-trace.npz": "5701925da54e64e1446b1cc584b2185082f4969baa5b728728f00c425fd8750a",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000000/actual-native-trace.npz": "1c2da5071c06b189cf5fb032629944253302ec019a7b5fdafebe3021b98d9f13",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000000/actual-native-trace.json": "65b18b3f05872d350f767c59c0469e93f65c61fa6333e765140efb1318283517",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000004/actual-native-trace.npz": "9a19b4d929b4c53dc149fbf360b7e5811edbda730665a487a75ab5d29c9ed3ac",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000006/actual-native-trace.json": "4a5dee78e756a99ac7d1ef623eada480e40b2883ac83dec3c9c020705bc94483",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000003/actual-native-trace.json": "8397dbc7241685ea7dc549ef68607fc4d8978d61de2ad2c5ef2e0d4ab77d90bb",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-original-task-retention-v1/stove-original-retention-0/original/actual-native-trace.json": "dbd1c3f392d6864887df41a472ba6fc124c1a48f9c437cf4c017c342ac9f968e",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000002/actual-native-trace.npz": "91ee4bd2df007f9976bca651b5635c06371f33875f1f05dcc95dfd6a94d580d4",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model/train_config.json": "a713595b88d3d5a4b4bfb51dc73cd62c7d531130b0a0c3d58dfcf85aaa00c7f8",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/train_late_correction_replay_v1.py": "f815af81ccdb5880bb5410d74e5fe87d9d7b29050202e27ed4c4aa70b5660d50",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/evaluate_native_multitask_replay_v1.py": "0d07ee7288722fd98895b83c17ec680de0fe327c9009059299beaae39cbbbf0c",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/train_sft_retention.py": "3e00b1bf2d3c530d6173acaaa1aaef3037647eb41de05cb350772c4620e7973c",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000000/actual-native-trace.npz": "f36f0206c4bdfa9b408121fceef00a3579020a27c8e51a5c50d43c3c5477c136",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/audit_metrics.py": "d1dc38d03436d9c7863d112f76297048847dcc23f0cd9d293e422cdca0755669",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000001/actual-native-trace.npz": "e393eacef22932423167b8ae2d7957d398ca40393004d2142d3438bf39e9a698",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model/policy_preprocessor.json": "ac6a2201b15776dd97cdf4e7f07b62b798faaf0f4ae2922cf687bfdbb2df7a97",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/native-multitask-replay-SFT-v1/runtime_drawer/protocol.py": "5eafcdfb3a13cd0ccdaefc3562107f872680d3fcb144ecb2b431ee6ed6a76c5b",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000014/actual-native-trace.json": "8c8ac22df5b051535e8cf3e59eec82be1a76d81c730da34cab489c8792c394c2",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000002/actual-native-trace.json": "f6805d843017ab539f7cc2addb704e73ecfc009c0f5429379d29ebdc82cb893d",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000003/actual-native-trace.npz": "d12475b743e6bb98bb6141393eff2e5e57c9c5923e123994b749b627dd469635",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-center-obstacle-stock10-diagnosis-v1/current/episode-000001/actual-native-trace.npz": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000015/actual-native-trace.npz": "6fa36d45af115fa45aab7ff2adc2d861df33aec3fe0400a6ca520b994dcca5e4",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000006/actual-native-trace.npz": "d77b2ad7ef065784f88090267c25488777e6e6297c185b1487f2b52d7f6ae07e",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000004/actual-native-trace.npz": "32ffb92329c8a0b94d500ada3858e71ea811b45c855713a2d4ee627ffcdbd095",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000000/actual-native-trace.json": "2f3180b6671a86535af9134ee1765a0dfbefe3989136d221b25cdb7605b796b0",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-original-task-retention-v1/drawer-original-retention-0/original/actual-native-trace.json": "c023d68ef09f58743c5a5525706046bde99ee75601c5284f068a8d134df307bc",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000002/actual-native-trace.json": "9f60bd8d7e918bd2d4c10493482674a106732d9f2c8a1fc7e333ad36949c0e33",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000002/actual-native-trace.npz": "27c286ee2f9c968ac4dcb6b0ae6437f65cf622475e6501332541ad3edd9a9d95",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/native-multitask-replay-SFT-v1/runtime_drawer/client.py": "ba0eab5d348a9bc5f8ef60ace816df8570c524d3ae61f407ad243ef24b4336cd",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000004/actual-native-trace.json": "fb837974210eeb8e6ab61a460ecffd895971972acde8d6511e5b1fea20482dcd",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000001/actual-native-trace.json": "33e7cb9b8f7ab2ec56b8d4e6643fd54f2b5dc406724d7c2cabb03da69b1cb9ee",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/common.py": "54252ae6e8824fcca3c9fee7cc415cd18d8d7a2f00825368d597e9ab818493b1",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000015/actual-native-trace.json": "0f102259ff46c646c187a61767f5546c9009cab377fcef7b04027e53b64c6b08",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000003/actual-native-trace.json": "6d25a7248e62e044f021b4f0fecdcaed44d5072db4c928317a3bac320c5fa9c1",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000002/actual-native-trace.json": "4b53564d707513d051637ebccf3f8c2276b395b4fa84590abef7dcd0a9bb0c18",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000005/actual-native-trace.json": "a9c8f287140bd97d0c78f4e9af6d9df11280017626f77cd6fea5b0d63f022ace",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000002/actual-native-trace.npz": "5f370f7b11163319cbb17b8dd64052e0e16d593de07ae202e1fc73da6b451f16",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/audit_late_correction_replay_v1.py": "51622053d7d82a9cdcc2b8b1afae41798d35c2c7fd6d608c9dedd531f67e3060",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000006/actual-native-trace.json": "e3414cee73bb7851adeb735b819f6549365fa46b1fd32b04567596d1dc0da003",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/native-multitask-replay-SFT-v1/runtime_qualification/client.py": "ba0eab5d348a9bc5f8ef60ace816df8570c524d3ae61f407ad243ef24b4336cd",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000004/actor-command-provenance.json": "3c43f227ad44f6d2fa00c307cebec5170014425b211d81327dc70a8fa25893a4",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/evaluate_late_correction_replay_v1.py": "d664d037b420881f512194da65fcaebbb9cf61682f29b1bab5a32aba997bc7a0",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-native-multitask-replay-SFT1000-v1/pretrained_model/model.safetensors": "871581b503b92a70fa9de73842f20d04cd5b77fe87f87ca3ae08053aa0fca0fa",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000007/actual-native-trace.npz": "2349c91d3b6b1c68f4c582ce11fcced00af985d669bfc28a357cd4f471d32a66",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000009/actual-native-trace.json": "410319a70013a13284d82327c3062834332e826b7a5a48be5afb1029e82520bc",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/native-multitask-replay-SFT-v1/data-readback-QA.json": "4742b96f7881124428df39dfbeb822886dfd7e9bdd6e567c05b87f0cda78ff53",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model/tokenizer/chat_template.jinja": "830005085ddd94cec605b6e21b885b28ffad6e3f82ee6a212c523533e8f04f01",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model/tokenizer/tokenizer_config.json": "6d2b6de492a5e53f6a740c37d37ef8c507a4e1a96f7e70f688dbf872b00be38e",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/native-multitask-replay-SFT-v1/runtime_stove/worker.py": "f885442b8bb469d4040492af01862b73e993ed6070887eb3808722d4a387fa24",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000013/actual-native-trace.npz": "b9127e657ab1996faf76615ef1c937db3ea9222625f23d75740e116e59e26590",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000001/actual-native-trace.json": "24a6dbfdc989c91fef9756dfc0de06493ec50eb4aa764c736ef30f71122ea5ee",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000007/actual-native-trace.json": "294fb7ad0e4020dfbdf605120d7681c30cb7e12e048b1d2e397827aadce7c67c",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000005/actual-native-trace.json": "0ec67faa73f5e6ea6f2678155ea9c67ea8cca4d3141c7e03bcf97fc441adfabf",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/run_late_correction_replay_pipeline_v1.py": "1bdb1227a0c177dbccc6eff5af4a7abb50809cea315147b5e1bce35c2b9c457a",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000006/actor-command-provenance.json": "45cbf3b40cf712778f5f66537d4e14284e4891e0afea54845fbbddb85d6d889e",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/native-multitask-replay-SFT-v1/runtime_qualification/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000005/actual-native-trace.npz": "b8ec00186ee455bfb3d65557cce678a8ec3f27cb7f560ecbd3dd53bc26391430",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/physical_passage_score_v1.py": "08f7c5becad5d06de312182383d6a8c74ba4de21d8016df2b20b151262ff224a",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model/policy_preprocessor_step_5_normalizer_processor.safetensors": "f6f09afd26d3d0e2d4975ef698f5f480e396e9006feb29eecf5989aace5afda9",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000002/actual-native-trace.json": "9f10f07ccc929a237364e36187f059ae0ffcdd27f5a34ed84e06b141832e1c00",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000005/actual-native-trace.npz": "127a9c8c8fb7a82719284b41e2681d1e4b43d69274789a069597752fca56d410",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/train_joint_balanced_replay5k_v1.py": "4fa45db30d671499652f1012cb13d53c7c95214deb0679965dcdd90005bafba9",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000013/actual-native-trace.json": "1257205eadb8dc739fd35d9835c8aebff5f268dac2d63e97018267dafecbc0fc",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/horizon450-control-v1/all-records-audit.json": "84366fac70dfaeae4e730cdb249762b3c84200992334b900a3e8c9496eefdb65",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000010/actual-native-trace.json": "526f2296015d16781bc164f5f7b33018089e37e850bf089b927d21df53ad931e",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/native-multitask-replay-SFT-v1/runtime_drawer/worker.py": "f885442b8bb469d4040492af01862b73e993ed6070887eb3808722d4a387fa24",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000003/actual-native-trace.json": "10189aebf291eab0717aa013dd9d903c5cc61e382095110ca2e77d2613d7969f",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000008/actual-native-trace.json": "4d12656c408d335cd294f8c65cbf31ba23d50f79622bd49ce079531371076508",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/native-multitask-replay-SFT-v1/runtime_qualification/worker.py": "f885442b8bb469d4040492af01862b73e993ed6070887eb3808722d4a387fa24",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/joint-balanced-replay-SFT5k-v1/training-integrity-audit.json": "37c6e22a1c6d1ad24892b11810030f44ec9e3a0321b10a2d0a52fdea0b8f1ee3",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000001/actual-native-trace.json": "052d45fd885497e21b0bdf3af5fe4d1a287a061c1c3378177627d584cd4f8d83",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000002/actual-native-trace.json": "eb314cabd2cca2e144fbeff302f9a8690263d810ce39c0340baaf5beacdb57c4",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000001/actual-native-trace.npz": "d9c0318121768dacca2de96c2e769f4300dd0c280ebe5f112c87e418bd64208f",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000012/actual-native-trace.npz": "3de1d8b2d8ed09b77a4124b7a7ea01f076a0e97b75d843662e5001d7238fcdc9",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000003/actual-native-trace.npz": "0eb70a8f459da59c2f60ff122e4112f62a9a52d07bbcef4b3c39c4e428f4f987",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/evaluate_horizon450_control_v1.py": "f2ac91b6b70572b392e7fc33f011e262e5fb34af8cad0b70754df6386f7c9c7b",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000004/actual-native-trace.npz": "83f5b1fe54c7c4492f4f481fa05ded50ae51dfc17e0f2c68e8c5c7d778f87003",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/late-learned-recovery-TRAIN-v1/independent-readback.json": "1e8760a1c5c4202bb8c1363cf2073adf02a9e3c67279158da43f6f4d6b677240",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-fresh-generalization-v3/spatialSFT1000-final8/episode-000001/actual-native-trace.json": "d767779ee623a2e303dfefa609e7b5ae44f3fe78d1d3298ce255512154ea1af3",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000003/actual-native-trace.npz": "98ef456e6b74044cd994965cda40f0e2b9a8b3fba4231cb15b604d1cad2a78a0",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000000/actual-native-trace.npz": "5433cb83954bdd2022594bb3f0eed9e972afcc0ebc46b4f701bec3af379333f2",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000004/actual-native-trace.json": "ea405cd22bfbc995db5104dfd746bb7b835848aeb98bbdc82fad9beb583af4ab",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-open-variants-v1/episode-000003/actual-native-trace.json": "f4cce08a8716543543d7cacaf04548b71df8e8461814d916ee46a22d48e89094",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/prepare_late_correction_replay_v1.py": "0170ba5fe3e82757072f970f5bcaab28848408aca9d72fdeaeeeae1dc2a64717",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-late-learned-recovery-TRAIN-v1/episode-000002/actor-command-provenance.json": "b428e57a0b0b494c55a39ec57842e3c91cd086682eb5bcd2850fbb3f8c091f04",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000009/actual-native-trace.npz": "836a29c33713557e94f0164c56fa3672509b5410cf25e81525fc5df4b40dad28",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000000/actual-native-trace.npz": "77e493570032540194642d8065f68dc4d84f449fac0db431c4d6fad4d556095f",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000003/actual-native-trace.npz": "344d8d60860e581715f0d820686a658d1d800114d3256469dcf75fe575e40683",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/late-learned-recovery-TRAIN-v1/plan.json": "69cf64e77ef8e047fc6976f24551620bd3f11416bc79edfa4ebd52d0a49a95e3",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-original-task-retention-v1/stove-original-retention-0/original/actual-native-trace.npz": "e482407e506d5b32a271ed4fb9b052fae1c97a1f064fb50ad54488b878f459ad",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-retention-v1/episode-000000/actual-native-trace.json": "be22ff3dc21b57f8dc776d97fd447664dcc5de8a00c2851c56dd61a8b6a0298d",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000002/actual-native-trace.npz": "c2ebe778f94a674d5e2f9e7e5eff8a1c90afdcb5ccdc6ebbdc198c0d730e46a2",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-joint-balanced-replay-SFT5000-v1/pretrained_model/policy_postprocessor.json": "ad2d22405cb63be4932c4a4d9a69bc9953df02a01235c5f420b679dbe6bfe7c5",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-standard-pose-layout-SFT1000-v2/pretrained_model/model.safetensors": "11d4a47f309b412107a67ec8ae192a83e2faf08b37da57fe050a147171622023",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-right-route-variation-TRAIN-v1/episode-000010/actual-native-trace.npz": "7e0e0f91003f49157917677ca03d090d9e69a2a821e00c6cb9c3a7cdec54f39a",
+    "/home/enis/humanoid_isaac_lab/runs/challenge2026-spatialSFT1000-stockChunk10-passage-variants-v1/episode-000000/actual-native-trace.npz": "49485a34796db29fa086e381d5d56b79ebda133ce8d0776ffa0d97a732cf75e6",
+    "/home/enis/humanoid_isaac_lab/work/challenge2026/learned_improvement_20261014_v1/native-multitask-replay-SFT-v1/runtime_qualification/protocol.py": "84f1eb6f90ee928da160a672fbd144ada14f876659d360579359c9f513cfe16b"
+  }
+}
