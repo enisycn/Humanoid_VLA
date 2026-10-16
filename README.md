@@ -101,15 +101,15 @@ Some extra tests execute five commands before looking at a new image; others exe
 
 ### Two layout successes and one failure
 
-**Shifted passage — pass.** The original baseline fails on the same layout.
+**Passage at a new position — pass.** The original baseline fails on the same layout.
 
-[![Shifted passage, final policy](media/test-4-fine.gif)](media/test-4-fine.mp4)
+[![Passage at a new position, final policy](media/test-4-fine.gif)](media/test-4-fine.mp4)
 
 **Diagonal passage — pass.** The original baseline fails on the same layout.
 
 [![Diagonal passage, final policy](media/layout-5-fine.gif)](media/layout-5-fine.mp4)
 
-**Recorded horizontal passage — fail.** The policy avoids added-obstacle contact but loses useful plate contact and does not cross the passage.
+**Video-based passage — fail.** The policy avoids added-obstacle contact but loses useful plate contact and does not cross the passage.
 
 [![Horizontal passage, failed final policy](media/final-horizontal-passage.gif)](media/final-horizontal-passage.mp4)
 
@@ -119,7 +119,7 @@ These top-down paths follow the plate centre across recorded simulation steps. T
 
 [Baseline versus final results](docs/RESULTS.md) · [New layouts and predictor tests](docs/NEW-LAYOUTS.md) · [All control metrics](results/metrics.csv)
 
-The recorded horizontal passage still fails: less obstacle contact does not mean reaching the goal. Larger starting changes also expose missed approaches. The predictor ranks four learned action proposals; it is not a collision guarantee. Better approach and contact-recovery data are future work. A [small native-task check](docs/RETENTION.md) retains the stove task and succeeds at opening a drawer; it does not establish retention of every pretrained skill.
+The video-based passage still fails: less obstacle contact does not mean reaching the goal. Larger starting changes also expose missed approaches. The predictor ranks four learned action proposals. In the completed passage-at-a-new-position follow-up it turns a VLA success into a failure, so I keep it as an optional negative result rather than an improvement. Better approach and contact-recovery data are future work. A [small native-task check](docs/RETENTION.md) retains the stove task and succeeds at opening a drawer; it does not establish retention of every pretrained skill.
 
 ## Run
 
