@@ -14,9 +14,18 @@ I removed resets and the return-to-start motion, then mapped measured paths into
 
 ### Short clips from my recordings
 
-| Ordinary push | Obstacle recording | Passage recording |
-|---|---|---|
-| [![My ordinary push recording](media/recorded-push.gif)](media/recorded-push.mp4) | [![My obstacle recording](media/recorded-obstacle.gif)](media/recorded-obstacle.mp4) | [![My passage recording](media/recorded-passage.gif)](media/recorded-passage.mp4) |
+<table>
+  <tr>
+    <th width="33%">Ordinary push</th>
+    <th width="33%">Obstacle recording</th>
+    <th width="33%">Passage recording</th>
+  </tr>
+  <tr>
+    <td width="33%" align="center" valign="top"><a href="media/phone-push-landscape.mp4"><img src="media/phone-push-landscape.gif" width="288" height="162" alt="Ordinary push"></a></td>
+    <td width="33%" align="center" valign="top"><a href="media/phone-obstacle-landscape.mp4"><img src="media/phone-obstacle-landscape.gif" width="288" height="162" alt="Obstacle recording"></a></td>
+    <td width="33%" align="center" valign="top"><a href="media/phone-passage-landscape.mp4"><img src="media/phone-passage-landscape.gif" width="288" height="162" alt="Passage recording"></a></td>
+  </tr>
+</table>
 
 I varied the plate start and push direction instead of repeating one route. I also recorded deliberate contact loss and another approach, to provide examples of recovery. Obstacle and passage recordings add route changes while keeping the same goal. These are the intended skills in the data, not a claim that the final policy learned every variation.
 
@@ -56,7 +65,7 @@ The horizontal axis counts weight updates. These losses have no centimetre or pe
 
 ## Evaluation
 
-The policy sees two colour camera views (RGB), the robot's eight state values and the same plate instruction in every layout. It receives no simulator object positions. I measure target-region arrival, actual obstacle contact, simulated time, total travelled path and contact breaks. Centre error is the plate’s distance from the target centre. Stopped drift is its extra movement after a neutral hold command. Contact breaks count interruptions in robot–plate contact. These are extra diagnostics; the full success rule and units are in the [results](docs/RESULTS.md).
+The policy sees two colour camera views (RGB), the robot's eight state values and the same plate instruction in every pushing layout. It receives no simulator object positions. I measure target-region arrival, actual obstacle contact, simulated time, total travelled path and contact breaks. Centre error is the plate’s distance from the target centre. Stopped drift is its extra movement after a neutral hold command. Contact breaks count interruptions in robot–plate contact. These are extra diagnostics; the full success rule and units are in the [results](docs/RESULTS.md).
 
 The fixed final policy completes the familiar simple push, blocking obstacle and passage controls. Original-baseline comparisons use the same initial observations and geometry. New layout checks are reported separately, including failures.
 
@@ -96,7 +105,19 @@ Stopped drift is also recorded: baseline → final is 0.0 → 10.5 mm (simple), 
 
 The GIFs play here; click for full MP4. Each side shows its own simulated time. After a recording ends, its last frame is held for display.
 
-I also completed **seven layout checks**. The final policy succeeds at the shifted and diagonal passages, where the matched original baseline fails. The round obstacle gives near-arrival with contact; left start, forward-right start, shifted obstacle and the moved stove fail. The moved-stove case has no baseline run. [All seven results and videos](docs/NEW-LAYOUTS.md) are reported separately.
+### Paths for the three main comparisons
+
+These plots belong only to **Simple push, Passage and Blocking obstacle** in the main baseline–final table. They do not show the additional passage layouts or the video-based failure.
+
+![Plate paths for the three main comparisons](figures/primary-paths.png)
+
+These top-down paths follow the plate centre across recorded simulation steps. Grey lines are the original baseline, green lines the final policy; the red cross is the target centre and shaded shapes mark obstacles. The axes are table coordinates in metres. Path length sums the travelled segments, including turns; it is not the straight-line start-to-finish distance.
+
+[Baseline versus final results](docs/RESULTS.md) · [New layouts and predictor tests](docs/NEW-LAYOUTS.md) · [All control metrics](results/metrics.csv)
+
+### Additional layouts
+
+I also completed **seven final-policy layout checks**, with matched original-baseline runs for the first six. The final policy succeeds at the passage at a new position and the diagonal passage, where the matched original baseline fails. The round obstacle gives near-arrival with contact; left start, forward-right start, shifted obstacle and the moved stove fail. The moved-stove case has no baseline run. [All seven results and videos](docs/NEW-LAYOUTS.md) are reported separately.
 
 Some extra tests execute five commands before looking at a new image; others execute ten. Each baseline–final pair uses the same setting. I keep these protocols separate rather than pooling their success rates.
 
@@ -113,12 +134,6 @@ Some extra tests execute five commands before looking at a new image; others exe
 **Video-based passage — fail.** The policy avoids added-obstacle contact but loses useful plate contact and does not cross the passage.
 
 [![Horizontal passage, failed final policy](media/final-horizontal-passage.gif)](media/final-horizontal-passage.mp4)
-
-![Measured plate paths](figures/primary-paths.png)
-
-These top-down paths follow the plate centre across recorded simulation steps. The axes are table coordinates in metres. Path length sums the travelled segments, including turns; it is not the straight-line start-to-finish distance.
-
-[Baseline versus final results](docs/RESULTS.md) · [New layouts and predictor tests](docs/NEW-LAYOUTS.md) · [All control metrics](results/metrics.csv)
 
 The video-based passage still fails: less obstacle contact does not mean reaching the goal. Larger starting changes also expose missed approaches. The predictor ranks four learned action proposals. In the completed passage-at-a-new-position follow-up it turns a VLA success into a failure, so I keep it as an optional negative result rather than an improvement. Better approach and contact-recovery data are future work. A [small native-task check](docs/RETENTION.md) retains the stove task and succeeds at opening a drawer; it does not establish retention of every pretrained skill.
 

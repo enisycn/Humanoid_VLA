@@ -1,26 +1,39 @@
 {
-  "created_utc": "2026-10-16T22:57:40.998908+00:00",
+  "updated_utc": "2026-10-16T23:06:49.495711+00:00",
   "viewing_only": true,
   "originals_unchanged": true,
+  "display": {
+    "width": 576,
+    "height": 324,
+    "readme_width": 288,
+    "readme_height": 162,
+    "orientation": "Landscape, portrait previews rotated counterclockwise for viewing only",
+    "full_frame_retained": true,
+    "geometric_stretch": false,
+    "fresh_asset_paths": "Avoid stale GitHub image cache"
+  },
   "cuts": [
     {
       "source": "recordings/normal-pushes.mov",
       "start_s": 96,
       "end_s": 105.35,
-      "preview": "media/recorded-push.gif"
+      "preview": "media/phone-push-landscape.gif",
+      "video": "media/phone-push-landscape.mp4"
     },
     {
       "source": "recordings/single-obstacle.mov",
       "start_s": 10,
       "end_s": 20,
-      "preview": "media/recorded-obstacle.gif"
+      "preview": "media/phone-obstacle-landscape.gif",
+      "video": "media/phone-obstacle-landscape.mp4"
     },
     {
       "source": "recordings/passages.mov",
-      "start_s": 27,
-      "end_s": 37,
-      "preview": "media/recorded-passage.gif"
+      "start_s": 76,
+      "end_s": 83,
+      "preview": "media/phone-passage-landscape.gif",
+      "video": "media/phone-passage-landscape.mp4"
     }
   ],
-  "display": "Same 448x252 landscape canvas; portrait previews rotated for display only. Full frame retained, no geometric stretch."
+  "passage_selection": "76\u201383 seconds; full source reviewed each second. Single-arm push; no head visible."
 }
