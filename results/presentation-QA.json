@@ -6,9 +6,10 @@
   "decoded_phone_video_frames": {
     "phone-push-landscape": 281,
     "phone-obstacle-landscape": 300,
-    "phone-passage-landscape": 210
+    "phone-passage-landscape": 210,
+    "phone-passage-complete": 555
   },
-  "passage_clip": "76\u201383s, visually reviewed, no head visible",
+  "passage_clip": "75.5\u201394s, full recorded push, release and stationary finish; no head visible",
   "primary_plot_scope": "Before additional layouts; only the three primary comparisons",
   "main_success": "Original0/3, final3/3",
   "seven_layouts": "13completed rows, 6pairs+final-only stove; final2clean successes",
@@ -37,5 +38,35 @@
     "VLA_success": true,
     "VLA_plus_predictor_success": false,
     "side_by_side_video_frames_decoded": 461
+  },
+  "last_preview_check_utc": "2026-10-16T23:15:47.298632+00:00",
+  "current_passage_preview": {
+    "source": "recordings/passages.mov",
+    "start_s": 75.5,
+    "end_s": 94.0,
+    "decoded_video_frames": 555,
+    "gif_frames": 74,
+    "size": [
+      576,
+      324
+    ],
+    "readme_size": [
+      240,
+      135
+    ],
+    "full_recorded_finish_included": true,
+    "original_recording_unchanged": true,
+    "gif_fps": 4,
+    "gif_duration_s": 18.5,
+    "visually_reviewed_frames_s": [
+      75.5,
+      78,
+      81,
+      84,
+      87,
+      90,
+      92,
+      93.5
+    ]
   }
 }

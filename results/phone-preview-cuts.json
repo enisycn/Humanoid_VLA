@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-16T23:06:49.495711+00:00",
+  "updated_utc": "2026-10-16T23:14:52.208912+00:00",
   "viewing_only": true,
   "originals_unchanged": true,
   "display": {
@@ -29,11 +29,13 @@
     },
     {
       "source": "recordings/passages.mov",
-      "start_s": 76,
-      "end_s": 83,
-      "preview": "media/phone-passage-landscape.gif",
-      "video": "media/phone-passage-landscape.mp4"
+      "start_s": 75.5,
+      "end_s": 94.0,
+      "preview": "media/phone-passage-complete.gif",
+      "video": "media/phone-passage-complete.mp4"
     }
   ],
-  "passage_selection": "76\u201383 seconds; full source reviewed each second. Single-arm push; no head visible."
+  "passage_selection": "75.5\u201394 seconds: approach/push, finish in front of stove marker, release and stationary ending; reset and return motion excluded. No head visible. Previous 76\u201383 second preview ended before the finish.",
+  "passage_preview_fps": 4,
+  "passage_preview_duration_s": 18.5
 }

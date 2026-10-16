@@ -23,9 +23,11 @@ I removed resets and the return-to-start motion, then mapped measured paths into
   <tr>
     <td width="33%" align="center" valign="top"><a href="media/phone-push-landscape.mp4"><img src="media/phone-push-landscape.gif" width="240" height="135" alt="Ordinary push"></a></td>
     <td width="33%" align="center" valign="top"><a href="media/phone-obstacle-landscape.mp4"><img src="media/phone-obstacle-landscape.gif" width="240" height="135" alt="Obstacle recording"></a></td>
-    <td width="33%" align="center" valign="top"><a href="media/phone-passage-landscape.mp4"><img src="media/phone-passage-landscape.gif" width="240" height="135" alt="Passage recording"></a></td>
+    <td width="33%" align="center" valign="top"><a href="media/phone-passage-complete.mp4"><img src="media/phone-passage-complete.gif" width="240" height="135" alt="Passage recording"></a></td>
   </tr>
 </table>
+
+The passage clip shows the full push and the plate resting in front of the stove marker.
 
 I varied the plate start and push direction instead of repeating one route. I also recorded deliberate contact loss and another approach, to provide examples of recovery. Obstacle and passage recordings add route changes while keeping the same goal. These are the intended skills in the data, not a claim that the final policy learned every variation.
 
