@@ -1,0 +1,398 @@
+{
+  "schema": "three_scenario_native_plate_v1",
+  "language": "push the plate to the front of the stove",
+  "task": "push_the_plate_to_the_front_of_the_stove",
+  "selection": "Predeclared geometry/clearance, not policy outcomes. Test translation [-10,-15]mm is fixed before any new policy evaluation.",
+  "scene": "native Panda, cameras, OSC, plate, table and stove; original five clutter objects parked at reset; optional fixed box obstacles",
+  "native_goal": {
+    "site": "main_table_stove_front_region",
+    "xyz_m": [
+      -0.05,
+      0.21,
+      0.895
+    ],
+    "half_size_m": [
+      0.04,
+      0.04,
+      0.007
+    ],
+    "predicate": "unmodified native On"
+  },
+  "protocol": {
+    "policy_commands_max": 300,
+    "hold_commands": 10,
+    "control_frequency_hz": 20,
+    "stop": "first native On OR 300-policy horizon, then ten zero-six-axis holds retaining last gripper command",
+    "primary_success": "native On at stop AND all ten hold boundaries",
+    "scenario_success": "primary_success AND zero plate/robot added-obstacle pair samples AND required passage gate crossed",
+    "drift": "maximum3D displacement from stop over all ten holds",
+    "contact_count": "all physics-substep contact pair samples, not distinct collision events",
+    "lift": "maximum plate-body centre Z relative to reset, all physics substeps; diagnostic, no global lift gate",
+    "actor_inputs": "native official RGB2+own8+original language only",
+    "native_action_dim": 7,
+    "action_clip": "native [-1,1] only",
+    "robot_preposition": false,
+    "actor_object_truth": false,
+    "visual_marker": false
+  },
+  "geometry": {
+    "plate_box_corner_radius_from_historical_record_m": 0.07316301610151348,
+    "conservative_plate_planar_radius_m": 0.075,
+    "nominal_gripper_planar_halfwidth_m": 0.085,
+    "gripper_proxy_is_not_dynamic_feasibility": true,
+    "obstacle_full_size_m": [
+      0.05,
+      0.04,
+      0.04
+    ],
+    "obstacle_reference_side": "positive X",
+    "passage_clear_width_m": 0.2,
+    "passage_wall_y_interval_m": [
+      0.06,
+      0.12
+    ],
+    "passage_nominal_plate_diameter_m": 0.15,
+    "passage_total_nominal_plate_side_clearance_m": 0.05,
+    "table_surface_z_m": 0.9,
+    "all_added_boxes_bottom_z_m": 0.9
+  },
+  "cases": [
+    {
+      "episode_id": "open-train-0",
+      "scenario_id": "open",
+      "split": "train_development",
+      "init_index": 0,
+      "seed": 1020701,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": null,
+      "expected_start_xy_m": [
+        0.051859242903970884,
+        -0.02849312292867993
+      ],
+      "walls": [],
+      "reference_centerline_xy_m": [
+        [
+          0.051859242903970884,
+          -0.02849312292867993
+        ],
+        [
+          -0.05,
+          0.21
+        ]
+      ],
+      "passage_gate": null
+    },
+    {
+      "episode_id": "open-test-0",
+      "scenario_id": "open",
+      "split": "reserved_paired_test",
+      "init_index": 0,
+      "seed": 1020701,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        0.04185924290397088,
+        -0.043493122928679934
+      ],
+      "expected_start_xy_m": [
+        0.04185924290397088,
+        -0.043493122928679934
+      ],
+      "walls": [],
+      "reference_centerline_xy_m": [
+        [
+          0.04185924290397088,
+          -0.043493122928679934
+        ],
+        [
+          -0.05,
+          0.21
+        ]
+      ],
+      "passage_gate": null
+    },
+    {
+      "episode_id": "obstacle-train-0",
+      "scenario_id": "obstacle",
+      "split": "train_development",
+      "init_index": 0,
+      "seed": 1020701,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": null,
+      "expected_start_xy_m": [
+        0.051859242903970884,
+        -0.02849312292867993
+      ],
+      "walls": [
+        {
+          "name": "detour_block",
+          "center_xyz_m": [
+            0.005,
+            0.09,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.025,
+            0.02,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        }
+      ],
+      "reference_centerline_xy_m": [
+        [
+          0.051859242903970884,
+          -0.02849312292867993
+        ],
+        [
+          0.17,
+          -0.02849312292867993
+        ],
+        [
+          0.17,
+          0.2
+        ],
+        [
+          -0.05,
+          0.21
+        ]
+      ],
+      "passage_gate": null
+    },
+    {
+      "episode_id": "obstacle-test-0",
+      "scenario_id": "obstacle",
+      "split": "reserved_paired_test",
+      "init_index": 0,
+      "seed": 1020701,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        0.04185924290397088,
+        -0.043493122928679934
+      ],
+      "expected_start_xy_m": [
+        0.04185924290397088,
+        -0.043493122928679934
+      ],
+      "walls": [
+        {
+          "name": "detour_block",
+          "center_xyz_m": [
+            0.005,
+            0.09,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.025,
+            0.02,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        }
+      ],
+      "reference_centerline_xy_m": [
+        [
+          0.04185924290397088,
+          -0.043493122928679934
+        ],
+        [
+          0.17,
+          -0.043493122928679934
+        ],
+        [
+          0.17,
+          0.2
+        ],
+        [
+          -0.05,
+          0.21
+        ]
+      ],
+      "passage_gate": null
+    },
+    {
+      "episode_id": "passage-train-0",
+      "scenario_id": "passage",
+      "split": "train_development",
+      "init_index": 0,
+      "seed": 1020701,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": null,
+      "expected_start_xy_m": [
+        0.051859242903970884,
+        -0.02849312292867993
+      ],
+      "walls": [
+        {
+          "name": "passage_left",
+          "center_xyz_m": [
+            -0.16,
+            0.09,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        },
+        {
+          "name": "passage_right",
+          "center_xyz_m": [
+            0.06,
+            0.09,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        }
+      ],
+      "reference_centerline_xy_m": [
+        [
+          0.051859242903970884,
+          -0.02849312292867993
+        ],
+        [
+          -0.05,
+          -0.04
+        ],
+        [
+          -0.05,
+          0.21
+        ]
+      ],
+      "passage_gate": {
+        "y_m": 0.09,
+        "plate_centre_x_interval_m": [
+          -0.075,
+          -0.025
+        ],
+        "maximum_height_change_m": 0.02
+      }
+    },
+    {
+      "episode_id": "passage-test-0",
+      "scenario_id": "passage",
+      "split": "reserved_paired_test",
+      "init_index": 0,
+      "seed": 1020701,
+      "model_seed": 0,
+      "language": "push the plate to the front of the stove",
+      "plate_start_xy_m": [
+        0.04185924290397088,
+        -0.043493122928679934
+      ],
+      "expected_start_xy_m": [
+        0.04185924290397088,
+        -0.043493122928679934
+      ],
+      "walls": [
+        {
+          "name": "passage_left",
+          "center_xyz_m": [
+            -0.16,
+            0.09,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        },
+        {
+          "name": "passage_right",
+          "center_xyz_m": [
+            0.06,
+            0.09,
+            0.92
+          ],
+          "half_size_xyz_m": [
+            0.01,
+            0.03,
+            0.02
+          ],
+          "rgba": [
+            0.12,
+            0.25,
+            0.85,
+            1.0
+          ]
+        }
+      ],
+      "reference_centerline_xy_m": [
+        [
+          0.04185924290397088,
+          -0.043493122928679934
+        ],
+        [
+          -0.05,
+          -0.04
+        ],
+        [
+          -0.05,
+          0.21
+        ]
+      ],
+      "passage_gate": {
+        "y_m": 0.09,
+        "plate_centre_x_interval_m": [
+          -0.075,
+          -0.025
+        ],
+        "maximum_height_change_m": 0.02
+      }
+    }
+  ],
+  "split_rule": "Run only train_development geometry/model rollouts first. Freeze final methods/data/parameters before reserved paired tests; no held-out success from training-start results.",
+  "required_record_fields": [
+    "initial RGB2, own8, qpos, qvel, original/native XML, setup audit, source hashes",
+    "all RGB2+own8 before each actual policy and hold command",
+    "proposed base action, residual or selected requested action, actually issued native clipped seven-vector",
+    "own8 and score sample after every actual command",
+    "simulation before/after times and monotonic observation/query/step wall times",
+    "every native success boundary, all ten holds, substep contacts, contact-loss/recontact indices",
+    "full raw MP4 and trace, successes and failures, incomplete traces if execution fails"
+  ],
+  "limits": [
+    "custom scene study, not official LIBERO benchmark score",
+    "geometry preflight is not dynamic feasibility",
+    "one shifted object pose per scenario is a small paired test, not population/generalization evidence",
+    "all current data synthetic; no personal human footage"
+  ]
+}

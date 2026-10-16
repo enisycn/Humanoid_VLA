@@ -1,0 +1,2366 @@
+{
+  "schema": "complete_panda_demonstrations_v2",
+  "status": "human_video_review_before_training",
+  "sources": [
+    {
+      "key": "simple-centre",
+      "title": "Simple push: recorded motion",
+      "group": "Simple push",
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-original-comparison-20261016-v1/retarget-centre/episode-00",
+      "origin": "Personal marker video",
+      "source": null,
+      "include_ranges": null,
+      "case": {
+        "episode_id": "personal-ordinary",
+        "scenario_id": "open",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026221600,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.013962848038624479,
+          -0.017473683331323153
+        ],
+        "expected_start_xy_m": [
+          0.013962848038624479,
+          -0.017473683331323153
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0,
+        "target_object": "plate_1"
+      },
+      "checks": {
+        "goal_and_ten_holds": true,
+        "collision_free": true,
+        "route": true,
+        "drift": true,
+        "lift": true,
+        "no_unwanted_contact": true
+      },
+      "result": {
+        "native_goal_success": false,
+        "primary_success": false,
+        "scenario_success": false,
+        "route_complete": true,
+        "added_obstacle_collision_free": true,
+        "passage_crossings": [],
+        "centre_error_mm": 47.29162008943699,
+        "region_distance_mm": 6.669480278903989,
+        "stopped_3d_drift_mm": 0.029500373670861595,
+        "final_plate_xyz": [
+          -0.042354286090845995,
+          0.163330519721096,
+          0.9024886002291986
+        ],
+        "native_success_at_stop": false,
+        "native_success_all_ten_holds": false,
+        "external_hold_commands": 10,
+        "object_truth_scoring_only": true,
+        "allowed_tool_plate_samples": 9096,
+        "allowed_finger_table_samples": 0,
+        "unwanted_contact_samples": 0,
+        "plate_obstacle_contact_samples": 0,
+        "robot_obstacle_contact_samples": 0,
+        "maximum_lift_mm": 1.732289481306326,
+        "obstacle_contact_pairs": {},
+        "contact_intervals_inclusive": [
+          [
+            90,
+            94
+          ],
+          [
+            97,
+            306
+          ]
+        ],
+        "contact_loss_recontact_events": [
+          {
+            "kind": "first_contact",
+            "command_index": 90,
+            "simulation_time_s": 5.049999999999666
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 95,
+            "simulation_time_s": 5.299999999999638
+          },
+          {
+            "kind": "recontact",
+            "command_index": 97,
+            "simulation_time_s": 5.399999999999627
+          }
+        ],
+        "contact_count_definition": "all physics-substep pair samples, not distinct collisions",
+        "contact_gap_definition": "a policy command without any gripper-plate contact after a command with contact",
+        "passage_scoring_rule": "actual_inner_face_crossing_and_all_substep_contacts",
+        "canonical_declared_gate_route_complete": true,
+        "canonical_declared_gate_crossings": [],
+        "actual_gap_interval_x_m": null,
+        "geometry_used_only_for_reward_and_scoring": true
+      },
+      "full_video_reaches_goal": true,
+      "policy_commands": 307,
+      "training_ranges_half_open": [
+        [
+          0,
+          307
+        ]
+      ],
+      "selected_labels": 307,
+      "excluded_labels": 0,
+      "minimum_table_support_mm": -1.0255327493583488,
+      "whole_episode_depth_gate_passed": true,
+      "depth_violation_commands": [],
+      "all_selected_labels_depth_qualified": true,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-original-comparison-20261016-v1/retarget-centre/episode-00/actual-native-trace.npz",
+        "sha256": "35906e95af26dfd28c949e3ba07f9cd9fa15546f23960a3a20c7080f127ed596"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-original-comparison-20261016-v1/retarget-centre/episode-00/actual-native-trace.json",
+        "sha256": "ce7c98785303365535eec47f265bc85422f2aec726decea4cbbdbc2c0f3538c9"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-original-comparison-20261016-v1/retarget-centre/episode-00/issued-provenance.json",
+        "sha256": "2de90953cba8628f9f465db60928246c8d4e5ce5e74dda79f4e66c5262a79fc7"
+      },
+      "physics": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-original-comparison-20261016-v1/retarget-centre/episode-00/contact-physical-audit.npz",
+        "sha256": "f69ea9b2ca23c400907bc7615ce0f8b9858e7f156372faccabc897e106c96167"
+      },
+      "gate_QA": {
+        "applicable": false,
+        "passed": true
+      },
+      "maximum_FP32_label_conversion_error": 0.0,
+      "student_inputs": [
+        "RGB2",
+        "own8",
+        "language"
+      ],
+      "no_new_model_success_claim": true,
+      "teacher_uses_object_truth_for_completion": false,
+      "object_truth_is_never_a_student_input": true,
+      "issued_action_sha256": "7e39abf67d8595cd286185bb83d1c12d2bb120b1d382f01ed86480dff49491dc"
+    },
+    {
+      "key": "simple-left",
+      "title": "Simple push: left start",
+      "group": "Simple push",
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-last-start-generalization-20261016-v1/source/left-front/case-00-attempt-1",
+      "origin": "Existing simulation marker reference; not a new phone-video retarget",
+      "source": null,
+      "include_ranges": null,
+      "case": {
+        "episode_id": "last-start-TRAIN-left-front",
+        "scenario_id": "open",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026191600,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          -0.105,
+          0.025
+        ],
+        "expected_start_xy_m": [
+          -0.105,
+          0.025
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0,
+        "target_object": "plate_1"
+      },
+      "checks": {
+        "goal_and_ten_holds": true,
+        "collision_free": true,
+        "route": true,
+        "drift": true,
+        "lift": true,
+        "no_unwanted_contact": true
+      },
+      "result": {
+        "native_goal_success": true,
+        "primary_success": true,
+        "scenario_success": true,
+        "route_complete": true,
+        "added_obstacle_collision_free": true,
+        "passage_crossings": [],
+        "centre_error_mm": 38.28876255219735,
+        "region_distance_mm": 0.0,
+        "stopped_3d_drift_mm": 0.0,
+        "final_plate_xyz": [
+          -0.021290196272696606,
+          0.1846666917336431,
+          0.902506338529415
+        ],
+        "native_success_at_stop": true,
+        "native_success_all_ten_holds": true,
+        "external_hold_commands": 10,
+        "object_truth_scoring_only": true,
+        "allowed_tool_plate_samples": 2990,
+        "allowed_finger_table_samples": 82,
+        "unwanted_contact_samples": 0,
+        "plate_obstacle_contact_samples": 0,
+        "robot_obstacle_contact_samples": 0,
+        "maximum_lift_mm": 14.162588630617368,
+        "obstacle_contact_pairs": {},
+        "contact_intervals_inclusive": [
+          [
+            90,
+            185
+          ]
+        ],
+        "contact_loss_recontact_events": [
+          {
+            "kind": "first_contact",
+            "command_index": 90,
+            "simulation_time_s": 5.049999999999666
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 186,
+            "simulation_time_s": 9.849999999999959
+          }
+        ],
+        "contact_count_definition": "all physics-substep pair samples, not distinct collisions",
+        "contact_gap_definition": "a policy command without any gripper-plate contact after a command with contact",
+        "passage_scoring_rule": "actual_inner_face_crossing_and_all_substep_contacts",
+        "canonical_declared_gate_route_complete": true,
+        "canonical_declared_gate_crossings": [],
+        "actual_gap_interval_x_m": null,
+        "geometry_used_only_for_reward_and_scoring": true
+      },
+      "full_video_reaches_goal": true,
+      "policy_commands": 207,
+      "training_ranges_half_open": [
+        [
+          0,
+          207
+        ]
+      ],
+      "selected_labels": 207,
+      "excluded_labels": 0,
+      "minimum_table_support_mm": -1.2673158656499872,
+      "whole_episode_depth_gate_passed": true,
+      "depth_violation_commands": [],
+      "all_selected_labels_depth_qualified": true,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-last-start-generalization-20261016-v1/source/left-front/case-00-attempt-1/actual-native-trace.npz",
+        "sha256": "af236975a6a2b8448c1c3afa24db00b69d9e8c634e198d130ad924c733990130"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-last-start-generalization-20261016-v1/source/left-front/case-00-attempt-1/actual-native-trace.json",
+        "sha256": "4b4c17f83306fa24dd9c7986154a9b398fa2eda4f6e8ee7a2ac11530d842cff9"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-last-start-generalization-20261016-v1/source/left-front/case-00-attempt-1/issued-provenance.json",
+        "sha256": "5250c3d2991b6b2202257051f8d86dbed1b2fd7327d9310b71c0f9982fc29b80"
+      },
+      "physics": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-last-start-generalization-20261016-v1/source/left-front/case-00-attempt-1/video-contact-alignment.npz",
+        "sha256": "94ddf4a86f2127058a801e6b558768d80d1cf6f6a74a8efa966c5461bd594d21"
+      },
+      "gate_QA": {
+        "applicable": false,
+        "passed": true
+      },
+      "maximum_FP32_label_conversion_error": 0.0,
+      "student_inputs": [
+        "RGB2",
+        "own8",
+        "language"
+      ],
+      "no_new_model_success_claim": true,
+      "teacher_uses_object_truth_for_completion": false,
+      "object_truth_is_never_a_student_input": true,
+      "issued_action_sha256": "e10f69cb8fc6db66433e4749ec6700356329c1c67a246b76169f8e73ebcf679a"
+    },
+    {
+      "key": "simple-right",
+      "title": "Simple push: right start",
+      "group": "Simple push",
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-last-start-generalization-20261016-v1/source/right-front-v2/case-00-attempt-1",
+      "origin": "Existing simulation marker reference; not a new phone-video retarget",
+      "source": null,
+      "include_ranges": null,
+      "case": {
+        "episode_id": "last-start-TRAIN-right-front-video-v2",
+        "scenario_id": "open",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026191601,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.075,
+          0.015
+        ],
+        "expected_start_xy_m": [
+          0.075,
+          0.015
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0,
+        "target_object": "plate_1"
+      },
+      "checks": {
+        "goal_and_ten_holds": true,
+        "collision_free": true,
+        "route": true,
+        "drift": true,
+        "lift": true,
+        "no_unwanted_contact": true
+      },
+      "result": {
+        "native_goal_success": true,
+        "primary_success": true,
+        "scenario_success": true,
+        "route_complete": true,
+        "added_obstacle_collision_free": true,
+        "passage_crossings": [],
+        "centre_error_mm": 31.99145765933481,
+        "region_distance_mm": 0.0,
+        "stopped_3d_drift_mm": 0.012668236362654262,
+        "final_plate_xyz": [
+          -0.03218844244433176,
+          0.1834255427033753,
+          0.9024798186228449
+        ],
+        "native_success_at_stop": true,
+        "native_success_all_ten_holds": true,
+        "external_hold_commands": 10,
+        "object_truth_scoring_only": true,
+        "allowed_tool_plate_samples": 7993,
+        "allowed_finger_table_samples": 192,
+        "unwanted_contact_samples": 0,
+        "plate_obstacle_contact_samples": 0,
+        "robot_obstacle_contact_samples": 0,
+        "maximum_lift_mm": 13.518151079354833,
+        "obstacle_contact_pairs": {},
+        "contact_intervals_inclusive": [
+          [
+            148,
+            148
+          ],
+          [
+            158,
+            185
+          ],
+          [
+            190,
+            315
+          ]
+        ],
+        "contact_loss_recontact_events": [
+          {
+            "kind": "first_contact",
+            "command_index": 148,
+            "simulation_time_s": 7.9499999999993465
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 149,
+            "simulation_time_s": 7.999999999999341
+          },
+          {
+            "kind": "recontact",
+            "command_index": 158,
+            "simulation_time_s": 8.449999999999491
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 186,
+            "simulation_time_s": 9.849999999999959
+          },
+          {
+            "kind": "recontact",
+            "command_index": 190,
+            "simulation_time_s": 10.050000000000026
+          }
+        ],
+        "contact_count_definition": "all physics-substep pair samples, not distinct collisions",
+        "contact_gap_definition": "a policy command without any gripper-plate contact after a command with contact",
+        "passage_scoring_rule": "actual_inner_face_crossing_and_all_substep_contacts",
+        "canonical_declared_gate_route_complete": true,
+        "canonical_declared_gate_crossings": [],
+        "actual_gap_interval_x_m": null,
+        "geometry_used_only_for_reward_and_scoring": true
+      },
+      "full_video_reaches_goal": true,
+      "policy_commands": 316,
+      "training_ranges_half_open": [
+        [
+          0,
+          316
+        ]
+      ],
+      "selected_labels": 316,
+      "excluded_labels": 0,
+      "minimum_table_support_mm": -2.3393955822974544,
+      "whole_episode_depth_gate_passed": true,
+      "depth_violation_commands": [],
+      "all_selected_labels_depth_qualified": true,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-last-start-generalization-20261016-v1/source/right-front-v2/case-00-attempt-1/actual-native-trace.npz",
+        "sha256": "bbd40d1f0413436b27b03569d10955684317e6235caee26e950abd4d79f5b301"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-last-start-generalization-20261016-v1/source/right-front-v2/case-00-attempt-1/actual-native-trace.json",
+        "sha256": "370ee37e0c292dd4d5b97864d65433aea37166f7caec41addc6ebda8b5c80f6b"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-last-start-generalization-20261016-v1/source/right-front-v2/case-00-attempt-1/issued-provenance.json",
+        "sha256": "914f5644bc862a163b8f1b3192ee2fd53f948be5f6bb0f5d2820b19202beffbd"
+      },
+      "physics": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-last-start-generalization-20261016-v1/source/right-front-v2/case-00-attempt-1/video-contact-alignment.npz",
+        "sha256": "d63ca60361532e6e0efcfa4d324e2d2fa3d528cafc1b33a841678f227e5582cd"
+      },
+      "gate_QA": {
+        "applicable": false,
+        "passed": true
+      },
+      "maximum_FP32_label_conversion_error": 0.0,
+      "student_inputs": [
+        "RGB2",
+        "own8",
+        "language"
+      ],
+      "no_new_model_success_claim": true,
+      "teacher_uses_object_truth_for_completion": false,
+      "object_truth_is_never_a_student_input": true,
+      "issued_action_sha256": "e9fb4731eb59e57fbca4e0e165404d52f837962659ce31cb02d805eab4eeec7e"
+    },
+    {
+      "key": "obstacle-right",
+      "title": "Obstacle: right route",
+      "group": "Obstacle",
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-complete-replay-demonstrations-20261016-v1/episode-00",
+      "origin": "Simulation replay with an added obstacle",
+      "source": null,
+      "include_ranges": null,
+      "case": {
+        "episode_id": "full-data-obstacle-1",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.09,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.012,
+              0.095,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "checks": {
+        "goal_and_ten_holds": true,
+        "collision_free": true,
+        "route": true,
+        "drift": true,
+        "lift": true,
+        "no_unwanted_contact": true
+      },
+      "result": {
+        "native_goal_success": false,
+        "primary_success": false,
+        "scenario_success": false,
+        "route_complete": true,
+        "added_obstacle_collision_free": true,
+        "passage_crossings": [],
+        "centre_error_mm": 45.09683415070904,
+        "region_distance_mm": 3.464990231713441,
+        "stopped_3d_drift_mm": 1.408648118959165,
+        "final_plate_xyz": [
+          -0.006535009768286567,
+          0.22202160865165776,
+          0.9031604648237873
+        ],
+        "native_success_at_stop": false,
+        "native_success_all_ten_holds": false,
+        "external_hold_commands": 10,
+        "object_truth_scoring_only": true,
+        "allowed_tool_plate_samples": 18510,
+        "allowed_finger_table_samples": 130,
+        "unwanted_contact_samples": 0,
+        "plate_obstacle_contact_samples": 0,
+        "robot_obstacle_contact_samples": 0,
+        "maximum_lift_mm": 4.1800034234498185,
+        "obstacle_contact_pairs": {},
+        "contact_intervals_inclusive": [
+          [
+            41,
+            78
+          ],
+          [
+            81,
+            83
+          ],
+          [
+            86,
+            174
+          ],
+          [
+            176,
+            190
+          ],
+          [
+            193,
+            206
+          ],
+          [
+            208,
+            299
+          ]
+        ],
+        "contact_loss_recontact_events": [
+          {
+            "kind": "first_contact",
+            "command_index": 41,
+            "simulation_time_s": 2.5999999999999353
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 79,
+            "simulation_time_s": 4.499999999999726
+          },
+          {
+            "kind": "recontact",
+            "command_index": 81,
+            "simulation_time_s": 4.599999999999715
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 84,
+            "simulation_time_s": 4.749999999999699
+          },
+          {
+            "kind": "recontact",
+            "command_index": 86,
+            "simulation_time_s": 4.849999999999688
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 175,
+            "simulation_time_s": 9.299999999999775
+          },
+          {
+            "kind": "recontact",
+            "command_index": 176,
+            "simulation_time_s": 9.349999999999792
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 191,
+            "simulation_time_s": 10.100000000000042
+          },
+          {
+            "kind": "recontact",
+            "command_index": 193,
+            "simulation_time_s": 10.200000000000076
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 207,
+            "simulation_time_s": 10.90000000000031
+          },
+          {
+            "kind": "recontact",
+            "command_index": 208,
+            "simulation_time_s": 10.950000000000326
+          }
+        ],
+        "contact_count_definition": "all physics-substep pair samples, not distinct collisions",
+        "contact_gap_definition": "a policy command without any gripper-plate contact after a command with contact",
+        "passage_scoring_rule": "actual_inner_face_crossing_and_all_substep_contacts",
+        "canonical_declared_gate_route_complete": true,
+        "canonical_declared_gate_crossings": [],
+        "actual_gap_interval_x_m": null,
+        "geometry_used_only_for_reward_and_scoring": true
+      },
+      "full_video_reaches_goal": true,
+      "policy_commands": 300,
+      "training_ranges_half_open": [
+        [
+          0,
+          41
+        ],
+        [
+          55,
+          71
+        ],
+        [
+          76,
+          300
+        ]
+      ],
+      "selected_labels": 281,
+      "excluded_labels": 19,
+      "minimum_table_support_mm": -5.663146990256607,
+      "whole_episode_depth_gate_passed": false,
+      "depth_violation_commands": [
+        42,
+        43,
+        44,
+        45,
+        50,
+        51,
+        52,
+        53,
+        72,
+        73,
+        74
+      ],
+      "all_selected_labels_depth_qualified": true,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-complete-replay-demonstrations-20261016-v1/episode-00/actual-native-trace.npz",
+        "sha256": "c7535ee73612b4a9adb9de810507ac450b9a376c7747f28f582bf6d0dfed786b"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-complete-replay-demonstrations-20261016-v1/episode-00/actual-native-trace.json",
+        "sha256": "d4b7e102891e58aabee8c7063dd699154394f80fe133dc36298a1512906a2dbd"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-complete-replay-demonstrations-20261016-v1/episode-00/issued-provenance.json",
+        "sha256": "6d92f69aa5374730df2cbadcd3af22d2faebe4805d82615c8333b5a596416cb1"
+      },
+      "physics": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-complete-replay-demonstrations-20261016-v1/episode-00/contact-physical-audit.npz",
+        "sha256": "d9711cc26ba08b2589b6d49c3c66b37233fb2e9b03e5f31bc9488405a692beb1"
+      },
+      "gate_QA": {
+        "applicable": false,
+        "passed": true
+      },
+      "maximum_FP32_label_conversion_error": 0.0,
+      "student_inputs": [
+        "RGB2",
+        "own8",
+        "language"
+      ],
+      "no_new_model_success_claim": true,
+      "teacher_uses_object_truth_for_completion": false,
+      "object_truth_is_never_a_student_input": true,
+      "issued_action_sha256": "f58651eb64f9545fd573217528bd9b3e827be12d76e786b034ceca92eefe2aff"
+    },
+    {
+      "key": "obstacle-left",
+      "title": "Obstacle: left route",
+      "group": "Obstacle",
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-plate-blocked-repair-20261016-v1/retarget-v3/case-00-attempt-1",
+      "origin": "Existing simulation marker reference; different motion and obstacle object",
+      "source": null,
+      "include_ranges": null,
+      "case": {
+        "episode_id": "plate-blocked-repair-TRAIN-centerdrag-left",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026170000,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.015,
+          -0.1
+        ],
+        "expected_start_xy_m": [
+          0.015,
+          -0.1
+        ],
+        "walls": [
+          {
+            "name": "repair_right_post",
+            "center_xyz_m": [
+              0.075,
+              0.07,
+              0.909136
+            ],
+            "half_size_xyz_m": [
+              0.04060800000000002,
+              0.021336000000000004,
+              0.008936000000000055
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ],
+            "native_asset": "cream_cheese_1",
+            "actual_initial_AABB_world_m": [
+              [
+                0.034391999999999985,
+                0.048664000000000006,
+                0.9002
+              ],
+              [
+                0.11560800000000002,
+                0.091336,
+                0.9180720000000001
+              ]
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0,
+        "target_object": "plate_1"
+      },
+      "checks": {
+        "goal_and_ten_holds": true,
+        "collision_free": true,
+        "route": true,
+        "drift": true,
+        "lift": true,
+        "no_unwanted_contact": true
+      },
+      "result": {
+        "native_goal_success": true,
+        "primary_success": true,
+        "scenario_success": true,
+        "route_complete": true,
+        "added_obstacle_collision_free": true,
+        "passage_crossings": [],
+        "centre_error_mm": 36.39260869733537,
+        "region_distance_mm": 0.0,
+        "stopped_3d_drift_mm": 0.1556077106825507,
+        "final_plate_xyz": [
+          -0.05765024460743285,
+          0.1744205716003782,
+          0.9025226288086335
+        ],
+        "native_success_at_stop": true,
+        "native_success_all_ten_holds": true,
+        "external_hold_commands": 10,
+        "object_truth_scoring_only": true,
+        "allowed_tool_plate_samples": 12855,
+        "allowed_finger_table_samples": 0,
+        "unwanted_contact_samples": 0,
+        "plate_obstacle_contact_samples": 0,
+        "robot_obstacle_contact_samples": 0,
+        "maximum_lift_mm": 0.9991014553014654,
+        "obstacle_contact_pairs": {},
+        "contact_intervals_inclusive": [
+          [
+            88,
+            409
+          ]
+        ],
+        "contact_loss_recontact_events": [
+          {
+            "kind": "first_contact",
+            "command_index": 88,
+            "simulation_time_s": 4.949999999999677
+          }
+        ],
+        "contact_count_definition": "all physics-substep pair samples, not distinct collisions",
+        "contact_gap_definition": "a policy command without any gripper-plate contact after a command with contact"
+      },
+      "full_video_reaches_goal": true,
+      "policy_commands": 410,
+      "training_ranges_half_open": [
+        [
+          0,
+          410
+        ]
+      ],
+      "selected_labels": 410,
+      "excluded_labels": 0,
+      "minimum_table_support_mm": -1.483734230107725,
+      "whole_episode_depth_gate_passed": true,
+      "depth_violation_commands": [],
+      "all_selected_labels_depth_qualified": true,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-plate-blocked-repair-20261016-v1/retarget-v3/case-00-attempt-1/actual-native-trace.npz",
+        "sha256": "93b4dfc2753fc0905b0a2e51aed58b8c511f3127a6f009daef28c8c884bbd1ab"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-plate-blocked-repair-20261016-v1/retarget-v3/case-00-attempt-1/actual-native-trace.json",
+        "sha256": "f26810c50b2c9e54b4ac88bd6895401a072f5e85bbca7261dfb72243f90124b6"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-plate-blocked-repair-20261016-v1/retarget-v3/case-00-attempt-1/issued-provenance.json",
+        "sha256": "e8ed496b238b526bc3279112eaab7e2a95b82a6311d588796070088ebce039cb"
+      },
+      "physics": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-plate-blocked-repair-20261016-v1/retarget-v3/case-00-attempt-1/video-contact-alignment.npz",
+        "sha256": "df659e2d2b3226f236c40a9267ca21ca0db91238faf9e0a1e63689a20d5f74c2"
+      },
+      "gate_QA": {
+        "applicable": false,
+        "passed": true
+      },
+      "maximum_FP32_label_conversion_error": 0.0,
+      "student_inputs": [
+        "RGB2",
+        "own8",
+        "language"
+      ],
+      "no_new_model_success_claim": true,
+      "teacher_uses_object_truth_for_completion": false,
+      "object_truth_is_never_a_student_input": true,
+      "issued_action_sha256": "c113673dc9ab1869402723e8e2e31dc3981859ac11997e9c2c83b4d1db4bfe3b"
+    },
+    {
+      "key": "obstacle-other-start",
+      "title": "Obstacle: another start, left route",
+      "group": "Obstacle",
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-distinct-obstacle-data-20261016-v1/episode-00",
+      "origin": "Fresh replay of a different existing simulation trajectory",
+      "source": null,
+      "include_ranges": null,
+      "case": {
+        "episode_id": "varied_obstacle_native_approach_v7",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100909,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.105,
+          -0.035
+        ],
+        "expected_start_xy_m": [
+          0.105,
+          -0.035
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "reference_centerline_xy_m": [
+          [
+            0.105,
+            -0.035
+          ],
+          [
+            0.105,
+            -0.09
+          ],
+          [
+            -0.12,
+            -0.09
+          ],
+          [
+            -0.12,
+            0.205
+          ],
+          [
+            -0.05,
+            0.21
+          ]
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "checks": {
+        "goal_and_ten_holds": true,
+        "collision_free": true,
+        "route": true,
+        "drift": true,
+        "lift": true,
+        "no_unwanted_contact": true
+      },
+      "result": {
+        "native_goal_success": true,
+        "primary_success": true,
+        "scenario_success": true,
+        "route_complete": true,
+        "added_obstacle_collision_free": true,
+        "passage_crossings": [],
+        "centre_error_mm": 40.229933108795294,
+        "region_distance_mm": 0.0,
+        "stopped_3d_drift_mm": 1.7459419082172543,
+        "final_plate_xyz": [
+          -0.08920621185767341,
+          0.20098221370238945,
+          0.9025063379360394
+        ],
+        "native_success_at_stop": true,
+        "native_success_all_ten_holds": true,
+        "external_hold_commands": 10,
+        "object_truth_scoring_only": true,
+        "allowed_tool_plate_samples": 15758,
+        "allowed_finger_table_samples": 2,
+        "unwanted_contact_samples": 0,
+        "plate_obstacle_contact_samples": 0,
+        "robot_obstacle_contact_samples": 0,
+        "maximum_lift_mm": 0.19410559445454112,
+        "obstacle_contact_pairs": {},
+        "contact_intervals_inclusive": [
+          [
+            45,
+            275
+          ]
+        ],
+        "contact_loss_recontact_events": [
+          {
+            "kind": "first_contact",
+            "command_index": 45,
+            "simulation_time_s": 2.7999999999999132
+          }
+        ],
+        "contact_count_definition": "all physics-substep pair samples, not distinct collisions",
+        "contact_gap_definition": "a policy command without any gripper-plate contact after a command with contact",
+        "passage_scoring_rule": "actual_inner_face_crossing_and_all_substep_contacts",
+        "canonical_declared_gate_route_complete": true,
+        "canonical_declared_gate_crossings": [],
+        "actual_gap_interval_x_m": null,
+        "geometry_used_only_for_reward_and_scoring": true
+      },
+      "full_video_reaches_goal": true,
+      "policy_commands": 276,
+      "training_ranges_half_open": [
+        [
+          0,
+          276
+        ]
+      ],
+      "selected_labels": 276,
+      "excluded_labels": 0,
+      "minimum_table_support_mm": -2.965062466818491,
+      "whole_episode_depth_gate_passed": true,
+      "depth_violation_commands": [],
+      "all_selected_labels_depth_qualified": true,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-distinct-obstacle-data-20261016-v1/episode-00/actual-native-trace.npz",
+        "sha256": "86dc270cf0e4c0b8a4248d1db4548acd6785d14b14fdf00d0ca2d99a1175a877"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-distinct-obstacle-data-20261016-v1/episode-00/actual-native-trace.json",
+        "sha256": "848f3dea24da3e500059502003e81bf353d2cdb674b3961078cf7f4e50493d90"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-distinct-obstacle-data-20261016-v1/episode-00/issued-provenance.json",
+        "sha256": "af5011d5be8e2cb0fc3fdabf73c84a6397fe00c82aea0b142e87ef703279b6cd"
+      },
+      "physics": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-distinct-obstacle-data-20261016-v1/episode-00/contact-physical-audit.npz",
+        "sha256": "be50d173b8877f3a02f8073da3d1b6c0b658ef3acded4930396139f4f31cc30c"
+      },
+      "gate_QA": {
+        "applicable": false,
+        "passed": true
+      },
+      "maximum_FP32_label_conversion_error": 2.9657030164997877e-08,
+      "student_inputs": [
+        "RGB2",
+        "own8",
+        "language"
+      ],
+      "no_new_model_success_claim": true,
+      "teacher_uses_object_truth_for_completion": false,
+      "object_truth_is_never_a_student_input": true,
+      "issued_action_sha256": "3e78e40516410ad53221ae57692ba979b327e04820007b17ac067b9ffb5e6948"
+    },
+    {
+      "key": "passage-horizontal",
+      "title": "Horizontal passage",
+      "group": "Passage",
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-passage-shared-frame-20261016-v1/passage-1",
+      "origin": "Personal plate-marker path and measured marker14/15 layout; robot contact calibration",
+      "source": null,
+      "include_ranges": null,
+      "case": {
+        "episode_id": "personal-layout-passage-1",
+        "scenario_id": "passage",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026180010,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.0692565118553151,
+          -0.06428721386423852
+        ],
+        "expected_start_xy_m": [
+          0.0692565118553151,
+          -0.06428721386423852
+        ],
+        "walls": [
+          {
+            "name": "video14_0",
+            "center_xyz_m": [
+              0.1758829865446494,
+              0.09148363535935952,
+              0.9202
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.2,
+              0.45,
+              0.75,
+              1.0
+            ]
+          },
+          {
+            "name": "video15_0",
+            "center_xyz_m": [
+              -0.06569451348651344,
+              0.08564644056225726,
+              0.9202
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.75,
+              0.3,
+              0.2,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "target_object": "plate_1",
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "checks": {
+        "goal_and_ten_holds": true,
+        "collision_free": true,
+        "route": true,
+        "drift": true,
+        "lift": true,
+        "no_unwanted_contact": true
+      },
+      "result": {
+        "native_goal_success": true,
+        "primary_success": true,
+        "scenario_success": true,
+        "route_complete": true,
+        "added_obstacle_collision_free": true,
+        "passage_crossings": [],
+        "centre_error_mm": 40.25797073336447,
+        "region_distance_mm": 0.0,
+        "stopped_3d_drift_mm": 0.007676431120865726,
+        "final_plate_xyz": [
+          -0.028359382900018517,
+          0.17605316069056767,
+          0.9025002288737984
+        ],
+        "native_success_at_stop": true,
+        "native_success_all_ten_holds": true,
+        "external_hold_commands": 10,
+        "object_truth_scoring_only": true,
+        "allowed_tool_plate_samples": 8360,
+        "allowed_finger_table_samples": 0,
+        "unwanted_contact_samples": 0,
+        "plate_obstacle_contact_samples": 0,
+        "robot_obstacle_contact_samples": 0,
+        "maximum_lift_mm": 1.2522230295893833,
+        "obstacle_contact_pairs": {},
+        "contact_intervals_inclusive": [
+          [
+            95,
+            99
+          ],
+          [
+            103,
+            284
+          ]
+        ],
+        "contact_loss_recontact_events": [
+          {
+            "kind": "first_contact",
+            "command_index": 95,
+            "simulation_time_s": 5.299999999999638
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 100,
+            "simulation_time_s": 5.549999999999611
+          },
+          {
+            "kind": "recontact",
+            "command_index": 103,
+            "simulation_time_s": 5.699999999999594
+          }
+        ],
+        "contact_count_definition": "all physics-substep pair samples, not distinct collisions",
+        "contact_gap_definition": "a policy command without any gripper-plate contact after a command with contact",
+        "passage_scoring_rule": "actual_inner_face_crossing_and_all_substep_contacts",
+        "canonical_declared_gate_route_complete": true,
+        "canonical_declared_gate_crossings": [],
+        "actual_gap_interval_x_m": null,
+        "geometry_used_only_for_reward_and_scoring": true
+      },
+      "full_video_reaches_goal": true,
+      "policy_commands": 285,
+      "training_ranges_half_open": [
+        [
+          0,
+          285
+        ]
+      ],
+      "selected_labels": 285,
+      "excluded_labels": 0,
+      "minimum_table_support_mm": -0.8182098066887855,
+      "whole_episode_depth_gate_passed": true,
+      "depth_violation_commands": [],
+      "all_selected_labels_depth_qualified": true,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-passage-shared-frame-20261016-v1/passage-1/actual-native-trace.npz",
+        "sha256": "d2e0b5166d1d662016f90b2d9653faab3cc733ab7743878b2489e2229bd1ebdf"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-passage-shared-frame-20261016-v1/passage-1/actual-native-trace.json",
+        "sha256": "cf11ebb13c21047f14876de6119c685c97ac6ff899b9a2cfeeb1ef7840add3da"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-passage-shared-frame-20261016-v1/passage-1/issued-provenance.json",
+        "sha256": "be04bd19350696c71e5a9be370a8b239941186bd08b885e5e3100501c45ac90b"
+      },
+      "physics": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-passage-shared-frame-20261016-v1/passage-1/contact-physical-audit.npz",
+        "sha256": "933872c4985a7f3fae99e4e33bd721d70a2148009832b6afc0f29d4754edb108"
+      },
+      "gate_QA": {
+        "applicable": true,
+        "passed": true,
+        "plate_radius_m": 0.073,
+        "initial_signed_distance_m": -0.15314975128927943,
+        "final_signed_distance_m": 0.08947848107021014,
+        "crossings": [
+          {
+            "command": 196,
+            "xy_m": [
+              0.052519145646506574,
+              0.08850281649109448
+            ],
+            "along_gate_m": 0.00257584249610574
+          }
+        ],
+        "normal_xy": [
+          -0.024155774201251222,
+          0.9997082067147084
+        ],
+        "gate_span_m": 0.24164801129826374,
+        "no_Y_axis_assumption": true
+      },
+      "maximum_FP32_label_conversion_error": 0.0,
+      "student_inputs": [
+        "RGB2",
+        "own8",
+        "language"
+      ],
+      "no_new_model_success_claim": true,
+      "teacher_uses_object_truth_for_completion": false,
+      "object_truth_is_never_a_student_input": true,
+      "issued_action_sha256": "a01497137d08495bf7c2dc139d105992115b40d10966704ad9edd1f769628ed2"
+    },
+    {
+      "key": "passage-diagonal",
+      "title": "Diagonal passage",
+      "group": "Passage",
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-rigid-layout-v2-20261016-v1/1/rotated-passage-2",
+      "origin": "Simulation augmentation inspired by the recorded diagonal gate; not literal hand motion",
+      "source": null,
+      "include_ranges": null,
+      "case": {
+        "episode_id": "video-inspired-passage-rotate-35.0",
+        "scenario_id": "passage",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.08891640832552387,
+          0.06271058156038281
+        ],
+        "expected_start_xy_m": [
+          0.08891640832552387,
+          0.06271058156038281
+        ],
+        "walls": [
+          {
+            "name": "passage_left",
+            "center_xyz_m": [
+              -0.07127755250966358,
+              0.04860834668670591,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ],
+            "yaw_rad": 0.6108652381980153
+          },
+          {
+            "name": "passage_right",
+            "center_xyz_m": [
+              0.1089358972339146,
+              0.17479516268393605,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ],
+            "yaw_rad": 0.6108652381980153
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "checks": {
+        "goal_and_ten_holds": true,
+        "collision_free": true,
+        "route": true,
+        "drift": true,
+        "lift": true,
+        "no_unwanted_contact": true
+      },
+      "result": {
+        "native_goal_success": false,
+        "primary_success": false,
+        "scenario_success": false,
+        "route_complete": true,
+        "added_obstacle_collision_free": true,
+        "passage_crossings": [],
+        "centre_error_mm": 40.45709880195834,
+        "region_distance_mm": 0.4513979271348889,
+        "stopped_3d_drift_mm": 0.010751024013391234,
+        "final_plate_xyz": [
+          -0.09045139792713489,
+          0.20932084669476883,
+          0.9024751901923125
+        ],
+        "native_success_at_stop": false,
+        "native_success_all_ten_holds": false,
+        "external_hold_commands": 10,
+        "object_truth_scoring_only": true,
+        "allowed_tool_plate_samples": 3799,
+        "allowed_finger_table_samples": 17,
+        "unwanted_contact_samples": 0,
+        "plate_obstacle_contact_samples": 0,
+        "robot_obstacle_contact_samples": 0,
+        "maximum_lift_mm": 0.10089949018998734,
+        "obstacle_contact_pairs": {},
+        "contact_intervals_inclusive": [
+          [
+            106,
+            167
+          ]
+        ],
+        "contact_loss_recontact_events": [
+          {
+            "kind": "first_contact",
+            "command_index": 106,
+            "simulation_time_s": 5.849999999999578
+          }
+        ],
+        "contact_count_definition": "all physics-substep pair samples, not distinct collisions",
+        "contact_gap_definition": "a policy command without any gripper-plate contact after a command with contact",
+        "passage_scoring_rule": "actual_inner_face_crossing_and_all_substep_contacts",
+        "canonical_declared_gate_route_complete": true,
+        "canonical_declared_gate_crossings": [],
+        "actual_gap_interval_x_m": null,
+        "geometry_used_only_for_reward_and_scoring": true
+      },
+      "full_video_reaches_goal": true,
+      "policy_commands": 168,
+      "training_ranges_half_open": [
+        [
+          0,
+          168
+        ]
+      ],
+      "selected_labels": 168,
+      "excluded_labels": 0,
+      "minimum_table_support_mm": -2.2172868358346642,
+      "whole_episode_depth_gate_passed": true,
+      "depth_violation_commands": [],
+      "all_selected_labels_depth_qualified": true,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-rigid-layout-v2-20261016-v1/1/rotated-passage-2/actual-native-trace.npz",
+        "sha256": "846414b84be9af1fe09f65329042f7f4dffb1943052774f70fb8eb7cea8c97fa"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-rigid-layout-v2-20261016-v1/1/rotated-passage-2/actual-native-trace.json",
+        "sha256": "f33dbf8c1c22493be125e13a07ec7a27251637f30a150ea9cd22723c212e2470"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-rigid-layout-v2-20261016-v1/1/rotated-passage-2/issued-provenance.json",
+        "sha256": "39ec94f9a1a3c836817c8e5d652fc7fe0d2bed276f00f10d7ff2fa1200c43fe5"
+      },
+      "physics": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-rigid-layout-v2-20261016-v1/1/rotated-passage-2/contact-physical-audit.npz",
+        "sha256": "bac42162e62b96a7adf38384b7abe3c4c92178c639e93e01d15c8a44ca137abf"
+      },
+      "gate_QA": {
+        "applicable": true,
+        "passed": true,
+        "plate_radius_m": 0.073,
+        "initial_signed_distance_m": -0.08033160665498992,
+        "final_signed_distance_m": 0.14264563885009837,
+        "crossings": [
+          {
+            "command": 121,
+            "xy_m": [
+              0.02795418146852691,
+              0.11809115484785548
+            ],
+            "along_gate_m": 0.01113957923931171
+          }
+        ],
+        "normal_xy": [
+          -0.5735764363510462,
+          0.8191520442889918
+        ],
+        "gate_span_m": 0.21999999999999997,
+        "no_Y_axis_assumption": true
+      },
+      "maximum_FP32_label_conversion_error": 0.0,
+      "student_inputs": [
+        "RGB2",
+        "own8",
+        "language"
+      ],
+      "no_new_model_success_claim": true,
+      "teacher_uses_object_truth_for_completion": false,
+      "object_truth_is_never_a_student_input": true,
+      "issued_action_sha256": "cb7443aed05d77aeb5677289d81381c31c50656a9f58570c5be1b561c180fa55"
+    },
+    {
+      "key": "passage-vertical",
+      "title": "Vertical passage",
+      "group": "Passage",
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-rigid-layout-v4-20261016-v1/vertical/rotated-passage-1",
+      "origin": "Simulation augmentation: gate moved and widened for robot reach; offline terminal correction",
+      "source": null,
+      "include_ranges": null,
+      "case": {
+        "episode_id": "video-inspired-passage-rotate-90.0",
+        "scenario_id": "passage",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100911,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.1503316066549899,
+          0.2393119201243235
+        ],
+        "expected_start_xy_m": [
+          0.1503316066549899,
+          0.2393119201243235
+        ],
+        "walls": [
+          {
+            "name": "passage_left",
+            "center_xyz_m": [
+              0.06999999999999999,
+              0.059999999999999984,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ],
+            "yaw_rad": 1.5707963267948966
+          },
+          {
+            "name": "passage_right",
+            "center_xyz_m": [
+              0.06999999999999999,
+              0.36,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.01,
+              0.03,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ],
+            "yaw_rad": 1.5707963267948966
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "checks": {
+        "goal_and_ten_holds": true,
+        "collision_free": true,
+        "route": true,
+        "drift": true,
+        "lift": true,
+        "no_unwanted_contact": true
+      },
+      "result": {
+        "native_goal_success": true,
+        "primary_success": true,
+        "scenario_success": true,
+        "route_complete": true,
+        "added_obstacle_collision_free": true,
+        "passage_crossings": [],
+        "centre_error_mm": 52.30360698882335,
+        "region_distance_mm": 0.0,
+        "stopped_3d_drift_mm": 0.0,
+        "final_plate_xyz": [
+          -0.012343918814683769,
+          0.17370004333602912,
+          0.902506338529415
+        ],
+        "native_success_at_stop": true,
+        "native_success_all_ten_holds": true,
+        "external_hold_commands": 10,
+        "object_truth_scoring_only": false,
+        "allowed_tool_plate_samples": 2959,
+        "allowed_finger_table_samples": 33,
+        "unwanted_contact_samples": 0,
+        "plate_obstacle_contact_samples": 0,
+        "robot_obstacle_contact_samples": 0,
+        "maximum_lift_mm": 8.483237717519575,
+        "obstacle_contact_pairs": {},
+        "contact_intervals_inclusive": [
+          [
+            129,
+            174
+          ]
+        ],
+        "contact_loss_recontact_events": [
+          {
+            "kind": "first_contact",
+            "command_index": 129,
+            "simulation_time_s": 6.999999999999451
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 175,
+            "simulation_time_s": 9.299999999999775
+          }
+        ],
+        "contact_count_definition": "all physics-substep pair samples, not distinct collisions",
+        "contact_gap_definition": "a policy command without any gripper-plate contact after a command with contact",
+        "passage_scoring_rule": "actual_inner_face_crossing_and_all_substep_contacts",
+        "canonical_declared_gate_route_complete": true,
+        "canonical_declared_gate_crossings": [],
+        "actual_gap_interval_x_m": null,
+        "geometry_used_only_for_reward_and_scoring": true,
+        "offline_teacher_uses_object_truth": true
+      },
+      "full_video_reaches_goal": true,
+      "policy_commands": 194,
+      "training_ranges_half_open": [
+        [
+          0,
+          194
+        ]
+      ],
+      "selected_labels": 194,
+      "excluded_labels": 0,
+      "minimum_table_support_mm": -1.7056763075941062,
+      "whole_episode_depth_gate_passed": true,
+      "depth_violation_commands": [],
+      "all_selected_labels_depth_qualified": true,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-rigid-layout-v4-20261016-v1/vertical/rotated-passage-1/actual-native-trace.npz",
+        "sha256": "b89167587e299a1429d7aa8bb2a8ad1ed3dfcca630766c2ee8b7afae7b89b45d"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-rigid-layout-v4-20261016-v1/vertical/rotated-passage-1/actual-native-trace.json",
+        "sha256": "768cc3dd9044dc3e78a6ecc4fa9300afd6cc800290fd4cc858dd87c58dd9ac87"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-rigid-layout-v4-20261016-v1/vertical/rotated-passage-1/issued-provenance.json",
+        "sha256": "4397fa227d221806d0043c489f1d89b3302a9e7fb46e9e21e90c16244ee22b3a"
+      },
+      "physics": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-rigid-layout-v4-20261016-v1/vertical/rotated-passage-1/contact-physical-audit.npz",
+        "sha256": "4a328043d8ea849e77544877b043d4598594e437aac4f3fbfcc60b8da70fd899"
+      },
+      "gate_QA": {
+        "applicable": true,
+        "passed": true,
+        "plate_radius_m": 0.073,
+        "initial_signed_distance_m": -0.08033160665498991,
+        "final_signed_distance_m": 0.08234391881468377,
+        "crossings": [
+          {
+            "command": 153,
+            "xy_m": [
+              0.06999999999999999,
+              0.20698364966468333
+            ],
+            "along_gate_m": -0.0030163503353166643
+          }
+        ],
+        "normal_xy": [
+          -1.0,
+          0.0
+        ],
+        "gate_span_m": 0.3,
+        "no_Y_axis_assumption": true
+      },
+      "maximum_FP32_label_conversion_error": 0.0,
+      "student_inputs": [
+        "RGB2",
+        "own8",
+        "language"
+      ],
+      "no_new_model_success_claim": true,
+      "teacher_uses_object_truth_for_completion": true,
+      "object_truth_is_never_a_student_input": true,
+      "issued_action_sha256": "93fdf373163d5c43224c2625f9c9f82b80362ae599f945bb393a02b50c3ff2eb"
+    },
+    {
+      "key": "recorded-diagonal",
+      "title": "Recorded diagonal: robot completion",
+      "group": "Other accepted data",
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-full-demonstrations-v3-20261016-v1/episode-05",
+      "origin": "Personal marker video + simulation completion",
+      "source": null,
+      "include_ranges": null,
+      "case": {
+        "episode_id": "personal-all-sections-diagonal-push",
+        "scenario_id": "open",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026241601,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.01410403177628615,
+          -0.017953708039372768
+        ],
+        "expected_start_xy_m": [
+          0.01410403177628615,
+          -0.017953708039372768
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0,
+        "target_object": "plate_1"
+      },
+      "checks": {
+        "goal_and_ten_holds": true,
+        "collision_free": true,
+        "route": true,
+        "drift": true,
+        "lift": true,
+        "no_unwanted_contact": true
+      },
+      "result": {
+        "native_goal_success": true,
+        "primary_success": true,
+        "scenario_success": true,
+        "route_complete": true,
+        "added_obstacle_collision_free": true,
+        "passage_crossings": [],
+        "centre_error_mm": 43.31010134284295,
+        "region_distance_mm": 0.0,
+        "stopped_3d_drift_mm": 0.8387997786893305,
+        "final_plate_xyz": [
+          -0.03067071907646716,
+          0.17124250037339256,
+          0.904395985758543
+        ],
+        "native_success_at_stop": true,
+        "native_success_all_ten_holds": true,
+        "external_hold_commands": 10,
+        "object_truth_scoring_only": true,
+        "allowed_tool_plate_samples": 5419,
+        "allowed_finger_table_samples": 0,
+        "unwanted_contact_samples": 0,
+        "plate_obstacle_contact_samples": 0,
+        "robot_obstacle_contact_samples": 0,
+        "maximum_lift_mm": 3.99977334356294,
+        "obstacle_contact_pairs": {},
+        "contact_intervals_inclusive": [
+          [
+            90,
+            93
+          ],
+          [
+            99,
+            206
+          ],
+          [
+            274,
+            302
+          ]
+        ],
+        "contact_loss_recontact_events": [
+          {
+            "kind": "first_contact",
+            "command_index": 90,
+            "simulation_time_s": 5.049999999999666
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 94,
+            "simulation_time_s": 5.249999999999644
+          },
+          {
+            "kind": "recontact",
+            "command_index": 99,
+            "simulation_time_s": 5.499999999999616
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 207,
+            "simulation_time_s": 10.90000000000031
+          },
+          {
+            "kind": "recontact",
+            "command_index": 274,
+            "simulation_time_s": 14.250000000001428
+          }
+        ],
+        "contact_count_definition": "all physics-substep pair samples, not distinct collisions",
+        "contact_gap_definition": "a policy command without any gripper-plate contact after a command with contact",
+        "passage_scoring_rule": "actual_inner_face_crossing_and_all_substep_contacts",
+        "canonical_declared_gate_route_complete": true,
+        "canonical_declared_gate_crossings": [],
+        "actual_gap_interval_x_m": null,
+        "geometry_used_only_for_reward_and_scoring": true
+      },
+      "full_video_reaches_goal": true,
+      "policy_commands": 303,
+      "training_ranges_half_open": [
+        [
+          0,
+          303
+        ]
+      ],
+      "selected_labels": 303,
+      "excluded_labels": 0,
+      "minimum_table_support_mm": -1.5785741773054474,
+      "whole_episode_depth_gate_passed": true,
+      "depth_violation_commands": [],
+      "all_selected_labels_depth_qualified": true,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-full-demonstrations-v3-20261016-v1/episode-05/actual-native-trace.npz",
+        "sha256": "98cccfa352d8f6ad3616ae0ed056400eb652a5517635dfd80aae95f776c8eb3f"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-full-demonstrations-v3-20261016-v1/episode-05/actual-native-trace.json",
+        "sha256": "7ecebf771fd7894a4a922ba5a450080275a89a2cd8af213bb31fb82442d8ed22"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-full-demonstrations-v3-20261016-v1/episode-05/issued-provenance.json",
+        "sha256": "a2d064858d7ee467ada88795e395fef33abe4a4cdbc2726cdac64b284aa43279"
+      },
+      "physics": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-full-demonstrations-v3-20261016-v1/episode-05/contact-physical-audit.npz",
+        "sha256": "990eead2863732a58dc77b00557a43b70ac3be2457f039cc25b576f45514c19a"
+      },
+      "gate_QA": {
+        "applicable": false,
+        "passed": true
+      },
+      "maximum_FP32_label_conversion_error": 0.0,
+      "student_inputs": [
+        "RGB2",
+        "own8",
+        "language"
+      ],
+      "no_new_model_success_claim": true,
+      "teacher_uses_object_truth_for_completion": true,
+      "object_truth_is_never_a_student_input": true,
+      "issued_action_sha256": "acfdc19c26c2e27a76db6c47a4ed30363211402e79ee93cd708215bf97b45353"
+    },
+    {
+      "key": "recorded-other-direction",
+      "title": "Other recorded push",
+      "group": "Other accepted data",
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-original-comparison-20261016-v1/retarget-centre/episode-01",
+      "origin": "Personal marker video",
+      "source": null,
+      "include_ranges": null,
+      "case": {
+        "episode_id": "personal-other-direction",
+        "scenario_id": "open",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026221602,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.02794259321521511,
+          -0.06500481693173149
+        ],
+        "expected_start_xy_m": [
+          0.02794259321521511,
+          -0.06500481693173149
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0,
+        "target_object": "plate_1"
+      },
+      "checks": {
+        "goal_and_ten_holds": true,
+        "collision_free": true,
+        "route": true,
+        "drift": true,
+        "lift": true,
+        "no_unwanted_contact": true
+      },
+      "result": {
+        "native_goal_success": true,
+        "primary_success": true,
+        "scenario_success": true,
+        "route_complete": true,
+        "added_obstacle_collision_free": true,
+        "passage_crossings": [],
+        "centre_error_mm": 40.61819677315057,
+        "region_distance_mm": 0.0,
+        "stopped_3d_drift_mm": 0.0,
+        "final_plate_xyz": [
+          -0.04069514928084525,
+          0.17046194665645986,
+          0.902506338529415
+        ],
+        "native_success_at_stop": true,
+        "native_success_all_ten_holds": true,
+        "external_hold_commands": 10,
+        "object_truth_scoring_only": true,
+        "allowed_tool_plate_samples": 9993,
+        "allowed_finger_table_samples": 0,
+        "unwanted_contact_samples": 0,
+        "plate_obstacle_contact_samples": 0,
+        "robot_obstacle_contact_samples": 0,
+        "maximum_lift_mm": 2.945354474462647,
+        "obstacle_contact_pairs": {},
+        "contact_intervals_inclusive": [
+          [
+            91,
+            95
+          ],
+          [
+            99,
+            114
+          ],
+          [
+            117,
+            255
+          ]
+        ],
+        "contact_loss_recontact_events": [
+          {
+            "kind": "first_contact",
+            "command_index": 91,
+            "simulation_time_s": 5.09999999999966
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 96,
+            "simulation_time_s": 5.349999999999633
+          },
+          {
+            "kind": "recontact",
+            "command_index": 99,
+            "simulation_time_s": 5.499999999999616
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 115,
+            "simulation_time_s": 6.299999999999528
+          },
+          {
+            "kind": "recontact",
+            "command_index": 117,
+            "simulation_time_s": 6.399999999999517
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 256,
+            "simulation_time_s": 13.350000000001128
+          }
+        ],
+        "contact_count_definition": "all physics-substep pair samples, not distinct collisions",
+        "contact_gap_definition": "a policy command without any gripper-plate contact after a command with contact",
+        "passage_scoring_rule": "actual_inner_face_crossing_and_all_substep_contacts",
+        "canonical_declared_gate_route_complete": true,
+        "canonical_declared_gate_crossings": [],
+        "actual_gap_interval_x_m": null,
+        "geometry_used_only_for_reward_and_scoring": true
+      },
+      "full_video_reaches_goal": true,
+      "policy_commands": 275,
+      "training_ranges_half_open": [
+        [
+          0,
+          275
+        ]
+      ],
+      "selected_labels": 275,
+      "excluded_labels": 0,
+      "minimum_table_support_mm": -1.5736907196322036,
+      "whole_episode_depth_gate_passed": true,
+      "depth_violation_commands": [],
+      "all_selected_labels_depth_qualified": true,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-original-comparison-20261016-v1/retarget-centre/episode-01/actual-native-trace.npz",
+        "sha256": "ac7217ce46fd7a961e91bb21ca4c8e1feda6c68f004d5b3d9a926cc831d0df14"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-original-comparison-20261016-v1/retarget-centre/episode-01/actual-native-trace.json",
+        "sha256": "77b5e06dc461e8a3cc1b2b37de1d061a6542d90c2e22d7162fdceefa14cce899"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-original-comparison-20261016-v1/retarget-centre/episode-01/issued-provenance.json",
+        "sha256": "88d96c6c78b4dfce2d980d8043efeaae030dcdfee40e2c05746e2162669f3d8d"
+      },
+      "physics": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-video-original-comparison-20261016-v1/retarget-centre/episode-01/contact-physical-audit.npz",
+        "sha256": "650d11179f33c6a8760f432264d4b7d48d38fadff3d6f74fd4e877667355df50"
+      },
+      "gate_QA": {
+        "applicable": false,
+        "passed": true
+      },
+      "maximum_FP32_label_conversion_error": 0.0,
+      "student_inputs": [
+        "RGB2",
+        "own8",
+        "language"
+      ],
+      "no_new_model_success_claim": true,
+      "teacher_uses_object_truth_for_completion": false,
+      "object_truth_is_never_a_student_input": true,
+      "issued_action_sha256": "2fdfa7763dcac228972f6c93b7ac3fe54fc670b911183efbfbbaf723eefa564d"
+    },
+    {
+      "key": "contact-again",
+      "title": "Contact again",
+      "group": "Contact again",
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-full-demonstrations-v2-20261016-v1/episode-02",
+      "origin": "Personal marker video + simulation completion",
+      "source": null,
+      "include_ranges": [
+        [
+          0,
+          147
+        ],
+        [
+          302,
+          null
+        ]
+      ],
+      "case": {
+        "episode_id": "personal-new-reapproach-first",
+        "scenario_id": "open",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026261600,
+        "model_seed": 0,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.03540136175289357,
+          -0.09036462995983813
+        ],
+        "expected_start_xy_m": [
+          0.03540136175289357,
+          -0.09036462995983813
+        ],
+        "walls": [],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0,
+        "target_object": "plate_1"
+      },
+      "checks": {
+        "goal_and_ten_holds": true,
+        "collision_free": true,
+        "route": true,
+        "drift": true,
+        "lift": true,
+        "no_unwanted_contact": true
+      },
+      "result": {
+        "native_goal_success": true,
+        "primary_success": true,
+        "scenario_success": true,
+        "route_complete": true,
+        "added_obstacle_collision_free": true,
+        "passage_crossings": [],
+        "centre_error_mm": 42.336078835782956,
+        "region_distance_mm": 0.0,
+        "stopped_3d_drift_mm": 0.05699140528485649,
+        "final_plate_xyz": [
+          -0.03386400034811612,
+          0.17085957222482062,
+          0.9069405445316531
+        ],
+        "native_success_at_stop": true,
+        "native_success_all_ten_holds": true,
+        "external_hold_commands": 10,
+        "object_truth_scoring_only": true,
+        "allowed_tool_plate_samples": 9575,
+        "allowed_finger_table_samples": 0,
+        "unwanted_contact_samples": 0,
+        "plate_obstacle_contact_samples": 0,
+        "robot_obstacle_contact_samples": 0,
+        "maximum_lift_mm": 4.447997318453689,
+        "obstacle_contact_pairs": {},
+        "contact_intervals_inclusive": [
+          [
+            93,
+            96
+          ],
+          [
+            102,
+            146
+          ],
+          [
+            544,
+            603
+          ],
+          [
+            669,
+            766
+          ]
+        ],
+        "contact_loss_recontact_events": [
+          {
+            "kind": "first_contact",
+            "command_index": 93,
+            "simulation_time_s": 5.199999999999649
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 97,
+            "simulation_time_s": 5.399999999999627
+          },
+          {
+            "kind": "recontact",
+            "command_index": 102,
+            "simulation_time_s": 5.6499999999996
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 147,
+            "simulation_time_s": 7.899999999999352
+          },
+          {
+            "kind": "recontact",
+            "command_index": 544,
+            "simulation_time_s": 27.7499999999955
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 604,
+            "simulation_time_s": 30.749999999993836
+          },
+          {
+            "kind": "recontact",
+            "command_index": 669,
+            "simulation_time_s": 33.99999999999559
+          }
+        ],
+        "contact_count_definition": "all physics-substep pair samples, not distinct collisions",
+        "contact_gap_definition": "a policy command without any gripper-plate contact after a command with contact",
+        "passage_scoring_rule": "actual_inner_face_crossing_and_all_substep_contacts",
+        "canonical_declared_gate_route_complete": true,
+        "canonical_declared_gate_crossings": [],
+        "actual_gap_interval_x_m": null,
+        "geometry_used_only_for_reward_and_scoring": true
+      },
+      "full_video_reaches_goal": true,
+      "policy_commands": 767,
+      "training_ranges_half_open": [
+        [
+          0,
+          147
+        ],
+        [
+          302,
+          767
+        ]
+      ],
+      "selected_labels": 612,
+      "excluded_labels": 155,
+      "minimum_table_support_mm": -1.0834922309439499,
+      "whole_episode_depth_gate_passed": true,
+      "depth_violation_commands": [],
+      "all_selected_labels_depth_qualified": true,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-full-demonstrations-v2-20261016-v1/episode-02/actual-native-trace.npz",
+        "sha256": "fb336215420053af553d34da31e4a18a4887846fc615fe7b71efd9349bc7f96d"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-full-demonstrations-v2-20261016-v1/episode-02/actual-native-trace.json",
+        "sha256": "a2cfaa19f3fbcc16c50c291a16c967b052e431373ae52d1ed2dbb1e3d05431a2"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-full-demonstrations-v2-20261016-v1/episode-02/issued-provenance.json",
+        "sha256": "ce29e7dc440ccea3d4d7a17a8666b258f4f144eeb0bbc203870b7fba080e7377"
+      },
+      "physics": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-personal-full-demonstrations-v2-20261016-v1/episode-02/contact-physical-audit.npz",
+        "sha256": "82c3950abc9d0227abebc331abe1b084b2ea2f1b1095faf5fecff203c89e50ad"
+      },
+      "gate_QA": {
+        "applicable": false,
+        "passed": true
+      },
+      "maximum_FP32_label_conversion_error": 0.0,
+      "student_inputs": [
+        "RGB2",
+        "own8",
+        "language"
+      ],
+      "no_new_model_success_claim": true,
+      "teacher_uses_object_truth_for_completion": true,
+      "object_truth_is_never_a_student_input": true,
+      "issued_action_sha256": "609fbf395dd69dea37d32357bf9557d8065b403e7f2ec28690f014b9e6cece34"
+    },
+    {
+      "key": "obstacle-contact-again",
+      "title": "Obstacle: contact again",
+      "group": "Contact again",
+      "folder": "/home/enis/humanoid_isaac_lab/runs/challenge2026-complete-replay-demonstrations-v4-20261016-v1/episode-06",
+      "origin": "Simulation replay with a deliberate contact break",
+      "source": null,
+      "include_ranges": null,
+      "case": {
+        "episode_id": "full-data-obstacle-contact-again",
+        "scenario_id": "obstacle",
+        "split": "TRAIN",
+        "init_index": 0,
+        "seed": 2026100912,
+        "model_seed": 1,
+        "language": "push the plate to the front of the stove",
+        "plate_start_xy_m": [
+          0.092,
+          -0.055
+        ],
+        "expected_start_xy_m": [
+          0.092,
+          -0.055
+        ],
+        "walls": [
+          {
+            "name": "detour_block",
+            "center_xyz_m": [
+              0.005,
+              0.09,
+              0.92
+            ],
+            "half_size_xyz_m": [
+              0.025,
+              0.02,
+              0.02
+            ],
+            "rgba": [
+              0.12,
+              0.25,
+              0.85,
+              1.0
+            ]
+          }
+        ],
+        "passage_gate": null,
+        "yaw_mode": "preserve_native_quaternion",
+        "yaw_delta_rad": 0.0
+      },
+      "checks": {
+        "goal_and_ten_holds": true,
+        "collision_free": true,
+        "route": true,
+        "drift": true,
+        "lift": true,
+        "no_unwanted_contact": true
+      },
+      "result": {
+        "native_goal_success": false,
+        "primary_success": false,
+        "scenario_success": false,
+        "route_complete": true,
+        "added_obstacle_collision_free": true,
+        "passage_crossings": [],
+        "centre_error_mm": 44.940017060656274,
+        "region_distance_mm": 3.831651250170702,
+        "stopped_3d_drift_mm": 0.01160599950572674,
+        "final_plate_xyz": [
+          -0.006168348749829304,
+          0.21991924806099164,
+          0.902501733742452
+        ],
+        "native_success_at_stop": false,
+        "native_success_all_ten_holds": false,
+        "external_hold_commands": 10,
+        "object_truth_scoring_only": true,
+        "allowed_tool_plate_samples": 19660,
+        "allowed_finger_table_samples": 143,
+        "unwanted_contact_samples": 0,
+        "plate_obstacle_contact_samples": 0,
+        "robot_obstacle_contact_samples": 0,
+        "maximum_lift_mm": 4.615912062527983,
+        "obstacle_contact_pairs": {},
+        "contact_intervals_inclusive": [
+          [
+            41,
+            78
+          ],
+          [
+            80,
+            84
+          ],
+          [
+            86,
+            142
+          ],
+          [
+            260,
+            297
+          ],
+          [
+            299,
+            313
+          ],
+          [
+            316,
+            442
+          ]
+        ],
+        "contact_loss_recontact_events": [
+          {
+            "kind": "first_contact",
+            "command_index": 41,
+            "simulation_time_s": 2.5999999999999353
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 79,
+            "simulation_time_s": 4.499999999999726
+          },
+          {
+            "kind": "recontact",
+            "command_index": 80,
+            "simulation_time_s": 4.549999999999721
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 85,
+            "simulation_time_s": 4.799999999999693
+          },
+          {
+            "kind": "recontact",
+            "command_index": 86,
+            "simulation_time_s": 4.849999999999688
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 143,
+            "simulation_time_s": 7.699999999999374
+          },
+          {
+            "kind": "recontact",
+            "command_index": 260,
+            "simulation_time_s": 13.550000000001194
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 298,
+            "simulation_time_s": 15.450000000001829
+          },
+          {
+            "kind": "recontact",
+            "command_index": 299,
+            "simulation_time_s": 15.500000000001846
+          },
+          {
+            "kind": "contact_loss",
+            "command_index": 314,
+            "simulation_time_s": 16.250000000001872
+          },
+          {
+            "kind": "recontact",
+            "command_index": 316,
+            "simulation_time_s": 16.350000000001817
+          }
+        ],
+        "contact_count_definition": "all physics-substep pair samples, not distinct collisions",
+        "contact_gap_definition": "a policy command without any gripper-plate contact after a command with contact",
+        "passage_scoring_rule": "actual_inner_face_crossing_and_all_substep_contacts",
+        "canonical_declared_gate_route_complete": true,
+        "canonical_declared_gate_crossings": [],
+        "actual_gap_interval_x_m": null,
+        "geometry_used_only_for_reward_and_scoring": true
+      },
+      "full_video_reaches_goal": true,
+      "policy_commands": 443,
+      "training_ranges_half_open": [
+        [
+          0,
+          41
+        ],
+        [
+          55,
+          71
+        ],
+        [
+          76,
+          140
+        ],
+        [
+          208,
+          443
+        ]
+      ],
+      "selected_labels": 356,
+      "excluded_labels": 87,
+      "minimum_table_support_mm": -6.285798512433938,
+      "whole_episode_depth_gate_passed": false,
+      "depth_violation_commands": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        50,
+        51,
+        52,
+        53,
+        72,
+        73,
+        74
+      ],
+      "all_selected_labels_depth_qualified": true,
+      "arrays": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-complete-replay-demonstrations-v4-20261016-v1/episode-06/actual-native-trace.npz",
+        "sha256": "394aca6cbd04f1d60e202445b49c9d56ef91fe69078feac51e3ec82199175482"
+      },
+      "metadata": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-complete-replay-demonstrations-v4-20261016-v1/episode-06/actual-native-trace.json",
+        "sha256": "9c7a2185069d2cd1e004fe220e511452a297e984d39b03fcfd25ff6856f31e34"
+      },
+      "provenance": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-complete-replay-demonstrations-v4-20261016-v1/episode-06/issued-provenance.json",
+        "sha256": "bc4de1fc61ae8235fad4030befb7ee3d57b512c53ac48720c3093a8e6ec9c5a2"
+      },
+      "physics": {
+        "path": "/home/enis/humanoid_isaac_lab/runs/challenge2026-complete-replay-demonstrations-v4-20261016-v1/episode-06/contact-physical-audit.npz",
+        "sha256": "9f202b79b58250a730f10b6c36992ddd89033fa63791c4bc86ea3a7f7847acc2"
+      },
+      "gate_QA": {
+        "applicable": false,
+        "passed": true
+      },
+      "maximum_FP32_label_conversion_error": 0.0,
+      "student_inputs": [
+        "RGB2",
+        "own8",
+        "language"
+      ],
+      "no_new_model_success_claim": true,
+      "teacher_uses_object_truth_for_completion": false,
+      "object_truth_is_never_a_student_input": true,
+      "issued_action_sha256": "e65638f2767a00ef8541079ee1507f05ad62e342c2beadb18425ccfe59e50dbf"
+    }
+  ],
+  "full_demonstrations": 13,
+  "total_selected_labels": 3990,
+  "no_training_started": true,
+  "no_weights_changed": true,
+  "no_personal_passage_recording_supplied": false,
+  "full_videos_are_not_learned_policy_evaluation": true,
+  "obstacle_action_hashes": {
+    "obstacle-right": "f58651eb64f9545fd573217528bd9b3e827be12d76e786b034ceca92eefe2aff",
+    "obstacle-left": "c113673dc9ab1869402723e8e2e31dc3981859ac11997e9c2c83b4d1db4bfe3b",
+    "obstacle-other-start": "3e78e40516410ad53221ae57692ba979b327e04820007b17ac067b9ffb5e6948"
+  },
+  "three_obstacle_motions_are_distinct": true,
+  "limits": [
+    "Two simple-start and two obstacle examples are existing simulation references. The third obstacle is a fresh physical replay of another existing trajectory.",
+    "The horizontal gate uses measured phone positions. Diagonal and vertical gate examples are disclosed robot augmentations; the vertical gate is relocated and widened.",
+    "Literal shared-frame obstacle-path transfers failed contact or reach checks and remain excluded. This library does not claim those transfers succeeded.",
+    "Whole-episode depth failures remain visible. Only separately depth-qualified labels are supplied by the loader."
+  ]
+}
