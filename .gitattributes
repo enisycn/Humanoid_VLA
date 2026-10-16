@@ -1,2 +1,3 @@
 weights/*.safetensors filter=lfs diff=lfs merge=lfs -text
 training_data/*.npz filter=lfs diff=lfs merge=lfs -text
+recordings/*.mov filter=lfs diff=lfs merge=lfs -text
