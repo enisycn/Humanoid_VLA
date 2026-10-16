@@ -1,0 +1,8 @@
+{
+  "assets_repo": "lerobot/libero-assets",
+  "assets_repo_type": "dataset",
+  "assets_revision": "0b3ea86be5fe169d0fd036ae63d1070ec09e90f6",
+  "libero_runtime_zip_sha256": "843f8fc69f236ed32b313ee4314d87721029399b136929e679503c66a7876fe2",
+  "lerobot_commit": "200ee53596d464bd28f6595cdb31be69a2b5e379",
+  "dinov2_commit": "85a24602099d397264d5b30461ad7f3bfd726ca1"
+}

@@ -2,7 +2,7 @@
 from pathlib import Path
 import argparse,copy,json,os,select,subprocess,sys,time
 import numpy as np
-ROOT=Path(__file__).resolve().parents[1];sys.path[:0]=[str(ROOT/'src'),str(ROOT/'src/runtime')]
+ROOT=Path(__file__).resolve().parents[1];sys.path[:0]=[str(ROOT/'src'),str(ROOT/'src/runtime'),str(ROOT/'vendor')]
 from protocol import send,receive
 KEYS=('observation.images.image','observation.images.image2')
 def write(p,x):Path(p).write_text(json.dumps(x,indent=2,allow_nan=False)+'\n')

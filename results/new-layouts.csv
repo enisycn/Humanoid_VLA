@@ -1,0 +1,6 @@
+scenario,method,success,native_goal,centre_error_mm,simulated_time_s,gripper_path_cm,contact_breaks,plate_obstacle_samples,robot_obstacle_samples,route_complete,planning_queries,nonfirst_selections
+Left Start,Original VLA,False,False,278.2968827554131,22.5,114.20306028670963,3,0,0,True,90,0
+Left Start,Fine-tuned VLA,False,False,273.39537686631496,22.5,86.3631620072369,1,0,0,True,90,0
+Left Start,Fine-tuned VLA + predictor,False,False,280.0446392988088,22.5,85.32884254722892,0,0,0,True,90,74
+Shifted Block,Original VLA,False,False,215.73094442952322,22.5,133.48119161947648,1,0,402,True,90,0
+Shifted Block,Fine-tuned VLA,False,False,189.72752358118942,22.5,104.73196171960429,7,1517,0,True,90,0
